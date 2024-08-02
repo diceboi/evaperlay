@@ -11,7 +11,7 @@ const dropdown = {
   transition: { duration: 0.2 },
 };
 
-export default function SubMenu({ items }) {
+export default function Submenu({ items }) {
   const itemsWithIcons = items.filter(item => item.icon);
   const itemsWithoutIcons = items.filter(item => !item.icon);
 

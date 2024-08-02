@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { TbChevronDown, TbChevronUp } from "react-icons/tb";
-import SubMenu from "./SubMenu";
+import SubMenu from "./submenu";
 
 export default function NavButton({ title, items, link }) {
   return (

@@ -20,14 +20,14 @@ export default function Hero3() {
             width={300}
             height={300}
             alt="Egyenlő alapítvány csoportkép"
-            className="absolute translate-x-1/2 -translate-y-1/2 top-1/2 -rotate-12 border-8 border-white shadow-xl"
+            className="absolute translate-x-1/5 -translate-y-1/2 top-1/2 -rotate-12 border-8 border-white shadow-xl"
           />
           <Image
             src="/eva/egyenlo-2.webp"
             width={300}
             height={300}
             alt="Egyenlő alapítvány instagram"
-            className="absolute translate-x-1/2 left-1/4 -translate-y-1/2 top-1/2 rotate-6 border-8 border-white shadow-xl"
+            className="absolute translate-x-1/5 left-1/4 -translate-y-1/2 top-1/2 rotate-6 border-8 border-white shadow-xl"
           />
         </motion.div>
         <div className="flex flex-col gap-8 w-1/2 self-center">

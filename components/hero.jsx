@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="flex flex-col justify-end gap-20 xl:w-3/4 w-4/5 h-[100vh]">
             <div className="flex flex-col gap-8">
               <h2 className="text-xl uppercase font-medium tracking-widest bg-[--mint] w-fit px-2 py-1 rounded-full">
-                Perlay Éva
+                Business Coaching
               </h2>
               <h1 className="text-6xl font-bold">
                 Coaching, Tréning személyre szabva

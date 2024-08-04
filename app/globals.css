@@ -81,6 +81,20 @@
   animation: 25s slide infinite linear;
 }
 
+/*Sima szövegbuborék*/
+
+#bubble-left:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 18px;
+  bottom: -18px;
+  border-bottom-right-radius: 100%;
+  background-color: var(--white);
+  z-index: 10;
+}
+
 /*Szlogen szövegbuborék fül*/
 
 #slogen:after {
@@ -104,4 +118,17 @@
   color: var(--dukeblue);
   z-index: 10;
 
+}
+
+/*Nagy név aláhúzás*/
+
+#nev::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background-color: var(--aquamarine);
+  z-index: -1;
 }

@@ -100,34 +100,49 @@ export default function Navbar() {
       initial={{ y:"-96px" }}
       animate={{ y:"0px" }}
       transition={{ ease:"easeIn", duration: 0.2 }}
-      className={`flex flex-row items-center w-full ${isScrolled ? "h-16 bg-[#ffffff80] backdrop-blur-lg" : "h-24 bg-transparent"} font-semibold fixed top-0 transition-all duration-200 z-50`}>
-        <div className="w-full flex flex-row items-center px-4 py-1">
-          <div className="flex flex-row items-center justify-start">
-            <div className={`relative ${isScrolled ? "w-[150px] h-12" : "w-[200px] h-16"} transition-all duration-200`}>
-              <Image
-                src="/logo/szineslogo-test.svg"
-                alt="Logo"
-                fill
-                style={{ objectFit: "contain" }}
-                placeholder="blur"
-                blurDataURL="/blurdata/logo-blurdata.webp"
-              />
-            </div>
-            <ul className="flex flex-row gap-4 text-lg">
-              {menus.map((menu, index) => (
-                <NavButton key={index} {...menu} />
-              ))}
-            </ul>
+      className={`flex flex-row items-center w-full ${isScrolled ? "bg-white" : "bg-transparent"} font-semibold fixed top-0 transition-all duration-200 z-50`}>
+        <div className={`flex flex-col justify-center w-11/12 m-auto ${isScrolled ? "h-16" : "h-24 border-b"} border-[--dukeblue]`}>
+        <div className="w-full flex flex-row items-center px-1 py-1">
+          <div className="flex flex-row items-center justify-start gap-8">
+              <Link href="/" className={`flex flex-row items-center justify-start ${isScrolled ? "w-16" : "w-36"} h-8 transition-all duration-200`}>
+              {isScrolled ? (
+                <Image
+                  src='/logo/emblema.svg'
+                  alt="Logo"
+                  width={36}
+                  height={36}
+                  placeholder="blur"
+                  blurDataURL="/blurdata/logo-blurdata.webp"
+                  className=""
+                />
+              ):(
+                <Image
+                  src='/logo/szineslogo-test.svg'
+                  alt="Logo"
+                  width={125}
+                  height={36}
+                  placeholder="blur"
+                  blurDataURL="/blurdata/logo-blurdata.webp"
+                  className=""
+                />
+              )}
+              </Link>
+              <ul className="flex flex-row gap-8 text-lg">
+                {menus.map((menu, index) => (
+                  <NavButton key={index} {...menu} />
+                ))}
+              </ul>
           </div>
           <div className="group flex flex-row justify-end w-full">
             <Link href="/">
               <li className="group flex flex-col h-16 justify-center text-lg">
-                <span className="px-4 py-2 bg-[--dukeblue] group-hover:bg-[--dukeblue-dark] text-white font-bold rounded-2xl transition-all">
+                <span className="px-4 py-2 bg-[--dukeblue] group-hover:bg-[--dukeblue-dark] text-white font-bold transition-all">
                   Foglalj időpontot
                 </span>
               </li>
             </Link>
           </div>
+        </div>
         </div>
       </motion.nav>
     </>

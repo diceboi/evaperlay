@@ -15,7 +15,7 @@ export default function NavButton({ title, items, link }) {
     >
         {link ? (
             <Link href="/">
-                <span className="flex flex-nowrap items-center gap-2 px-4 py-2 group-hover:bg-white rounded-2xl transition-all">
+                <span className="flex flex-nowrap items-center gap-2 py-2 group-hover:border-b group-hover:border-[--dukeblue] text-[--dukeblue] transition-all">
                 {title}
                 {items && (
                     <>
@@ -26,7 +26,7 @@ export default function NavButton({ title, items, link }) {
                 </span>
             </Link>
         ):(
-            <span className="flex flex-nowrap items-center gap-2 px-4 py-2 group-hover:bg-white rounded-2xl transition-all">
+            <span className="flex flex-nowrap items-center gap-2 py-2 group-hover:border-b group-hover:border-[--dukeblue] text-[--dukeblue] transition-all">
                 {title}
                 {items && (
                     <>
@@ -34,7 +34,7 @@ export default function NavButton({ title, items, link }) {
                     <TbChevronUp className="group-hover:flex hidden" />
                     </>
                 )}
-                </span>
+            </span>
         )}
       
       {items && <Submenu items={items} />}

@@ -18,7 +18,7 @@ export default function Hero4() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
         >
-          <div className="flex flex-col justify-between w-1/2 self-center h-[40vh]">
+          <div className="flex flex-col justify-between w-2/3 self-center h-[40vh]">
             <motion.h2
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -45,8 +45,8 @@ export default function Hero4() {
               ehhez egyenrangú szakmai partnert keresel, akivel olyan bizalommal
               tudnál együtt dolgozni, hogy beleférne a feltétel nélküli
               elfogadás, a sebezhetőség, az érzelmek megmutatása, az őszinteség,
-              a nyitottság és a humor is, akkor mindenképp foglalj velem egy
-              ingyenes, 30 perces konzultációt!
+              a nyitottság és a humor is, akkor <span className=" bg-white font-bold p-1">mindenképp foglalj velem egy
+              ingyenes, 30 perces konzultációt!</span>
             </motion.p>
             <motion.button
               className="text-    xl py-2 px-4 text-white font-semibold bg-[--dukeblue] hover:bg-[--dukeblue-dark] transition-all duration-100 w-fit"
@@ -61,7 +61,7 @@ export default function Hero4() {
               Lefoglalom
             </motion.button>
           </div>
-          <div className="flex flex-col items-end justify-between relative w-1/2 h-[40vh]">
+          <div className="flex flex-col items-end justify-between relative w-1/3 h-[40vh]">
             <Image
                 src="/eva/ulo.webp"
                 width={500}

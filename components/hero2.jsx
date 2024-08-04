@@ -9,7 +9,7 @@ export default function Hero2() {
   return (
     <section className="relative bg-[url('/noise.png')] bg-repeat">
       <div className="container relative flex lg:flex-row flex-col min-h-[100vh] m-auto gap-20">
-        <div className="flex flex-col justify-center gap-4 w-1/2">
+        <div className="flex flex-col justify-center gap-4 w-1/2 mt-20">
           <div className="flex flex-row items-baseline gap-4">
             <motion.div
               className="relative w-fit h-fit"
@@ -97,7 +97,7 @@ export default function Hero2() {
           className="flex flex-row gap-4"
           >
             <motion.button
-              className="text-    xl py-2 px-4 text-white font-semibold bg-[--dukeblue] hover:bg-[--dukeblue-dark] transition-all duration-100 w-fit"
+              className="text-    xl py-2 px-4 text-white font-semibold bg-[--dukeblue] hover:bg-[--dukeblue-dark] transition-all duration-200 w-fit"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
@@ -109,7 +109,7 @@ export default function Hero2() {
               30 perc ingyen tanácsadás
             </motion.button>
             <motion.button
-              className="text-    xl py-2 px-4 text-[--dukeblue] hover:text-white font-semibold border border-[--dukeblue] bg-transparent hover:bg-[--dukeblue-dark] transition-all duration-100 w-fit"
+              className="text-    xl py-2 px-4 text-[--dukeblue] hover:text-white font-semibold border border-[--dukeblue] bg-transparent hover:bg-[--dukeblue-dark] transition-all duration-200 w-fit"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{

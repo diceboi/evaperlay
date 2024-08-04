@@ -8,7 +8,7 @@ import { TbChevronRight } from "react-icons/tb";
 export default function Hero3() {
   return (
     <section className="relative bg-[url('/noise.png')] bg-repeat">
-      <div className="container relative flex lg:flex-row flex-col m-auto gap-20 min-h-[60vh]">
+      <div className="container relative flex lg:flex-row flex-col m-auto gap-20 min-h-[80vh]">
         <motion.div
           initial={{ scale: 0.9, opacity: 0, }}
           whileInView={{ scale: 1, opacity: 1, }}
@@ -16,10 +16,18 @@ export default function Hero3() {
           className="relative w-1/2"
         >
           <Image
-            src="/eva/ulo.webp"
-            fill
-            style={{ objectFit: "contain" }}
-            alt="Éva gondolkodik"
+            src="/eva/egyenlo-1.webp"
+            width={300}
+            height={300}
+            alt="Egyenlő alapítvány csoportkép"
+            className="absolute translate-x-1/2 -translate-y-1/2 top-1/2 -rotate-12 border-8 border-white shadow-xl"
+          />
+          <Image
+            src="/eva/egyenlo-2.webp"
+            width={300}
+            height={300}
+            alt="Egyenlő alapítvány instagram"
+            className="absolute translate-x-1/2 left-1/4 -translate-y-1/2 top-1/2 rotate-6 border-8 border-white shadow-xl"
           />
         </motion.div>
         <div className="flex flex-col gap-8 w-1/2 self-center">

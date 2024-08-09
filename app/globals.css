@@ -7,15 +7,112 @@
   --black: #191919;
   --white:#f5f5f7;
   --mint: #beeedb;
+  --mintbg: #eaf7f1;
   --aquamarine: #58e7b9;
   --vistablue: #96a9d9;
+  --vistabluebg: #edf0fa;
   --dukeblue: #2b089d;
   --dukeblue-dark: #1f066f;
+  
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+  --fs-600: 2rem;
+  --fs-400: 1rem;
 }
 
 .text-poppins {
     font-family: var(--poppins);
 }
+
+/*-----------------------------------------------------*/
+
+/*H1*/
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  letter-spacing: -0.125rem;
+}
+
+@media (max-width: 996px) {
+  h1 {
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+
+/*H2*/
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+}
+
+@media (max-width: 996px) {
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+
+/*H3*/
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 996px) {
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  h3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+
+/*H4*/
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/*Button text*/
+
+
+
+
+
+
 
 .shadow-special {
   --tw-shadow: 0 5px 35px -20px var(--dukeblue-dark);
@@ -69,12 +166,12 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f5f5f7);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f5f5f7);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
 }
 
 .logos-slide {
@@ -122,13 +219,86 @@
 
 /*Nagy név aláhúzás*/
 
-#nev::after {
+.underlined-h::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 20px;
-  width: 100%;
-  background-color: var(--aquamarine);
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 25%;
+  width: 105%;
+  background-color: var(--dukeblue);
   z-index: -1;
+  opacity: 0.75;
+}
+
+.underlined-p::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 30%;
+  width: 102%;
+  background: linear-gradient(90deg, var(--mint), var(--vistablue));
+  z-index: -1;
+}
+
+
+/*Buttons*/
+
+.button-primary {
+  appearance: none;
+  background-color: var(--aquamarine);
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 16px 32px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  font-weight: 500;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button-primary:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: var(--dukeblue);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-primary:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-primary:after {
+  background-color: #000;
+}
+
+.button-primary span {
+  z-index: 1;
+  position: relative;
 }

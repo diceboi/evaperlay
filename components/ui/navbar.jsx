@@ -96,12 +96,9 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.nav 
-      initial={{ y:"-96px" }}
-      animate={{ y:"0px" }}
-      transition={{ ease:"easeIn", duration: 0.2 }}
-      className={`flex flex-row items-center w-full ${isScrolled ? "bg-white" : "bg-transparent"} font-semibold fixed top-0 transition-all duration-200 z-50`}>
-        <div className={`flex flex-col justify-center w-11/12 m-auto ${isScrolled ? "h-16" : "h-24 border-b"} border-[--dukeblue]`}>
+      <nav
+      className={`flex flex-row items-center w-full ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"} font-regular fixed top-0 transition-all duration-200 z-50`}>
+        <div className={`flex flex-col justify-center w-11/12 m-auto ${isScrolled ? "h-16" : "h-24 border-b"} border-[--white]`}>
         <div className="w-full flex flex-row items-center px-1 py-1">
           <div className="flex flex-row items-center justify-start gap-8">
               <Link href="/" className={`flex flex-row items-center justify-start ${isScrolled ? "w-16" : "w-36"} h-8 transition-all duration-200`}>
@@ -117,7 +114,7 @@ export default function Navbar() {
                 />
               ):(
                 <Image
-                  src='/logo/szineslogo-test.svg'
+                  src='/logo/feher-logo.svg'
                   alt="Logo"
                   width={125}
                   height={36}
@@ -129,22 +126,18 @@ export default function Navbar() {
               </Link>
               <ul className="flex flex-row gap-8 text-lg">
                 {menus.map((menu, index) => (
-                  <NavButton key={index} {...menu} />
+                  <NavButton key={index} {...menu} scrolled={isScrolled} />
                 ))}
               </ul>
           </div>
           <div className="group flex flex-row justify-end w-full">
             <Link href="/">
-              <li className="group flex flex-col h-16 justify-center text-lg">
-                <span className="px-4 py-2 bg-[--dukeblue] group-hover:bg-[--dukeblue-dark] text-white font-bold transition-all">
-                  Foglalj időpontot
-                </span>
-              </li>
+            <button className="group button-primary" role="button"><span className="group-hover:text-white transition-all">Foglalj időpontot</span></button>
             </Link>
           </div>
         </div>
         </div>
-      </motion.nav>
+      </nav>
     </>
   );
 }

@@ -35,10 +35,10 @@ export default function Submenu({ items }) {
   return (
     <motion.ul
       variants={dropdown}
-      className={`flex flex-col absolute ${isScrolled ? 'top-14' : 'top-20'} -left-1 p-4 gap-2 bg-[--dukeblue] backdrop-blur-lg w-max text-sm`}
+      className={`flex flex-col absolute ${isScrolled ? 'top-[52px]' : 'top-20'} -left-1 p-4 gap-2 bg-[--aquamarine] backdrop-blur-lg w-max text-sm`}
     >
       {items.map((item, index) => (
-        <Link href="/" key={index} className="h-6 hover:border-b hover:border-[--white] text-[--vistablue] hover:text-[--white] w-fit transition-all duration-200">
+        <Link href="/" key={index} className="h-6 hover:border-b hover:border-white text-[--black] hover:text-black w-fit">
         <li>
         <span>{item.title}</span>
         </li>

@@ -1,7 +1,7 @@
-import Freecoach from "@/components/freecoach";
-import Hero2 from "@/components/hero2";
-import Hero3 from "@/components/hero3";
-import Hero4 from "@/components/hero4";
+import Aboutme from "@/components/aboutme";
+import Hero5 from "@/components/hero5";
+import Logocarousel from "@/components/logocarousel";
+import Maincta from "@/components/maincta";
 import Socialcred from "@/components/socialcred";
 import Whattoexpect from "@/components/whattoexpect";
 import Whyus from "@/components/whyus";
@@ -9,12 +9,10 @@ import Whyus from "@/components/whyus";
 export default function Home() {
   return (
     <>
-    <Hero2 />
-    <Hero3 />
-    <Hero4 />
+    <Hero5 />
+    <Aboutme />
     <Whyus />
-    <Whattoexpect/>
-    <Socialcred />
+    <Maincta />
     </>
   );
 }

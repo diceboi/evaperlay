@@ -14,7 +14,7 @@ export default function Home() {
     <>
     <Hero />
     <Aboutme />
-    <Maincta/>
+    <Maincta />
     <Whyus />
     <Maincta2 />
     <Whattoexpect />

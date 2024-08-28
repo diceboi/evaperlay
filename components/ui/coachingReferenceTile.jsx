@@ -14,8 +14,8 @@ export default function Coachingreferencetile({ image, name, from, comment }) {
       <div className="flex flex-col gap-2">
         <Image
           src={image}
-          height={75}
-          width={75}
+          height={100}
+          width={100}
           alt="Profilkép"
           className="rounded-full"
         />

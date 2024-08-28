@@ -5,7 +5,7 @@ import Regularcontainer from "./ui/regularcontainer";
 import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
 
-export default function MainCTA() {
+export default function Maincta() {
   return (
     <Regularcontainer bgcolor={'bg-white'}>
         <motion.div 
@@ -29,7 +29,6 @@ export default function MainCTA() {
             alt="Éva ül"
             className="absolute -bottom-0 right-1/3 h-[150%] w-auto"
           />
-
           </div>
         </motion.div>
     </Regularcontainer>

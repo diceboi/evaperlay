@@ -5,6 +5,7 @@ import Image from "next/image";
 import NavButton from "./navbutton";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Primarybuton from "./primaryGreenButon";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ export default function Navbar() {
         {
           title: "Egyéni coaching",
           icon: "/icons/coaching-icon.svg",
-          link: "/",
+          link: "/egyeni-coaching",
         },
         {
           title: "Vállalati képzések",
@@ -114,7 +115,7 @@ export default function Navbar() {
                 />
               ):(
                 <Image
-                  src='/logo/feher-logo.svg'
+                  src='/logo/logo-white-coaching.svg'
                   alt="Logo"
                   width={125}
                   height={36}
@@ -131,9 +132,7 @@ export default function Navbar() {
               </ul>
           </div>
           <div className="group flex flex-row justify-end w-full">
-            <Link href="/">
-            <button className="group button-primary" role="button"><span className="group-hover:text-white transition-all">Foglalj időpontot</span></button>
-            </Link>
+            <Primarybuton text={'Foglalj időpontot'} link={'/'}/>
           </div>
         </div>
         </div>

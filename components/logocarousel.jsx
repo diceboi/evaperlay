@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Logocarousel() {
   return (
-      <div className="container logos flex flex-col relative overflow-hidden h-[20vh] pb-16 ">
+      <div className="container logos flex flex-col relative overflow-hidden h-[30vh] ">
       <div className="absolute flex w-[900%] lg:w-[300%] top-1/2">
         <div className="logos-slide inline-flex justify-between w-[150%] gap-8">
           <div className="flex justify-center items-center w-1/3 lg:w-1/5 ml-8">

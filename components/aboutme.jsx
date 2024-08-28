@@ -4,6 +4,8 @@ import Regularcontainer from "./ui/regularcontainer";
 import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import { motion } from "framer-motion";
+import Primarygreenbuton from "./ui/primaryGreenButon";
+import Secondarybluebutton from "./ui/SecondaryBlueButton";
 
 export default function Aboutme() {
   return (
@@ -15,7 +17,7 @@ export default function Aboutme() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
             >
-                <Image src='/eva/rolam.webp' fill style={{objectFit: 'cover', objectPosition: '25% 20%',}} alt="Rólam"/>
+                <Image src='/eva/rolam3.webp' fill style={{objectFit: 'cover', objectPosition: '25% 20%',}} alt="Rólam"/>
             </motion.div>
             <div className="flex flex-col gap-12 justify-center w-1/2">
                 <div className="flex flex-col gap-4">
@@ -49,15 +51,13 @@ export default function Aboutme() {
                     <p>
                     Fókuszterületeim az önazonos munkavégzés és kommunikáció, a mentális egészségmegőrzés, a munkahelyi egyenlőség, a befogadó vezetés és az élhető szervezeti kultúra kialakítása.
                     </p>
+                    <p>
+                    Olvass bele a témáimba: <Secondarybluebutton text={'Témáim'} link={'/'} />
+                    </p>
+                    <p>
+                    Ha kíváncsi vagy, miért lehetek számodra hiteles partner, kattints ide: <Secondarybluebutton text={'Miért válassz?'} link={'/'} />
+                    </p>
                 </motion.div> 
-                <motion.button 
-                className="group button-primary" role="button"
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
-                >
-                    <span className="group-hover:text-white transition-all">Bővebben rólam</span>
-                </motion.button>
             </div>
         </div>
         <div className="flex flex-row justify-evenly pt-32"> 

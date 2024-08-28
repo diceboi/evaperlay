@@ -5,7 +5,6 @@ import Regularcontainer from "./ui/regularcontainer";
 import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
 
-
 export default function MainCTA() {
   return (
     <Regularcontainer bgcolor={'bg-white'}>

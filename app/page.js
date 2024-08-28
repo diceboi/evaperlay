@@ -2,7 +2,7 @@ import Aboutme from "@/components/aboutme";
 import Coachingreferences from "@/components/coachingReferences";
 import Hero from "@/components/hero";
 import Linkedin from "@/components/linkedin";
-import MainCTA from "@/components/MainCTA";
+import MainCTA from "../components/MainCTA";
 import Maincta2 from "@/components/MainCTA2";
 import Socialcred from "@/components/socialcred";
 import Contactus from "@/components/ui/contactus";

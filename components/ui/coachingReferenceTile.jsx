@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Coachingreferencetile({ image, name, from, comment }) {
   return (
     <motion.div
-      className="flex flex-col gap-8 w-full bg-[--white] p-8"
+      className="flex flex-col gap-8 w-full bg-white p-8"
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}

@@ -30,7 +30,7 @@ export default function Whyus() {
             <MdOutlineHorizontalRule className="min-w-8 min-h-8" />
             Mi a célod?
           </motion.h4>
-          <h2>Vedd fel velem a kapcsolatot, ha...</h2>  
+          <h2>Vedd fel velem a kapcsolatot, ha</h2>  
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 grid-rows-2 gap-8">

@@ -4,6 +4,7 @@ import Regularcontainer from "./regularcontainer";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
 import Link from "next/link";
+import Secondarybluebutton from "./SecondaryBlueButton";
 
 import { TbMail, TbBrandLinkedin } from "react-icons/tb";
 
@@ -115,12 +116,7 @@ export default function Contactus() {
                 />
                 <label for="acceptance">
                   Elolvastam, megértettem, és elfogadom az{" "}
-                  <Link
-                    href={"/adatkezelesi-tajekoztato"}
-                    className="text-[--dukeblue] underline"
-                  >
-                    adatkezelési tájékoztatóban
-                  </Link>{" "}
+                  <Secondarybluebutton text={'adatkezelési tájékoztatóban'} link={'/adatkezelesi-tajekoztato'} />
                   foglaltakat.*
                 </label>
               </div>

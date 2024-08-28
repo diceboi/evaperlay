@@ -5,7 +5,7 @@ import Regularcontainer from "./ui/regularcontainer";
 import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
 
-export default function Maincta() {
+export default function Ctaone() {
   return (
     <Regularcontainer bgcolor={'bg-white'}>
         <motion.div 
@@ -19,7 +19,7 @@ export default function Maincta() {
                 <h2>Foglalj ingyenes 30 perces konzultációt</h2>
                 <p className="text-xl">Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a témádról, a coaching részleteiről, illetve bármilyen felmerülő kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!</p>
             </div>
-            <Primarybluebutton text={'Ingyenes konzultáció'} link={'/'}/>
+            <Primarybluebutton text={'Ingyenes konzultáció igénylés'} link={'/'}/>
           </div>
           <div className="relative w-1/3">
           <Image

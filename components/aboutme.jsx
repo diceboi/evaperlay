@@ -64,18 +64,22 @@ export default function Aboutme() {
             <div className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 pr-8 text-center gap-2">
                 <h3>15+ év</h3>
                 <p>nagyvállalati tapasztalat</p>
+                <Secondarybluebutton text={'Hol tartok a coach szakmai utamon?'} link={'/'} classname={'my-4'}/>
             </div>
             <div className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2">
                 <h3>Egyenlítő alapítvány</h3>
                 <p>partnerkapcsolati vezető és trainer</p>
+                <Secondarybluebutton text={'Az Egyenlítő Alapítványnál végzett munkám'} link={'/'} classname={'my-4'}/>
             </div>
             <div className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2">
                 <h3>Diplomás</h3>
                 <p>üzleti coach</p>
+                <Secondarybluebutton text={'Multinacionális marketing és sales hátterem'} link={'/'} classname={'my-4'}/>
             </div>
             <div className="flex flex-col items-center justify-evenly w-full pl-8 text-center  gap-2">
                 <p>képzésben lévő </p>
                 <h3>mentálhigiénés szakember</h3>
+                <Secondarybluebutton text={'Tanulmányaim'} link={'/'} classname={'my-4'} />
             </div>
         </div>
     </Regularcontainer>

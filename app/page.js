@@ -2,7 +2,6 @@ import Aboutme from "@/components/aboutme";
 import Coachingreferences from "@/components/coachingReferences";
 import Hero from "@/components/hero";
 import Linkedin from "@/components/linkedin";
-import Maincta from "../components/Maincta";
 import Maincta2 from "@/components/MainCTA2";
 import Contactus from "@/components/ui/contactus";
 import Whattoexpect from "@/components/whattoexpect";
@@ -13,7 +12,6 @@ export default function Home() {
     <>
     <Hero />
     <Aboutme />
-    <Maincta />
     <Whyus />
     <Maincta2 />
     <Whattoexpect />

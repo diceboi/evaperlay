@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <Regularcontainer bgcolor={"bg-[--aquamarine]"}>
       <div className="flex flex-col gap-8 w-full">
-        <div className="flex lg:flex-row flex-col w-full justify-between">
-          <div className="flex flex-col gap-8 justify-center items-center">
+        <div className="flex lg:flex-row flex-col gap-16 w-full justify-center items-start">
+          <div className="flex flex-col gap-8 justify-center ">
             <Image
-              src={"/logo/logo-gardient-1-coaching.svg"}
+              src={"/logo/logo-black-coaching.svg"}
               width={200}
               height={500}
               alt={"footer logo"}

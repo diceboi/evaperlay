@@ -9,7 +9,7 @@ import Quote from "./ui/quote"
 export default function Hero() {
   return (
     <Bgcontainer bgimage={'/eva/beszelgeto.webp'} height={'min-h-[100vh]'} bgopacity={'bg-opacity-40'} bgcolor={'bg-black'} blendmode={'mix-blend-darken'}>
-    <div className='relative flex flex-col items-center gap-8'>
+    <div className='relative flex flex-col justify-end items-center gap-8'>
         <div className="flex flex-col w-1/2">
           <motion.h1 
           className="text-center text-white drop-shadow-lg "

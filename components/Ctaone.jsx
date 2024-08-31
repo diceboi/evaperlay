@@ -16,20 +16,24 @@ export default function Ctaone() {
         >
           <div className="flex flex-col gap-4 justify-between w-2/3  p-8">
             <div className="flex flex-col gap-4">
-                <h2>Foglalj ingyenes 30 perces konzultációt</h2>
+                <h2>Foglalj ingyenes 30 perces konzultációt!</h2>
                 <p className="text-xl">Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a témádról, a coaching részleteiről, illetve bármilyen felmerülő kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!</p>
             </div>
             <Primarybluebutton text={'Ingyenes konzultáció igénylés'} link={'/'}/>
           </div>
           <div className="relative w-1/3">
           <Image
-            src="/eva/linkedin2.webp"
+            src="/eva/maincta3.webp"
             width={500}
             height={300}
             alt="Éva ül"
-            className="absolute -bottom-0 right-1/3 h-[150%] w-auto"
+            className="absolute -bottom-0 z-20"
           />
+          <div className="w-full h-full relative overflow-hidden">
+            <div className="absolute -bottom-1/2 left-2/3 -translate-x-1/2 bg-[--dukeblue] blur-3xl w-1/2 h-full z-10 opacity-30"></div>
           </div>
+          </div>
+          
         </motion.div>
     </Regularcontainer>
   )

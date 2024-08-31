@@ -41,7 +41,7 @@ export default function Ctatwo() {
               <strong>ingyenes, 30 perces konzultációt!</strong>
             </p>
           </div>
-          <Primarybluebutton text={"Ingyenes konzultáció igénylés"} link={"/"} />
+          <Primarybluebutton text={"Ingyenes konzultáció igénylésö"} link={"/"} />
         </div>
       </motion.div>
     </Regularcontainer>

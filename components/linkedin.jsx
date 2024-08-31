@@ -35,7 +35,7 @@ export default function Linkedin() {
               fill
               style={{ objectFit: "cover", objectPosition: "top" }}
               alt="Éva ül"
-              className="w-full rounded-2xl"
+              className="w-full rounded-xl"
             />
             <div className="absolute top-4 lg:top-[50px] -right-4">
               <motion.p

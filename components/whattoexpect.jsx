@@ -8,6 +8,7 @@ import Image from "next/image";
 import Secondarybluebutton from "./ui/SecondaryBlueButton";
 import Primarygreenbuton from "./ui/primaryGreenButon";
 import { useRef } from "react";
+import { MdOutlineHorizontalRule } from "react-icons/md"
 
 export default function Whattoexpect() {
   const scrollRef = useRef(null);
@@ -40,7 +41,15 @@ export default function Whattoexpect() {
     <Regularcontainer bgcolor={"bg-gardient-to-b from-white to-transparent"}>
       <div className="relative flex flex-col gap-20">
         <div className="flex flex-col gap-16 w-full">
+        <div className="flex flex-col gap-4">
+          <h4
+            className="flex flex-nowrap items-center justify-center gap-2"
+          >
+            <MdOutlineHorizontalRule className="min-w-8 min-h-8" />
+            Hogyan dolgozom?
+          </h4>
           <h2 className="text-center z-10">Mire számíthatsz?</h2>
+          </div>
           <motion.div
             className="relative flex flex-col justify-end w-full h-[60vh] rounded-xl overflow-hidden "
             initial={{ y: -10, opacity: 0 }}
@@ -80,69 +89,63 @@ export default function Whattoexpect() {
           <h2 className="text-center">Közös munkánk során tehát:</h2>
           <div className="grid grid-cols-4 grid-rows-2 grid-flow-row gap-6" style={{ gridTemplateAreas: `"a a a a" "b b c c"`, gridAutoFlow: "dense" }}>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                1
+              <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+                <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
               <p className="text-lg">
                 <b>Egyenrangú </b>partnerekként
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                2
+            <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+                <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
               <p className="text-lg">
-                azzal fogunk dolgozni, ami <b>számodra fontos</b>,
+                azzal fogunk dolgozni, ami <b>számodra fontos</b>.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                3
+            <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+                <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
               <p className="text-lg">
-                <b>te felelsz</b> a folyamat során levont tanulságokért és
-                céljaid megvalósításáért,
+                <b>Te felelsz</b> a folyamat során levont tanulságokért és
+                céljaid megvalósításáért.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                4
-              </div>
               <p className="text-lg">
-                <b>én felelek</b> a coaching technikák alkalmazásáért és az
-                ülések strukturálásáért,
+                <b>Én felelek</b> a coaching technikák alkalmazásáért és az
+                ülések strukturálásáért.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                5
-              </div>
               <p className="text-lg">
-                <b>nem lesz részed</b> tanácsadásban (tapasztalat megosztásban
-                is csak kivételes esetben),
+              <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+                <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
+              </div>
+                <b>Nem lesz részed</b> tanácsadásban (tapasztalat megosztásban
+                is csak kivételes esetben).
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                6
+            <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+                <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
               <p className="text-lg">
-                <b>jövőorientáltan</b>, azaz nem a “miérteken”, hanem a
-                “hogyanokon” fogunk dolgozni,
+                <b>Jövőorientáltan</b>, azaz nem a “miérteken”, hanem a
+                “hogyanokon” fogunk dolgozni.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <div className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-8 h-8 bg-[--aquamarine] rounded-full text-white">
-                7
-              </div>
               <p className="text-lg">
-                végig <b>mérhető célok</b> mentén.
+                Végig <b>mérhető célok</b> mentén.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="relative flex flex-col justify-center w-1/2 m-auto gap-16">
+        <div className="relative flex flex-col justify- m-auto gap-16 ">
           <div className="absolute w-1 h-full bg-white top-32 left-1/2 -translate-x-1/2"></div>
           <h2 className="text-center">Hogyan zajlik a folyamat?</h2>
 
@@ -156,7 +159,7 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress1 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef }}
-              className="sticky top-1/3 text-center flex flex-col gap-16 bg-[--white] px-8 pb-8"
+              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 mr-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 0. beszélgetés
@@ -186,7 +189,7 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress2 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef2 }}
-              className="sticky top-1/3 text-center flex flex-col gap-16 bg-[--white] px-8 pb-8"
+              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 self-end  ml-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 Szerződéskötés
@@ -208,7 +211,7 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress3 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef3 }}
-              className="sticky top-1/3 text-center flex flex-col gap-16 bg-[--white] px-8 pb-8"
+              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 mr-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
               A Coaching folyamata
@@ -232,7 +235,7 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress4 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef4 }}
-              className="sticky top-1/3 text-center flex flex-col items-center gap-16 bg-[--white] px-8 pb-8"
+              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 self-end ml-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 Utánkövetés
@@ -242,7 +245,7 @@ export default function Whattoexpect() {
                 utánkövető alkalmak beiktatását, hogy segítségedre lehessek a
                 változások végrehajtásánál is.
               </p>
-              <Primarygreenbuton text={'Kezdjünk bele'} link={'/'} classname={'m-auto'}/>
+              <Primarygreenbuton text={'Kezdjünk bele'} link={'/'} classname={'m-auto self-center'}/>
             </motion.div>
           </div>
         </div>

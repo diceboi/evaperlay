@@ -22,7 +22,10 @@ export default function Coachingreferencetile({ image, name, from, comment }) {
         <h3>{name}</h3>
         <p className="italic text-sm">{from}</p>
       </div>
-      <p className="text-sm">{comment}</p>
+      <p
+        className="flex flex-col gap-3 text-sm"
+        dangerouslySetInnerHTML={{ __html: comment }}
+      />
     </motion.div>
   );
 }

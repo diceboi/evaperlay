@@ -38,7 +38,7 @@ export default function Submenu({ items }) {
       className={`flex flex-col absolute ${isScrolled ? 'top-[52px]' : 'top-20'} -left-1 p-4 gap-2 bg-[--aquamarine] backdrop-blur-lg w-max text-sm`}
     >
       {items.map((item, index) => (
-        <Link href="/" key={index} className="h-6 hover:border-b hover:border-white text-[--black] hover:text-black w-fit">
+        <Link href={item.link} key={index} className="h-6 hover:border-b hover:border-white text-[--black] hover:text-black w-fit">
         <li>
         <span>{item.title}</span>
         </li>

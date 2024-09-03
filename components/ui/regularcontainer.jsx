@@ -1,6 +1,6 @@
-export default function Regularcontainer({children, bgcolor}) {
+export default function Regularcontainer({children, bgcolor, padding}) {
   return (
-    <section className={`flex flex-col gap-16 py-8 lg:py-32 w-full ${bgcolor}`}>
+    <section className={`flex flex-col gap-16 ${padding} w-full ${bgcolor}`}>
         <div className="container m-auto">
             {children}   
         </div>

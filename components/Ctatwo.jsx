@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Ctatwo() {
   return (
-    <Regularcontainer bgcolor={"bg-white"}>
+    <Regularcontainer bgcolor={"bg-white"} padding={'py-32'}>
       <motion.div
         className="flex flex-row justify-between bg-[--aquamarine] w-full min-h-[40vh] gap-4"
         initial={{ y: -20, opacity: 0 }}

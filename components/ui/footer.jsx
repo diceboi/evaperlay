@@ -6,7 +6,7 @@ import { TbMail, TbBrandLinkedin,TbPhone } from "react-icons/tb";
 
 export default function Footer() {
   return (
-    <Regularcontainer bgcolor={"bg-[--aquamarine]"}>
+    <Regularcontainer bgcolor={"bg-[--aquamarine]"} padding={'py-16'}>
       <div className="flex flex-col gap-8 w-full">
         <div className="flex lg:flex-row flex-col gap-16 w-full justify-center items-start">
           <div className="flex flex-col gap-8 justify-center ">

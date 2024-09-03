@@ -12,7 +12,7 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 
 export default function Linkedin() {
   return (
-    <Regularcontainer bgcolor={"bg-white"}>
+    <Regularcontainer bgcolor={"bg-white"} padding={'py-32'}>
       <div className="flex flex-col items-center gap-16">
       <div className="flex flex-col gap-4">
         <h4

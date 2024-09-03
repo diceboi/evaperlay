@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import NavButton from "./navbutton";
+import NavButtonBlack from "./navbuttonBlack";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Primarybuton from "./primaryGreenButon";
 
-export default function Navbar() {
+export default function NavbarBlack() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Navbar() {
         {
           title: "Vállalati képzések",
           icon: "/icons/coaching-icon.svg",
-          link: "/szolgaltatasok/vallalati-kepzesek",
+          link: "/",
         },
       ],
     },
@@ -48,49 +48,50 @@ export default function Navbar() {
         {
           title: "Miért válassz?",
           icon: "/icons/coaching-icon.svg",
-          link: "/rolam/miert-valassz",
+          link: "/",
         },
-        { title: "Hol tartok a szakmai utamon", icon: "", link: "/rolam/hol-tartok-a-szakmai-utamon" },
+        { title: "Vállalati képzések", icon: "", link: "/" },
+        { title: "Hol tartok a szakmai utamon", icon: "", link: "/" },
         {
           title: "Az egyenlítő alapítványnál végzett munkám",
           icon: "",
-          link: "/rolam/az-egyenlito-alapitvanynal-vegzett-munkam",
+          link: "/",
         },
         {
           title: "Multinacionális Marketing és Sales hátterem",
           icon: "",
-          link: "/rolam/multinacionalis-es-sales-hatterem",
+          link: "/",
         },
-        { title: "Tanulmányaim", icon: "", link: "/rolam/tanulmanyaim" },
+        { title: "Tanulmányaim", icon: "", link: "/" },
       ],
     },
     {
       title: "Témáim",
-      link: "/temaim",
+      link: "/",
     },
     {
       title: "Referenciák",
       items: [
-        { title: "Coaching", icon: "/icons/coaching-icon.svg", link: "/referenciak/coaching" },
-        { title: "Tréning", icon: "/icons/coaching-icon.svg", link: "/referenciak/trening" },
+        { title: "Coaching", icon: "/icons/coaching-icon.svg", link: "/" },
+        { title: "Tréning", icon: "/icons/coaching-icon.svg", link: "/" },
         {
           title: "Egyéb vállalati",
           icon: "/icons/coaching-icon.svg",
-          link: "/referenciak/egyeb-vallalati",
+          link: "/",
         },
       ],
     },
     {
       title: "GYIK",
-      link: "/gyik",
+      link: "/",
     },
     {
       title: "Blog",
-      link: "/blog",
+      link: "/",
     },
     {
       title: "Kapcsolat",
-      link: "/kapcsolat",
+      link: "/",
     },
   ];
 
@@ -114,7 +115,7 @@ export default function Navbar() {
                 />
               ):(
                 <Image
-                  src='/logo/logo-white-coaching.svg'
+                  src='/logo/logo-gardient-1-coaching.svg'
                   alt="Logo"
                   width={125}
                   height={36}
@@ -126,7 +127,7 @@ export default function Navbar() {
               </Link>
               <ul className="flex flex-row gap-8 text-lg">
                 {menus.map((menu, index) => (
-                  <NavButton key={index} {...menu} scrolled={isScrolled} />
+                  <NavButtonBlack key={index} {...menu} scrolled={isScrolled} />
                 ))}
               </ul>
           </div>

@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image";
-import Regularcontainer from "./ui/regularcontainer";
-import Primarybluebutton from "./ui/primaryBlueButton";
+import Regularcontainer from "./regularcontainer";
+import Primarybluebutton from "./primaryBlueButton";
 import { motion } from "framer-motion";
 
-export default function Ctaone() {
+export default function MainCta() {
   return (
     <Regularcontainer bgcolor={'bg-white'} padding={'pb-20 pt-16'}>
         <motion.div 

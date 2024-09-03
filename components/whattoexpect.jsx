@@ -38,7 +38,7 @@ export default function Whattoexpect() {
   });
 
   return (
-    <Regularcontainer bgcolor={"bg-gardient-to-b from-white to-transparent"}>
+    <Regularcontainer bgcolor={"bg-gardient-to-b from-white to-transparent"} padding={'py-32'}>
       <div className="relative flex flex-col gap-20">
         <div className="flex flex-col gap-16 w-full">
         <div className="flex flex-col gap-4">
@@ -120,10 +120,11 @@ export default function Whattoexpect() {
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <p className="text-lg">
-              <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
+            <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
+              <p className="text-lg">
+              
                 <b>Nem lesz részed</b> tanácsadásban (tapasztalat megosztásban
                 is csak kivételes esetben).
               </p>

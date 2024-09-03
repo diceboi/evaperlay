@@ -19,7 +19,7 @@ export default function Contactus() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <Regularcontainer bgcolor={"bg-white"}>
+    <Regularcontainer bgcolor={"bg-white"} padding={'py-32'}>
       <div className="flex flex-col gap-16">
         <h2 className="text-center">Vegyük fel a kapcsolatot!</h2>
         <div className="flex lg:flex-row flex-fol lg:gap-20 gap-8 w-full">

@@ -18,7 +18,7 @@ import { BiWorld } from "react-icons/bi";
 
 export default function Whyus() {
   return (
-    <Regularcontainer bgcolor={"bg-[--white]"}>
+    <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-32'}>
       <div className="flex flex-col gap-20 text-center">
         <div className="flex flex-col gap-4">
           <motion.h4

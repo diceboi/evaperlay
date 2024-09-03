@@ -10,7 +10,7 @@ import Secondarybluebutton from "./ui/SecondaryBlueButton";
 
 export default function Aboutme() {
   return (
-    <Regularcontainer bgcolor={'bg-white'}>
+    <Regularcontainer bgcolor={'bg-white'} padding={'py-32'}>
         <div className="flex lg:flex-row flex-col gap-8 lg:gap-32">
             <motion.div 
             className="relative lg:w-1/2 w-full min-h-[60vh] rounded-xl overflow-hidden"

@@ -62,15 +62,15 @@ export default function Aboutme() {
             </div>
         </div>
         <div className="flex flex-row justify-evenly pt-32">
-            <Link href={'/multinacionalis-es-sales-hatterem'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 pr-8 text-center gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/rolam/multinacionalis-marketing-es-sales-hatterem'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center gap-2 hover:bg-neutral-50 py-4">
                 <h3>15+ év</h3>
                 <p>nagyvállalati tapasztalat</p>
             </Link>
-            <Link href={'/az-egyenlito-alapitvanynal-vegzett-munkam'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/rolam/az-egyenlito-alapitvanynal-vegzett-munkam'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
                 <h3>Egyenlítő alapítvány</h3>
                 <p>partnerkapcsolati vezető és trainer</p>
             </Link>
-            <Link href={'/hol-tartok-szakmai-utamon'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/rolam/hol-tartok-a-szakmai-utamon'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
                 <h3>Diplomás</h3>
                 <p>üzleti coach</p>
             </Link>

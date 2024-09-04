@@ -59,7 +59,7 @@ export default function Navbar() {
         {
           title: "Multinacionális Marketing és Sales hátterem",
           icon: "",
-          link: "/rolam/multinacionalis-es-sales-hatterem",
+          link: "/rolam/multinacionalis-marketing-es-sales-hatterem",
         },
         { title: "Tanulmányaim", icon: "", link: "/rolam/tanulmanyaim" },
       ],

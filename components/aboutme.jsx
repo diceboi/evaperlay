@@ -10,7 +10,7 @@ import Secondarybluebutton from "./ui/SecondaryBlueButton";
 
 export default function Aboutme() {
   return (
-    <Regularcontainer bgcolor={'bg-white'} padding={'py-32'}>
+    <Regularcontainer bgcolor={'bg-white'} padding={'py-16 lg:py-32'}>
         <div className="flex lg:flex-row flex-col gap-8 lg:gap-32">
             <motion.div 
             className="relative lg:w-1/2 w-full min-h-[60vh] rounded-xl overflow-hidden"
@@ -20,7 +20,7 @@ export default function Aboutme() {
             >
                 <Image src='/eva/rolam3.webp' fill style={{objectFit: 'cover', objectPosition: '25% 20%',}} alt="Rólam"/>
             </motion.div>
-            <div className="flex flex-col gap-12 justify-center w-1/2">
+            <div className="flex flex-col gap-12 justify-center lg:w-1/2">
                 <div className="flex flex-col gap-4">
                     <motion.h4 
                     className="flex flex-nowrap items-center gap-2"
@@ -37,7 +37,7 @@ export default function Aboutme() {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
                     >
-                        <span className="relative underlined-p">Perlay Éva</span> vagyok.
+                        <span className="relative">Perlay Éva</span> vagyok.
                     </motion.h2>
                 </div>
                 <motion.div 
@@ -61,20 +61,20 @@ export default function Aboutme() {
                 </motion.div> 
             </div>
         </div>
-        <div className="flex flex-row justify-evenly pt-32">
-            <Link href={'/rolam/multinacionalis-marketing-es-sales-hatterem'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center gap-2 hover:bg-neutral-50 py-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 justify-evenly pt-16 lg:pt-32">
+            <Link href={'/rolam/multinacionalis-marketing-es-sales-hatterem'} className="flex flex-col items-start lg:items-center justify-evenly w-full border-b lg:border-r border-neutral-400 lg:px-8 lg:text-center gap-2 hover:bg-neutral-50 py-4">
                 <h3>15+ év</h3>
                 <p>nagyvállalati tapasztalat</p>
             </Link>
-            <Link href={'/rolam/az-egyenlito-alapitvanynal-vegzett-munkam'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/rolam/az-egyenlito-alapitvanynal-vegzett-munkam'} className="flex flex-col items-start lg:items-center justify-evenly w-full border-b lg:border-r border-neutral-400 lg:px-8 lg:text-center  gap-2 hover:bg-neutral-50 py-4">
                 <h3>Egyenlítő alapítvány</h3>
                 <p>partnerkapcsolati vezető és trainer</p>
             </Link>
-            <Link href={'/rolam/hol-tartok-a-szakmai-utamon'} className="flex flex-col items-center justify-evenly w-full border-r border-neutral-400 px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/rolam/hol-tartok-a-szakmai-utamon'} className="flex flex-col items-start lg:items-center justify-evenly w-full lg:border-r border-neutral-400 lg:px-8 lg:text-center  gap-2 hover:bg-neutral-50 py-4">
                 <h3>Diplomás</h3>
                 <p>üzleti coach</p>
             </Link>
-            <Link href={'/tanulmanyaim'} className="flex flex-col items-center justify-evenly w-full px-8 text-center  gap-2 hover:bg-neutral-50 py-4">
+            <Link href={'/tanulmanyaim'} className="flex flex-col items-start lg:items-center justify-evenly w-full lg:px-8 lg:text-center gap-2 hover:bg-neutral-50 py-4">
                 <p>képzésben lévő </p>
                 <h3>mentálhigiénés szakember</h3>
             </Link>

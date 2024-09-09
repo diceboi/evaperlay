@@ -22,8 +22,8 @@ export default function Contactus() {
     <Regularcontainer bgcolor={"bg-white"} padding={'py-32'}>
       <div className="flex flex-col gap-16">
         <h2 className="text-center">Vegyük fel a kapcsolatot!</h2>
-        <div className="flex lg:flex-row flex-fol lg:gap-20 gap-8 w-full">
-          <div className="relative flex flex-col items-center justify-center w-1/2">
+        <div className="flex lg:flex-row flex-col flex-fol lg:gap-20 gap-8 w-full">
+          <div className="relative flex flex-col items-center justify-center lg:w-1/2">
             <Image
               src={"/eva/kapcsolat.webp"}
               width={800}
@@ -33,7 +33,7 @@ export default function Contactus() {
               className="rounded-xl"
             />
           </div>
-          <div className="flex flex-col items-center justify-center w-1/2 gap-8">
+          <div className="flex flex-col items-center justify-center lg:w-1/2 gap-8">
             <div className="flex flex-row self-start gap-4">
             <a
                 href="mailto:hello@evaperlay.com"

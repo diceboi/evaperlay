@@ -62,8 +62,8 @@ h1 {
 
 @media (max-width: 640px) {
   h1 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
@@ -79,15 +79,15 @@ h2 {
 
 @media (max-width: 996px) {
   h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 @media (max-width: 640px) {
   h2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
   }
 }
 
@@ -214,15 +214,51 @@ h4 {
 
 /*Sima szövegbuborék*/
 
-#bubble-left:after {
+.bubble-left:after {
   content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   left: 18px;
-  bottom: -18px;
+  bottom: -20px;
   border-bottom-right-radius: 100%;
   background-color: var(--white);
+  z-index: 10;
+}
+
+.bubble-right:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  bottom: -20px;
+  border-bottom-left-radius: 100%;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.bubble-left-transparent:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 18px;
+  bottom: -20px;
+  border-bottom-right-radius: 100%;
+  background-color: #ffffff49;
+  z-index: 10;
+}
+
+.bubble-right-transparent:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  bottom: -20px;
+  border-bottom-left-radius: 100%;
+  background-color: #ffffff49;
   z-index: 10;
 }
 

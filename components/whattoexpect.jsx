@@ -77,7 +77,7 @@ export default function Whattoexpect() {
                 target="_blank"
                 className=""
               >
-                <span className="italic text-neutral-400 text-right">
+                <span className="italic text-white lg:text-neutral-400 text-center lg:text-right">
                   International Coaching Federation definíció
                 </span>
               </Link>
@@ -86,13 +86,13 @@ export default function Whattoexpect() {
         </div>
 
         <div className="flex flex-col justify-center gap-16 w-full">
-          <h2 className="text-center">Közös munkánk során tehát:</h2>
-          <div className="grid grid-cols-4 grid-rows-2 grid-flow-row gap-6" style={{ gridTemplateAreas: `"a a a a" "b b c c"`, gridAutoFlow: "dense" }}>
+          <h2 className="text-center">Közös munkánk során:</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-4 grid-rows-5 lg:grid-rows-2 lg:grid-flow-row gap-6">
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
               <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 <b>Egyenrangú </b>partnerekként
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function Whattoexpect() {
             <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 azzal fogunk dolgozni, ami <b>számodra fontos</b>.
               </p>
             </div>
@@ -108,13 +108,13 @@ export default function Whattoexpect() {
             <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 <b>Te felelsz</b> a folyamat során levont tanulságokért és
                 céljaid megvalósításáért.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 <b>Én felelek</b> a coaching technikák alkalmazásáért és az
                 ülések strukturálásáért.
               </p>
@@ -123,7 +123,7 @@ export default function Whattoexpect() {
             <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
-              <p className="text-lg">
+              <p className="lg:text-lg">
               
                 <b>Nem lesz részed</b> tanácsadásban (tapasztalat megosztásban
                 is csak kivételes esetben).
@@ -133,13 +133,13 @@ export default function Whattoexpect() {
             <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
                 <MdOutlineHorizontalRule className="min-w-8 min-h-8 text-[--aquamarine]" />
               </div>
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 <b>Jövőorientáltan</b>, azaz nem a “miérteken”, hanem a
                 “hogyanokon” fogunk dolgozni.
               </p>
             </div>
             <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 bg-white  shadow-sm">
-              <p className="text-lg">
+              <p className="lg:text-lg">
                 Végig <b>mérhető célok</b> mentén.
               </p>
             </div>
@@ -160,17 +160,17 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress1 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef }}
-              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 mr-4"
+              className="sticky top-1/3 flex flex-col gap-8 lg:gap-16 bg-[--white] lg:px-8 lg:pb-8 lg:w-2/5 lg:mr-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 0. beszélgetés
               </h3>
-              <p className="text-xl">
+              <p className="lg:text-xl">
                 A coaching folyamat egy ingyenes, 30 perces online
                 konzultációval, az ún. 0. beszélgetéssel indul.{" "}
                 <Secondarybluebutton text={"Foglald le itt!"} link={"/"} />
               </p>
-              <p className="text-xl">
+              <p className="lg:text-xl">
                 Ebben a fázisban mindketten fel tudjuk mérni, hogy céljaid
                 megvalósításában én tudlak-e a legjobban támogatni, szeretnénk-e
                 elkezdeni és mikortól a közös munkát. Itt egyeztethetünk a
@@ -190,12 +190,12 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress2 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef2 }}
-              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 self-end  ml-4"
+              className="sticky top-1/3 flex flex-col lg:gap-16 gap-8 bg-[--white] lg:px-8 lg:pb-8 lg:w-2/5 self-end  lg:ml-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 Szerződéskötés
               </h3>
-              <p className="text-xl">
+              <p className="lg:text-xl">
                 Ha leszerződünk a coaching folyamatra, azt rugalmasan tudjuk az
                 igényeidhez igazítani.
               </p>
@@ -212,12 +212,12 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress3 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef3 }}
-              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 mr-4"
+              className="sticky top-1/3 flex flex-col lg:gap-16 gap-8 bg-[--white] lg:px-8 lg:pb-8 lg:w-2/5 self-end  lg:mr-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
               A Coaching folyamata
               </h3>
-              <p className="text-xl">
+              <p className="lg:text-xl">
                 Átlagosan 6-8 alkalommal fogunk találkozni, körülbelül 2-3 heti
                 rendszerességgel, jellemzően 60 perces hosszúságú online és/vagy
                 személyes ülések erejére. Két alkalom között élesben is
@@ -236,17 +236,17 @@ export default function Whattoexpect() {
               style={{ opacity: scrollYProgress4 }}
               transition={{ times: 2 }}
               viewport={{ scrollRef4 }}
-              className="sticky top-1/3 flex flex-col gap-16 bg-[--white] px-8 pb-8 w-2/5 self-end ml-4"
+              className="sticky top-1/3 flex flex-col lg:gap-16 gap-8 bg-[--white] lg:px-8 lg:pb-8 lg:w-2/5 self-end  lg:ml-4"
             >
               <h3 className="p-4 bg-[--dukeblue] text-white shadow-sm w-fit m-auto ">
                 Utánkövetés
               </h3>
-              <p className="text-xl">
+              <p className="lg:text-xl">
               A coaching folyamat lezárását követően javaslom fél éves és éves
                 utánkövető alkalmak beiktatását, hogy segítségedre lehessek a
                 változások végrehajtásánál is.
               </p>
-              <Primarygreenbuton text={'Kezdjünk bele'} link={'/'} classname={'m-auto self-center'}/>
+              <Primarygreenbuton text={'Kezdjünk bele'} link={'/'} buttonclassname={'m-auto self-center'}/>
             </motion.div>
           </div>
         </div>

@@ -12,7 +12,7 @@ import { MdOutlineHorizontalRule } from "react-icons/md";
 
 export default function Linkedin() {
   return (
-    <Regularcontainer bgcolor={"bg-white"} padding={'py-32'}>
+    <Regularcontainer bgcolor={"bg-white"} padding={'py-16 lg:py-32'}>
       <div className="flex flex-col items-center gap-16">
       <div className="flex flex-col gap-4">
         <h4
@@ -29,7 +29,7 @@ export default function Linkedin() {
           transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
           className="flex flex-col gap-8 lg:flex-row rounded-3xl w-full"
         >
-          <div className="relative flex flex-col items-center justify-between w-1/3 p-8 rounded-xl m-auto min-h-[70vh]">
+          <div className="relative flex flex-col items-center justify-between lg:w-1/3 w-full p-8 rounded-xl m-auto min-h-[70vh]">
             <Image
               src="/eva/linkedin.webp"
               fill
@@ -37,10 +37,9 @@ export default function Linkedin() {
               alt="Éva ül"
               className="w-full rounded-xl"
             />
-            <div className="absolute top-4 lg:top-[50px] -right-4">
+            <div className="absolute top-1 lg:top-[50px] -right-4">
               <motion.p
-                id="bubble-left"
-                className="relative text-sm font-semibold w-48 bg-[--white] p-2 shadow-xl"
+                className="bubble-left relative text-sm font-semibold w-48 bg-[--white] p-2 shadow-xl"
                 initial={{ scale: 0.7, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{
@@ -66,8 +65,8 @@ export default function Linkedin() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 grid-rows-2 gap-8 w-2/3">
-            <div className="col-span-1 row-span-2 bg-[--white]">
+          <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-8 lg:w-2/3">
+            <div className="col-span-1 lg:row-span-2 row-span-1 bg-[--white]">
               <span>Blog 1</span>
             </div>
             <div className="col-span-1 row-span-1 bg-[--white]">

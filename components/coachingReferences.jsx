@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 
 export default function Coachingreferences() {
   return (
-    <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-32'}>
+    <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-16 lg:py-32'}>
       <div className="flex flex-col gap-16">
         <div>
           <h2 className="text-center">Coaching referenciák</h2>

@@ -30,7 +30,6 @@ export default function Contactus() {
               height={800}
               style={{ objectFit: "cover" }}
               alt="Írj nekem"
-              className="rounded-xl"
             />
           </div>
           <div className="flex flex-col items-center justify-center lg:w-1/2 gap-8">

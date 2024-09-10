@@ -66,13 +66,13 @@ export default function Linkedin() {
           </div>
 
           <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-8 lg:w-2/3">
-            <div className="col-span-1 lg:row-span-2 row-span-1 bg-[--white]">
+            <div className="col-span-1 lg:row-span-2 row-span-1 bg-[--white] rounded-xl">
               <span>Blog 1</span>
             </div>
-            <div className="col-span-1 row-span-1 bg-[--white]">
+            <div className="col-span-1 row-span-1 bg-[--white] rounded-xl">
               <span>Blog 2</span>
             </div>
-            <div className="col-span-1 row-span-1 bg-[--white]">
+            <div className="col-span-1 row-span-1 bg-[--white] rounded-xl">
               <span>Blog 3</span>
             </div>
           </div>

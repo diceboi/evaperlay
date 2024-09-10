@@ -25,23 +25,23 @@ export default function Ctatwo() {
         </div>
         <div className="flex flex-col gap-8 justify-between lg:w-2/3 lg:p-8 p-4">
           <div className="flex flex-col gap-4">
-            <h3>
+            <p className="text-md lg:text-xl">
               Ha megérett benned az elhatározás, hogy új célokat tűzz ki, és
               ehhez egyenrangú szakmai partnert keresel, akivel olyan bizalommal
               tudnál együtt dolgozni, hogy beleférne
-            </h3>
+            </p>
             <ul className="list-disc marker:text-white lg:text-xl ml-4">
               <li>a feltétel nélküli elfogadás</li>
               <li>a sebezhetőség, az érzelmek megmutatása</li>
               <li>az őszinteség, a nyitottság</li>
-              <li>és a humor is</li>
+              <li>és a humor is,</li>
             </ul>
             <p className="lg:text-xl">
               akkor mindenképp foglalj velem egy{" "}
               <strong>ingyenes, 30 perces konzultációt!</strong>
             </p>
           </div>
-          <Primarybluebutton text={"Ingyenes konzultáció igénylésö"} link={"/"} />
+          <Primarybluebutton text={"Ingyenes konzultáció igénylés"} link={"/"} />
         </div>
       </motion.div>
     </Regularcontainer>

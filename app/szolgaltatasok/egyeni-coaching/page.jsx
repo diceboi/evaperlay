@@ -1,10 +1,17 @@
+"use client"
+
 import Mainheader from "@/components/ui/mainHeader";
 import Regularcontainer from "@/components/ui/regularcontainer";
 import GridWhiteTile from "@/components/ui/gridWhiteTile";
 import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
 import Primarygreenbuton from "@/components/ui/primaryGreenButon";
+import { useContext } from "react";
+import { CalendlyContext } from "@/app/CalendlyContext";
 
 export default function Mireszamithatsz() {
+
+  const { toggleCalendly } = useContext(CalendlyContext)
+
   return (
     <>
       <Mainheader title={'Egyéni coaching'} image={'/eva/beszelgeto2.webp'} />
@@ -77,7 +84,7 @@ export default function Mireszamithatsz() {
           <p className="lg:text-xl text-sm">
             A coaching munka egy ingyenes, 30 perces online
             konzultációval, az ún. 0. beszélgetéssel indul.
-            <Secondarybluebutton text={"Foglald le itt!"} link={"/"} />
+            <Secondarybluebutton text={"Foglald le itt!"} onclick={toggleCalendly} />
             <br></br><br></br>
             Ebben a fázisban mindketten fel tudjuk mérni, hogy céljaid
             megvalósításában én tudlak-e a legjobban támogatni, szeretnénk-e
@@ -128,7 +135,7 @@ export default function Mireszamithatsz() {
 
         <Primarygreenbuton
           text={"Kezdjünk bele"}
-          link={"/"}
+          onclick={toggleCalendly}
           buttonclassname={"m-auto self-center pt-16"}
         />  
         </div>

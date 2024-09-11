@@ -7,6 +7,7 @@ import Ctatwo from "@/components/Ctatwo";
 import Contactus from "@/components/ui/contactus";
 import Whattoexpect from "@/components/whattoexpect";
 import Whyus from "@/components/whyus";
+import CalendlyModal from "@/components/calendlyModal";
 
 export default function Home() {
   return (

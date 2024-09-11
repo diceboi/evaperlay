@@ -1,42 +1,107 @@
-import Mainheader from "@/components/ui/mainHeader"
-import Regularcontainer from "@/components/ui/regularcontainer"
+import Mainheader from "@/components/ui/mainHeader";
+import Regularcontainer from "@/components/ui/regularcontainer";
 
 export default function Temaim() {
   return (
     <>
-    <Mainheader title={'Témáim'} image={'/eva/temaim.webp'}/>
-    <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={'bg-[--white]'}>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
-            <div className="relative flex flex-col gap-4 p-4 shadow-md bg-white">
-                <p className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-6 h-6 bg-[--aquamarine] rounded-full">1.</p>
-                <h3>Önazonos munkavégzés és kommunikáció</h3>
-                <p>Ki vagyok én? Milyen értékeket vallok? Mi a célom? Hogyan tudok eltérő szerepekben is önmagam maradni? Hogyan tudom az igényeimet képviselni? Hogyan tudok büszke lenni a munkámra?</p>
+      <Mainheader title={"Témáim"} image={"/eva/temaim2.webp"} />
+      <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={"bg-[--white]"}>
+        <div className="flex flex-col lg:gap-32 gap-16">
+
+            <p className="lg:text-xl">Az üzleti coachingon belül elsősorban ezekre a témákra fókuszálok, mert úgy érzem, hogy a személyes érdeklődésem, szakmai szenvedélyem, eddigi tapasztalatom és az érték, amelyet közösen teremthetünk, itt a legnagyobb.<br></br><br></br>Ez nem jelenti azt, hogy nem tudunk együtt dolgozni olyan témán, amely kívül esik ezeken, ugyanakkor látod, hogy mi az, ami hozzám igazán közel áll.</p>
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="">Önazonos munkavégzés és kommunikáció</h2>
             </div>
-            <div className="relative flex flex-col gap-4 p-4 shadow-md bg-white">
-                <p className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-6 h-6 bg-[--aquamarine] rounded-full">2.</p>
-                <h3>Mentális egészségmegőrzés és egyensúly tartása</h3>
-                <p>Mi tesz boldoggá? Hogyan tudok magamra és a számomra fontos dolgokra figyelni? Hogyan tudom az egyensúlyt megtartani? Hova forduljak, ha már nagy a baj (pl. kiégés, mentális megbetegedés)?</p>
+            <ul className="flex flex-auto flex-wrap gap-4 list-disc marker:text-[--aquamarine] ml-4 w-full">
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Ki vagyok én?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Milyen értékeket vallok?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Mi a célom?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok eltérő szerepekben is önmagam maradni?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudom az igényeimet képviselni?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok büszke lenni a munkámra?
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="">
+                Mentális egészségmegőrzés és egyensúly tartása
+              </h2>
             </div>
-            <div className="relative flex flex-col gap-4 p-4 shadow-md bg-white">
-                <p className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-6 h-6 bg-[--aquamarine] rounded-full">3.</p>
-                <h3>Munkahelyi egyenlőség</h3>
-                <p>Hogyan tudok partneri viszonyban, szemmagasságban együttműködni másokkal? Hogyan tudok a munkahelyemen alulreprezentált csoportokat hatékonyan képviselni vagy alulreprezentált csoport tagjaként érvényesülni?</p>
+            <ul className="flex flex-auto flex-wrap gap-2 list-disc marker:text-[--aquamarine] ml-4 w-full">
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Mi tesz boldoggá?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok magamra és a számomra fontos dolgokra figyelni?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudom az egyensúlyt megtartani?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hova forduljak, ha már nagy a baj (pl. kiégés, mentális
+                megbetegedés)?
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="">Munkahelyi egyenlőség</h2>
             </div>
-            <div className="relative flex flex-col gap-4 p-4 shadow-md bg-white">
-                <p className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-6 h-6 bg-[--aquamarine] rounded-full">4.</p>
-                <h3>Sokszínűség és befogadás</h3>
-                <p>Mit tudok tenni egy sokszínű és befogadó szervezeti kultúráért? Hogyan tudok befogadó módon kommunikálni és vezetni?</p>
+            <ul className="flex flex-auto flex-wrap gap-2 list-disc marker:text-[--aquamarine] ml-4 w-full">
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok partneri viszonyban, szemmagasságban együttműködni
+                másokkal?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok a munkahelyemen alulreprezentált csoportokat
+                hatékonyan képviselni vagy alulreprezentált csoport tagjaként
+                érvényesülni?
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="">Sokszínűség és befogadás</h2>
             </div>
-            <div className="relative flex flex-col gap-4 p-4 shadow-md bg-white">
-                <p className="absolute flex flex-col items-center justify-center -top-3 -left-3 w-6 h-6 bg-[--aquamarine] rounded-full">5.</p>
-                <h3>Vezetési stílusok, szervezeti kultúra</h3>
-                <p>Hogyan teremtek olyan légkört, amelyben én és mások is jól érzik magukat?</p>
+            <ul className="flex flex-auto flex-wrap gap-2 list-disc marker:text-[--aquamarine] ml-4 w-full">
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Mit tudok tenni egy sokszínű és befogadó szervezeti kultúráért?
+              </li>
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan tudok befogadó módon kommunikálni és vezetni?
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4">
+              <h2 className="">Vezetési stílusok, szervezeti kultúra</h2>
             </div>
-            <div className="relative flex flex-col gap-4 p-4">
-                <p>Az üzleti coachingon belül elsősorban ezekre a témákra fókuszálok, mert úgy érzem, hogy a személyes érdeklődésem, szakmai szenvedélyem, eddigi tapasztalatom és az érték, amelyet közösen teremthetünk, itt a legnagyobb.<br></br><br></br>Ez nem jelenti azt, hogy nem tudunk együtt dolgozni olyan témán, amely kívül esik ezeken, ugyanakkor látod, hogy mi az, ami hozzám igazán közel áll.</p>
-            </div>
+            <ul className="flex flex-auto flex-wrap gap-2 list-disc marker:text-[--aquamarine] ml-4 w-full">
+              <li className="p-2 lg:ml-6 bg-white max-w-[-150px] shadow-sm">
+                Hogyan teremtek olyan légkört, amelyben én és mások is jól érzik
+                magukat?
+              </li>
+            </ul>
+          </div>
         </div>
-    </Regularcontainer>
+      </Regularcontainer>
     </>
-  )
+  );
 }

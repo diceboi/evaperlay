@@ -3,13 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavButton from "./navbutton";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { CalendlyContext } from "@/app/CalendlyContext";
 import { motion } from "framer-motion";
 import Primarygreenbuton from "./primaryGreenButon";
 import { TbMenu2 } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
+
+  const { openPopup, toggleCalendly } = useContext(CalendlyContext);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -63,12 +66,12 @@ export default function Navbar() {
           link: "/rolam/hol-tartok-a-szakmai-utamon",
         },
         {
-          title: "Az egyenlítő alapítványnál végzett munkám",
+          title: "Az Egyenlítő Alapítványnál végzett munkám",
           icon: "",
           link: "/rolam/az-egyenlito-alapitvanynal-vegzett-munkam",
         },
         {
-          title: "Multinacionális Marketing és Sales hátterem",
+          title: "Multinacionális marketing és sales hátterem",
           icon: "",
           link: "/rolam/multinacionalis-marketing-es-sales-hatterem",
         },
@@ -166,7 +169,7 @@ export default function Navbar() {
             <div className="group flex flex-row justify-end w-full">
               <Primarygreenbuton
                 text={"Foglalj időpontot"}
-                link={"/"}
+                onclick={toggleCalendly}
                 linkclassname={""}
                 buttonclassname={"md:block hidden"}
               />

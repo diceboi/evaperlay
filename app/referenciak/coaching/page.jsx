@@ -17,6 +17,9 @@ export default function Coaching() {
     <Mainheader title={'Coaching referenciák'} image={'/eva/coaching.webp'}/>
     <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={'bg-[--white]'}>
     <div className="flex flex-col gap-16">
+        <div>
+          <h2 className="text-center">Ügyfeleim mondták rólam</h2>
+        </div>
         <div className="w-full">
           <Swiper
             className=""

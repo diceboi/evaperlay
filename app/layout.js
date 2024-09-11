@@ -2,6 +2,8 @@ import { Poppins } from "next/font/google";
 import './globals.css';
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
+import CalendlyContextProvider from "./CalendlyContext";
+import CalendlyModal from "@/components/calendlyModal";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,11 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <CalendlyContextProvider>
       <body className={`${poppins.variable} text-poppins bg-[--white]`}>
         <Navbar />
         {children}
         <Footer />
+        <CalendlyModal />
       </body>
+      </CalendlyContextProvider>
     </html>
   );
 }

@@ -1,12 +1,15 @@
 "use client";
 
 import Bgcontainer from "./ui/bgContainer";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Primarygreenbuton from "./ui/primaryGreenButon";
-import Quote from "./ui/quote";
+import { CalendlyContext } from "@/app/CalendlyContext";
+import { useContext } from "react";
 
 export default function Hero() {
+
+  const { openPopup, toggleCalendly } = useContext(CalendlyContext);
+
   return (
     <Bgcontainer
       bgimage={"/eva/beszelgeto.webp"}
@@ -60,7 +63,7 @@ export default function Hero() {
           Ha új célokat tűznél ki, és ehhez egy bizalmon alapuló szakmai
           partnert keresel, foglalj velem egy ingyenes, 30 perces konzultációt!
         </motion.p>
-        <Primarygreenbuton text={"Ingyenes konzultáció igénylés"} link={"/"} />
+        <Primarygreenbuton text={"Ingyenes konzultáció igénylés"} link={"/"} onclick={toggleCalendly} />
       </div>
     </Bgcontainer>
   );

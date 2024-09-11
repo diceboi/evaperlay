@@ -53,7 +53,7 @@ export default function Aboutme() {
                     Fókuszterületeim az önazonos munkavégzés és kommunikáció, a mentális egészségmegőrzés, a munkahelyi egyenlőség, a befogadó vezetés és az élhető szervezeti kultúra kialakítása.
                     </p>
                     <p>
-                    Ha kíváncsi vagy, miért lehetek számodra hiteles partner, <Secondarybluebutton text={'kattints ide!'} link={'/'} />
+                    Ha kíváncsi vagy, miért lehetek számodra hiteles partner, <Secondarybluebutton text={'kattints ide!'} link={'/rolam/miert-valassz'} />
                     </p>
                 </motion.div> 
             </div>

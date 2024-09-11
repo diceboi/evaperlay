@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 export default function Vallalati() {
   return (
     <>
-    <Mainheader title={'Egyéb vállalati referenciák'} image={'/eva/egyenlito3.webp'}/>
+    <Mainheader title={'Egyéb vállalati referenciák'} image={'/eva/beszelgeto2.webp'}/>
     <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-32'}>
       <div className="flex flex-col gap-16">
         <div>

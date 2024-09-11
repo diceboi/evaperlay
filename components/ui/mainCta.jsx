@@ -4,8 +4,13 @@ import Image from "next/image";
 import Regularcontainer from "./regularcontainer";
 import Primarybluebutton from "./primaryBlueButton";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { CalendlyContext } from "@/app/CalendlyContext";
 
 export default function MainCta() {
+
+  const { toggleCalendly } = useContext(CalendlyContext)
+
   return (
     <Regularcontainer bgcolor={'bg-white'} padding={'pb-20 pt-16'}>
         <motion.div 
@@ -19,7 +24,7 @@ export default function MainCta() {
                 <h2>Foglalj ingyenes 30 perces konzultációt!</h2>
                 <p className="text-xl">Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a témádról, a coaching részleteiről, illetve bármilyen felmerülő kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!</p>
             </div>
-            <Primarybluebutton text={'Ingyenes konzultáció igénylés'} link={'/'}/>
+            <Primarybluebutton text={'Ingyenes konzultáció igénylés'} onclick={toggleCalendly}/>
           </div>
           <div className="relative w-1/3">
           <Image

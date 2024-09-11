@@ -4,8 +4,13 @@ import Image from "next/image";
 import Regularcontainer from "./ui/regularcontainer";
 import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
+import { CalendlyContext } from "@/app/CalendlyContext";
+import { useContext } from "react";
 
 export default function Ctaone() {
+
+  const { toggleCalendly } = useContext(CalendlyContext)
+
   return (
     <Regularcontainer bgcolor={"bg-white"} padding={"pb-20 pt-16"}>
       <motion.div
@@ -25,8 +30,8 @@ export default function Ctaone() {
           </div>
           <Primarybluebutton
             text={"Ingyenes konzultáció igénylés"}
-            link={"/"}
             classname={'z-10'}
+            onclick={toggleCalendly}
           />
         </div>
         <div className="lg:block hidden relative w-[30%]">

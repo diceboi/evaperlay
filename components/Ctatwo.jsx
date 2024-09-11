@@ -4,8 +4,13 @@ import Image from "next/image";
 import Regularcontainer from "./ui/regularcontainer";
 import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
+import { CalendlyContext } from "@/app/CalendlyContext";
+import { useContext } from "react";
 
 export default function Ctatwo() {
+
+  const { toggleCalendly } = useContext(CalendlyContext)
+
   return (
     <Regularcontainer bgcolor={"bg-white"} padding={'py-16 lg:py-32'}>
       <motion.div
@@ -41,7 +46,11 @@ export default function Ctatwo() {
               <strong>ingyenes, 30 perces konzultációt!</strong>
             </p>
           </div>
-          <Primarybluebutton text={"Ingyenes konzultáció igénylés"} link={"/"} />
+          <Primarybluebutton
+            text={"Ingyenes konzultáció igénylés"}
+            classname={'z-10'}
+            onclick={toggleCalendly}
+          />
         </div>
       </motion.div>
     </Regularcontainer>

@@ -140,17 +140,22 @@ export default function Miertvalassz() {
         padding={"lg:py-20 py-16"}
         align={"lg:flex-row"}
       >
-        <div className="flex flex-col justify-center gap-8 lg:w-1/3">
+        <div className="flex flex-col justify-center gap-8 lg:w-1/2">
+          <div className="flex flex-col gap-4">
+              <h2 className="">
+                Mert kiváló emberektől tanulhattam:
+              </h2>
+          </div>
           <p className="text-xl">
-            Mert egyetemi oklevelemet az ország egyik legkiválóbb és legtöbb
+            Egyetemi oklevelemet az ország egyik legkiválóbb és legtöbb
             gyakorlatot alkalmazó coaching képzési helyén, a{" "}
             <b>Budapesti Metropolitan Egyetemen szereztem</b>, ahol tapasztalt
             és ismert gyakorló coachoktól, pszichológusoktól és trénerektől
             tanulhattam egyéni és team coachingot.
           </p>
         </div>
-        <div className="relative lg:w-2/3 min-h-[40vh] overflow-hidden rounded-xl">
-          <Image src={"/eva/bme.webp"} fill style={{ objectFit: "cover" }} />
+        <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
+          <Image src={"/eva/egyenlito.webp"} fill style={{ objectFit: "cover" }} />
         </div>
       </Horizontalcontainer>
       <Horizontalcontainer
@@ -158,9 +163,14 @@ export default function Miertvalassz() {
         padding={"lg:py-20 py-16"}
         align={"lg:flex-row-reverse"}
       >
-        <div className="flex flex-col justify-center gap-8 lg:w-1/3">
+        <div className="flex flex-col justify-center gap-8 lg:w-1/2">
+          <div className="flex flex-col gap-4">
+            <h2 className="">
+              Mert folyamatosan feljesztem magam:
+            </h2>
+          </div>
           <p className="text-xl">
-            Mert tudásomat, önismeretemet és nyitottságomat{" "}
+            Tudásomat, önismeretemet és nyitottságomat{" "}
             <b>
               folyamatosan fejlesztem és pozitívan állok az enyémtől eltérő
               látásmódhoz
@@ -168,8 +178,8 @@ export default function Miertvalassz() {
             , hogy a coaching maximálisan az ügyfélről, ne pedig rólam szóljon.
           </p>
         </div>
-        <div className="relative lg:w-2/3 min-h-[40vh] overflow-hidden rounded-xl">
-          <Image src={"/eva/tudas.webp"} fill style={{ objectFit: "cover" }} />
+        <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
+          <Image src={"/eva/fejlodes.webp"} fill style={{ objectFit: "cover" }} />
         </div>
       </Horizontalcontainer>
       <MainCta

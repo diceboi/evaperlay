@@ -6,10 +6,10 @@ export default function Temaim() {
     <>
       <Mainheader title={"Témáim"} image={"/eva/temaim2.webp"} />
       <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={"bg-[--white]"}>
-        <div className="flex flex-col lg:gap-32 gap-16">
+        <div className="flex flex-col">
 
-            <p className="lg:text-xl">Az üzleti coachingon belül elsősorban ezekre a témákra fókuszálok, mert úgy érzem, hogy a személyes érdeklődésem, szakmai szenvedélyem, eddigi tapasztalatom és az érték, amelyet közösen teremthetünk, itt a legnagyobb.<br></br><br></br>Ez nem jelenti azt, hogy nem tudunk együtt dolgozni olyan témán, amely kívül esik ezeken, ugyanakkor látod, hogy mi az, ami hozzám igazán közel áll.</p>
-          <div className="flex flex-col gap-8">
+        <p className="lg:text-xl pb-16">Az üzleti coachingon belül elsősorban ezekre a témákra fókuszálok, mert úgy érzem, hogy a személyes érdeklődésem, szakmai szenvedélyem, eddigi tapasztalatom és az érték, amelyet közösen teremthetünk, itt a legnagyobb.<br></br><br></br>Ez nem jelenti azt, hogy nem tudunk együtt dolgozni olyan témán, amely kívül esik ezeken, ugyanakkor látod, hogy mi az, ami hozzám igazán közel áll.</p>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:py-16 py-8 border-b border-neutral-200">
             <div className="flex flex-col gap-4">
               <h2 className="">Önazonos munkavégzés és kommunikáció</h2>
             </div>
@@ -35,7 +35,7 @@ export default function Temaim() {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:py-16 py-8 border-b border-neutral-200">
             <div className="flex flex-col gap-4">
               <h2 className="">
                 Mentális egészségmegőrzés és egyensúly tartása
@@ -58,7 +58,7 @@ export default function Temaim() {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:py-16 py-8 border-b border-neutral-200">
             <div className="flex flex-col gap-4">
               <h2 className="">Munkahelyi egyenlőség</h2>
             </div>
@@ -75,7 +75,7 @@ export default function Temaim() {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:py-16 py-8 border-b border-neutral-200">
             <div className="flex flex-col gap-4">
               <h2 className="">Sokszínűség és befogadás</h2>
             </div>
@@ -89,7 +89,7 @@ export default function Temaim() {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:py-16 py-8">
             <div className="flex flex-col gap-4">
               <h2 className="">Vezetési stílusok, szervezeti kultúra</h2>
             </div>

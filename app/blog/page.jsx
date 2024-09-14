@@ -104,8 +104,8 @@ export default async function BlogArchive() {
   return (
     <>
     <Mainheader title={'Blog'} image={'/eva/hol-tartok.webp'}/>
-    <BlogFilter categories={categories}/>
     <Suspense>
+    <BlogFilter categories={categories}/>
     <BlogList posts={posts}/>
     </Suspense>
     </>

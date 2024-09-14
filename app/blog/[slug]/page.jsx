@@ -65,14 +65,10 @@ export default async function Blog() {
 
   const posts = await getPosts()
 
-  console.log("Posts:",posts)
-
   const headersList = headers();
   const pathname = headersList.get('x-pathname');
 
   const slug = pathname.split('/').filter(Boolean).pop();
-
-  console.log("Slug:",slug)
 
   // Find the post with the matching slug
   const currentpost = posts?.find(post => post.node.slug === slug);

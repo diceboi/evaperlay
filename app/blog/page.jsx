@@ -1,6 +1,7 @@
 import BlogList from "@/components/blogList";
 import Mainheader from "@/components/ui/mainHeader";
 import BlogFilter from "@/components/blogFilter";
+import { Suspense } from "react";
 
 export async function getCategories() {
   
@@ -104,7 +105,9 @@ export default async function BlogArchive() {
     <>
     <Mainheader title={'Blog'} image={'/eva/hol-tartok.webp'}/>
     <BlogFilter categories={categories}/>
+    <Suspense>
     <BlogList posts={posts}/>
+    </Suspense>
     </>
   )
 }

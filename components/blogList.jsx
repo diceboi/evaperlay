@@ -2,6 +2,7 @@
 
 import Blogtile from "./ui/blogTile";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 export default function BlogList({ posts }) {
 
@@ -25,6 +26,7 @@ export default function BlogList({ posts }) {
   };
 
   return (
+    <Suspense>
     <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 lg:py-16 container">
       {filteredPosts.map((post, index) => (
         <Blogtile 
@@ -44,5 +46,6 @@ export default function BlogList({ posts }) {
         href={`/blog/${post.node.slug}`}/>
       ))}
     </div>
+    </Suspense>
   )
 }

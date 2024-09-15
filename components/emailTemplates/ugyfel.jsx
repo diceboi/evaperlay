@@ -18,7 +18,7 @@ import {
       <Preview>Örülök, hogy írtál!</Preview>
       <Body style={main}>
         <Container style={container}>
-          <Img src='https://peboetterem-online-rendeles.vercel.app/_next/image?url=%2Fpebo-hero-logo.png&w=384&q=75' style={{ width: '150px', height: 'auto', margin: 'auto', paddingTop: '20px' }} />
+          <Img src='https://evaperlay.vercel.app/logo/logo-gardient-1-coaching.svg' style={{ width: '150px', height: 'auto', margin: 'auto', paddingTop: '20px' }} />
           <Heading style={{...h1, textAlign: 'center'}}>Kedves {nev}, örülök, hogy felvetted velem a kapcsolatot.</Heading>
           <Text style={{ ...text, marginBottom: '24px'}}>
             Megpróbálok neked minél előbb válaszolni!

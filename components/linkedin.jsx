@@ -8,6 +8,7 @@ import H2 from "./ui/typo/H2";
 import H3 from "./ui/typo/H3";
 import Paragraph from "./ui/typo/Paragraph";
 import BlogList from "./blogList";
+import { Suspense } from "react";
 
 export async function getPosts() {
 
@@ -96,8 +97,9 @@ export default async function Linkedin() {
             <LinkedInButton />
             <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent to-[--black] rounded-xl opacity-50"></div>
           </div>
-
+          <Suspense>
             <BlogList posts={posts} gridclassname={'lg:grid-cols-2 grid-cols-1 py-0 w-full'} tilebg={'bg-[--white]'}/>
+          </Suspense>
         </div>
         <Primarygreenbuton
           text={"További olvasmányok"}

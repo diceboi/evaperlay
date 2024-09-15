@@ -23,7 +23,6 @@ export default function Hero() {
     >
       <div className="relative flex flex-col justify-end items-center gap-8 h-[80vh] pb-20">
         <div className="flex flex-col lg:w-1/2">
-        <Image src={'/logo/evaperlay-logo-gardient-1.png'} width={150} height={100} alt="logo" />
           <H1
             classname="text-center text-white drop-shadow-lg"
             initial={{x: -100, opacity: 0}}

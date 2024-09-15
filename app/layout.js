@@ -4,6 +4,7 @@ import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import CalendlyContextProvider from "./CalendlyContext";
 import CalendlyModal from "@/components/calendlyModal";
+import MobileMenuContextProvider from "./MobileMenuContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,12 +21,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <CalendlyContextProvider>
+          <MobileMenuContextProvider>
           <body className={`${poppins.variable} text-poppins bg-[--white]`}>
             <Navbar />
               {children}
             <Footer />
             <CalendlyModal />
           </body>
+          </MobileMenuContextProvider>
         </CalendlyContextProvider>
     </html>
   );

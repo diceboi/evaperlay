@@ -10,15 +10,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import H2 from "@/components/ui/typo/H2";
 
 export default function Vallalati() {
   return (
     <>
-    <Mainheader title={'Egyéb vállalati referenciák'} image={'/eva/beszelgeto2.webp'}/>
-    <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-32'}>
+    <Mainheader title={'Referenciák'} subtitle={'Egyéb vállalati referenciák'} image={'/eva/beszelgeto2.webp'}/>
+    <Regularcontainer bgcolor={"bg-[--white]"} padding={'lg:py-32 py-16'}>
       <div className="flex flex-col gap-16">
         <div>
-          <h2 className="text-center">Céges partnereim mondták rólam</h2>
+          <H2 classname="lg:text-center lg:self-center">Céges partnereim mondták rólam</H2>
         </div>
         <div className="w-full">
           <Swiper
@@ -38,7 +39,7 @@ export default function Vallalati() {
                   spaceBetween: 40,
                 },
                 1024: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 50,
                 },
               }}
@@ -48,6 +49,9 @@ export default function Vallalati() {
             </SwiperSlide>
             <SwiperSlide>
               <Coachingreferencetile image={'/referenciak/liptai-judit.webp'} name={'Liptai Judit'} from={'Group Director of Sales and Marketing, Danubius Hotels'} comment={'<p>Nagy tiszteletben tartjuk az Egyenlítő Alapítvány munkáját, igyekszünk részt venni eseményeiken és részesei voltunk a mentor programjuknak is.<br><br>Évával sok egyeztetésen, közös gondolkodáson vagyunk túl, jó hangulat, értő figyelem és konstruktív együttműködés jellemezte ezeket a megbeszéléseket. Éva őszinte, empatikus, kedves lénye a garancia arra, hogy a közös munka mindkét félnek örömet okozzon és arra sarkalljon, hogy még többet tegyünk nemes céljaink eléréséért.</p>'}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Coachingreferencetile image={'/referenciak/jakab-judit.webp'} name={'Jakab Judit'} from={'Sokszínűségi és esélyegyenlőségi szakértő, Magyar Telekom'} comment={'<p>Évával mindig öröm volt együttdolgozni. Felkészült volt, ismerte a témát/projektet, amin dolgozott, bármit kérdezhettem tőle, képben volt, vagy ha mégsem, villámgyorsan utánajárt a dolognak. Mindig partnerségre, közös értékteremtésre törekedett, szem előtt tartva a vállalati oldal szempontjait, igényeit, mindezt úgy, hogy közben ne sérüljön a szakmaiság, partnerség.<br><br>Személy szerint nagyra értékelem nyitott, kedves, empatikus hozzáállását, kitartását, szakmai alázatát és azt, hogy mindig őszinte érdeklődéssel tanult új dolgokat, illetve ugyanilyen lelkesedéssel osztotta meg tudását velem és másokkal is.</p>'}/>
             </SwiperSlide>
           </Swiper>
         </div>

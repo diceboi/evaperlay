@@ -1,35 +1,88 @@
-"use client";
-
-import React from "react";
 import Regularcontainer from "./ui/regularcontainer";
-import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
+import LinkedInButton from "./ui/LinkedInButton";
 import Logocarousel from "./logocarousel";
 import Primarygreenbuton from "./ui/primaryGreenButon";
-import { MdOutlineHorizontalRule } from "react-icons/md";
+import SubTitle from "./ui/typo/SubTitle";
+import H2 from "./ui/typo/H2";
+import H3 from "./ui/typo/H3";
+import Paragraph from "./ui/typo/Paragraph";
+import BlogList from "./blogList";
 
-export default function Linkedin() {
+export async function getPosts() {
+
+  const query = `
+  {
+      posts {
+        edges {
+          node {
+            date
+            title
+            slug
+            author {
+              node {
+                avatar {
+                  url
+                }
+                name
+              }
+            }
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            categories {
+              nodes {
+                name
+                id
+              }
+            }
+            blocks {
+              saveContent
+              order
+            }
+            excerpt
+          }
+        }
+      }
+    }
+  `;
+  
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
+      query
+    )}`,
+    { next: { revalidate: 10 } },
+    {
+      method: "GET",
+      headers: {
+        "Content-type" : "application/json",
+      }
+    }
+  )
+  
+  const { data } = await res.json()
+  
+  return data.posts.edges
+    
+  }
+
+export default async function Linkedin() {
+
+  const posts = await getPosts()
+
   return (
-    <Regularcontainer bgcolor={"bg-white"} padding={'py-16 lg:py-32'}>
-      <div className="flex flex-col items-center gap-16">
-      <div className="flex flex-col gap-4">
-        <h4
-          className="flex flex-nowrap items-center justify-center gap-2"
-        >
-          <MdOutlineHorizontalRule className="min-w-8 min-h-8" />
-          Blog
-        </h4>
-        <h2 className="text-center">Szakmai tartalmaim</h2>
+    <Regularcontainer bgcolor={"bg-white"} padding={"py-16 lg:py-32"}>
+      <div className="flex flex-col lg:gap-16 gap-8">
+        <div className="flex flex-col gap-4">
+          <SubTitle classname={"lg:self-center"}>Blog</SubTitle>
+          <H2 classname={"lg:self-center"}>Szakmai tartalmaim</H2>
         </div>
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-          className="flex flex-col gap-8 lg:flex-row rounded-3xl w-full"
+        <div
+          className="flex flex-col gap-8 lg:flex-row rounded-3xl w-full min-h-[60vh]"
         >
-          <div className="relative flex flex-col items-center justify-between lg:w-1/3 w-full p-8 rounded-xl m-auto min-h-[70vh]">
+          <div className="relative flex flex-col items-center justify-end gap-4 lg:w-1/3 w-full p-8 rounded-xl h-auto min-h-[50vh]">
             <Image
               src="/eva/linkedin.webp"
               fill
@@ -37,51 +90,24 @@ export default function Linkedin() {
               alt="Éva ül"
               className="w-full rounded-xl"
             />
-            <div className="absolute top-1 lg:top-[50px] -right-4">
-              <motion.p
-                className="bubble-left relative text-sm font-semibold w-48 bg-[--white] p-2 shadow-xl"
-                initial={{ scale: 0.7, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{
-                  duration: 0.8,
-                  type: "spring",
-                  bounce: 0.4,
-                  delay: 0.4,
-                }}
-              >
-                Kövess be LinkedIn-en és olvass bele szakmai tartalmaimba.
-              </motion.p>
-            </div>
-
-            <Link
-              href="https://www.linkedin.com/in/evaperlay"
-              target="_blank"
-              className="w-fit absolute bottom-16"
-            >
-              <button className="bg-[#0077b5] pl-2 pr-2 py-1 text-white font-semibold flex flex-nowrap items-center gap-2 hover:gap-3 transition-all">
-                <FaLinkedin className="w-8 h-full" />
-                <p>LinkedIn</p>
-              </button>
-            </Link>
+            <Paragraph classname={"z-10 text-center text-white self-end"}>
+              Kövess be LinkedIn-en és olvass bele szakmai tartalmaimba.
+            </Paragraph>
+            <LinkedInButton />
+            <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent to-[--black] rounded-xl opacity-50"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 lg:grid-rows-2 gap-8 lg:w-2/3">
-            <div className="col-span-1 lg:row-span-2 row-span-1 bg-[--white] rounded-xl">
-              <span>Blog 1</span>
-            </div>
-            <div className="col-span-1 row-span-1 bg-[--white] rounded-xl">
-              <span>Blog 2</span>
-            </div>
-            <div className="col-span-1 row-span-1 bg-[--white] rounded-xl">
-              <span>Blog 3</span>
-            </div>
-          </div>
-        </motion.div>
-        <Primarygreenbuton text={'További olvasmányok'} link={'/blog'} classname={'m-auto'}/>
+            <BlogList posts={posts} gridclassname={'lg:grid-cols-2 grid-cols-1 py-0 w-full'} tilebg={'bg-[--white]'}/>
+        </div>
+        <Primarygreenbuton
+          text={"További olvasmányok"}
+          link={"/blog"}
+          classname={"self-center my-8"}
+        />
         <div className="flex flex-col w-full">
-          <h3 className="mt-32 -mb-16 pr-8 z-10 w-full text-center">
+          <H3 classname={"self-center text-center"}>
             Partnereim, akik már bizalmat szavaztak nekem:
-          </h3>
+          </H3>
           <Logocarousel />
         </div>
       </div>

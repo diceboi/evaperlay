@@ -6,6 +6,7 @@ import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
 import { CalendlyContext } from "@/app/CalendlyContext";
 import { useContext } from "react";
+import Paragraph from "./ui/typo/Paragraph";
 
 export default function Ctatwo() {
 
@@ -30,21 +31,21 @@ export default function Ctatwo() {
         </div>
         <div className="flex flex-col gap-8 justify-between lg:w-2/3 lg:p-8 p-4">
           <div className="flex flex-col gap-4">
-            <p className="text-md lg:text-xl">
+            <Paragraph className="text-md lg:text-xl">
               Ha megérett benned az elhatározás, hogy új célokat tűzz ki, és
               ehhez egyenrangú szakmai partnert keresel, akivel olyan bizalommal
               tudnál együtt dolgozni, hogy beleférne
-            </p>
+            </Paragraph>
             <ul className="list-disc marker:text-white lg:text-xl ml-4">
-              <li>a feltétel nélküli elfogadás</li>
-              <li>a sebezhetőség, az érzelmek megmutatása</li>
-              <li>az őszinteség, a nyitottság</li>
-              <li>és a humor is,</li>
+              <li><Paragraph>a feltétel nélküli elfogadás</Paragraph></li>
+              <li><Paragraph>a sebezhetőség, az érzelmek megmutatása</Paragraph></li>
+              <li><Paragraph>az őszinteség, a nyitottság</Paragraph></li>
+              <li><Paragraph>és a humor is,</Paragraph></li>
             </ul>
-            <p className="lg:text-xl">
+            <Paragraph className="lg:text-xl">
               akkor mindenképp foglalj velem egy{" "}
               <strong>ingyenes, 30 perces konzultációt!</strong>
-            </p>
+            </Paragraph>
           </div>
           <Primarybluebutton
             text={"Ingyenes konzultáció igénylés"}

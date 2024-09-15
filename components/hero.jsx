@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import Primarygreenbuton from "./ui/primaryGreenButon";
 import { CalendlyContext } from "@/app/CalendlyContext";
 import { useContext } from "react";
+import H1 from "./ui/typo/H1";
+import Paragraph from "./ui/typo/Paragraph";
+import Image from "next/image";
 
 export default function Hero() {
 
@@ -18,52 +21,32 @@ export default function Hero() {
       bgcolor={"bg-black"}
       blendmode={"mix-blend-darken"}
     >
-      <div className="relative flex flex-col justify-end items-center gap-8 h-[80vh]">
+      <div className="relative flex flex-col justify-end items-center gap-8 h-[80vh] pb-20">
         <div className="flex flex-col lg:w-1/2">
-          <motion.h1
-            className="text-center text-white drop-shadow-lg "
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+        <Image src={'/logo/logo-gardient-1-coaching.svg'} width={150} height={100} alt="logo" />
+          <H1
+            classname="text-center text-white drop-shadow-lg"
+            initial={{x: -100, opacity: 0}}
+            whileinview={{x: 0, opacity: 1}}
           >
             Üzleti coaching
-          </motion.h1>
-          <motion.h1
-            className="text-center text-white drop-shadow-lg "
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+          </H1>
+          <H1
+            classname="text-center text-white drop-shadow-lg"
+            initial={{x: 100, opacity: 0}}
+            whileinview={{x: 0, opacity: 1}}
           >
-            az igényeidre szabva.
-          </motion.h1>
+            Az igényeidre szabva
+          </H1>
         </div>
 
-        <div className="absolute top-[10%] lg:right-1/2 -right-8">
-          <motion.p
-            className="relative text-sm text-white font-semibold w-48 bg-[#ffffff49] p-2 shadow-xl bubble-left-transparent lg:bubble-right-transparent"
-            initial={{ scale: 0.7, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              duration: 0.8,
-              type: "spring",
-              bounce: 0.4,
-              delay: 0.4,
-            }}
-          >
-            Hogy helyedre kerülj a munkádban, a munka pedig az életedben.
-          </motion.p>
-        </div>
-
-        <motion.p
-          className="text-white lg:w-1/2 text-center lg:text-lg"
-          initial={{ y: -20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+        <Paragraph
+          classname="text-white lg:w-1/2 text-center"
         >
-          Ha új célokat tűznél ki, és ehhez egy bizalmon alapuló szakmai
+          Ha új célokat tűznél ki és ehhez egy bizalmon alapuló szakmai
           partnert keresel, foglalj velem egy ingyenes, 30 perces konzultációt!
-        </motion.p>
-        <Primarygreenbuton text={"Ingyenes konzultáció igénylés"} link={"/"} onclick={toggleCalendly} />
+        </Paragraph>
+        <Primarygreenbuton text={"Ingyenes konzultáció igénylés"} link={"/idopontfoglalas"} />
       </div>
     </Bgcontainer>
   );

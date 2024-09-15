@@ -11,6 +11,11 @@ import { useRef, useContext } from "react";
 import { CalendlyContext } from "@/app/CalendlyContext";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import TimelineBlock from "./ui/timelineBlock";
+import SubTitle from "./ui/typo/SubTitle";
+import H2 from "./ui/typo/H2";
+import H3 from "./ui/typo/H3"
+import Paragraph from "./ui/typo/Paragraph";
+import GreenBorderTile from "./ui/GreenBorderTile";
 
 export default function Whattoexpect() {
 
@@ -45,16 +50,15 @@ export default function Whattoexpect() {
   return (
     <Regularcontainer
       bgcolor={"bg-gardient-to-b from-white to-transparent"}
-      padding={"py-32"}
+      padding={"lg:py-32 py-16"}
     >
       <div className="relative flex flex-col gap-20">
         <div className="flex flex-col gap-16 w-full">
-          <div className="flex flex-col gap-4">
-            <h4 className="flex flex-nowrap items-center justify-center gap-2">
-              <MdOutlineHorizontalRule className="min-w-8 min-h-8" />
+          <div className="flex flex-col lg:items-center gap-4">
+            <SubTitle>
               Hogyan dolgozom?
-            </h4>
-            <h2 className="text-center z-10">Mire számíthatsz?</h2>
+            </SubTitle>
+            <H2>Mire számíthatsz?</H2>
           </div>
           <div className="flex flex-col lg:flex-row gap-16">
             <motion.div
@@ -72,91 +76,39 @@ export default function Whattoexpect() {
               <div className="flex flex-col items-center gap-4 w-10/12 mx-auto z-10 py-8">
                 <Quote
                   text={
-                    "A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is."
+                    "A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is. (ICF)"
                   }
                   textcolor={"text-white"}
                   width={"w-full"}
                   textalign={"text-center"}
                 />
-
-                <Link
-                  href={"https://www.coachingfederation.hu/mi-coaching/"}
-                  target="_blank"
-                  className=""
-                >
-                  <span className="italic text-white underline text-center lg:text-right">
-                    International Coaching Federation definíció
-                  </span>
-                </Link>
               </div>
             </motion.div>
             <div className="flex flex-col justify-center gap-16 lg:w-1/3 w-full">
-              <h3 className="lg:text-left text-center">Közös munkánk során:</h3>
+              <H3>Közös munkánk során:</H3>
               <div className="grid grid-cols-1 grid-rows-5 lg:grid-rows-2 lg:grid-flow-row gap-8 border-l-4 border-dashed border-[--mint]">
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
-                  </div>
-                  <p className="">
-                    <b>Egyenrangú </b>partnerekként
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
-                  </div>
-                  <p className="">
-                    azzal fogunk dolgozni, ami <b>számodra fontos</b>.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
-                  </div>
-                  <p className="">
-                    <b>Te felelsz</b> a folyamat során levont tanulságokért és
-                    céljaid megvalósításáért.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <p className="">
-                    <b>Én felelek</b> a coaching technikák alkalmazásáért és az
-                    ülések strukturálásáért.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
-                  </div>
-                  <p className="">
-                    <b>Nem lesz részed</b> tanácsadásban (tapasztalat
-                    megosztásban is csak kivételes esetben).
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <div className="absolute flex flex-col items-center justify-center top-1/2 -translate-y-1/2 -right-7 w-8 h-8">
-                  </div>
-                  <p className="">
-                    <b>Jövőorientáltan</b>, azaz nem a “miérteken”, hanem a
-                    “hogyanokon” fogunk dolgozni.
-                  </p>
-                </div>
-                <div className="flex flex-col justify-center relative align-middle py-4 pl-7 pr-4 -ml-1 bg-white shadow-sm border-l-4 border-[--aquamarine]">
-                  <p className="">
-                    Végig <b>mérhető célok</b> mentén.
-                  </p>
-                </div>
+                <GreenBorderTile text={<Paragraph><b>Egyenrangú </b>partnerekként</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph>azzal fogunk dolgozni, ami <b>számodra fontos</b>.</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph><b>Te felelsz</b> a folyamat során levont tanulságokért és céljaid megvalósításáért.</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph><b>Én felelek</b> a coaching technikák alkalmazásáért és az ülések strukturálásáért.</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph><b>Nem lesz részed</b> tanácsadásban (tapasztalatmegosztásban is csak kivételes esetben).</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph><b>Jövőorientáltan</b>, azaz nem a “miérteken”, hanem a “hogyanokon” fogunk dolgozni.</Paragraph>}/>
+                <GreenBorderTile text={<Paragraph>Végig <b>mérhető célok</b> mentén.</Paragraph>}/>
               </div>
             </div>
           </div>
         </div>
 
         <div className="relative flex flex-col m-auto ">
-          <div className="hidden absolute w-1 h-full bg-white top-32 left-1/2 -translate-x-1/2"></div>
-          <h2 className="text-center py-16">Hogyan zajlik a folyamat?</h2>
+          <div className="hidden absolute w-1 h-full bg-white top-16 lg:top-32 left-1/2 -translate-x-1/2"></div>
+          <H3 classname={'py-16 lg:self-center'}>Hogyan zajlik a folyamat?</H3>
 
           <TimelineBlock
             title={'0. beszélgetés'}
             type={'start'}
             text={
               <>
-                A coaching munka egy ingyenes, 30 perces online konzultációval, az ún. 0. beszélgetéssel indul.
+                A coaching munka egy ingyenes, 30 perces online konzultációval, az ún. 0. beszélgetéssel indul.&nbsp;
                 <Secondarybluebutton text={"Foglald le itt!"} onclick={toggleCalendly} />
                 <br />
                 <br />
@@ -176,7 +128,7 @@ export default function Whattoexpect() {
           />
 
           <TimelineBlock
-            title={'A Coach folyamata'}
+            title={'A coaching folyamat'}
             type={'middle'}
             text={
               <>
@@ -198,14 +150,13 @@ export default function Whattoexpect() {
                 változások végrehajtásánál is.
               </>
             }
-          />
-
+          /> 
+        </div>
         <Primarygreenbuton
           text={"Kezdjünk bele"}
-          onclick={toggleCalendly}
-          buttonclassname={"m-auto self-center pt-16"}
-        />  
-        </div>
+          link={'/idopontfoglalas'}
+          classname={"self-center"}
+        /> 
       </div>
     </Regularcontainer>
   );

@@ -24,40 +24,40 @@ export default function Logocarousel() {
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/nn-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="NN logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/linde-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Linde logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/richter-gedeon-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Richter Gedeon logó"
             />
           </div>
           <div className="flex justify-center items-center w-1/3 lg:w-1/5">
             <Image
               src="/logo/union-biztosito-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Union biztosító logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/tesco-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Tesco logó"
             />
           </div>
@@ -83,40 +83,40 @@ export default function Logocarousel() {
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/nn-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="NN logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/linde-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Linde logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/richter-gedeon-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Richter Gedeon logó"
             />
           </div>
           <div className="flex justify-center items-center w-1/3 lg:w-1/5">
             <Image
               src="/logo/union-biztosito-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Union biztosító logó"
             />
           </div>
           <div className="flex justify-center items-center  w-1/3 lg:w-1/5">
             <Image
               src="/logo/tesco-logo.webp"
-              width={100}
-              height={100}
+              width={125}
+              height={125}
               alt="Tesco logó"
             />
           </div>

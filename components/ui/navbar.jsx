@@ -5,6 +5,7 @@ import Image from "next/image";
 import NavButton from "./navbutton";
 import { useState, useEffect, useContext } from "react";
 import { CalendlyContext } from "@/app/CalendlyContext";
+import { MobileMenuContext } from "@/app/MobileMenuContext";
 import { motion } from "framer-motion";
 import Primarygreenbuton from "./primaryGreenButon";
 import { TbMenu2 } from "react-icons/tb";
@@ -12,9 +13,14 @@ import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
 
+  const { mobileMenuOpen, toggleMobileMenu } = useContext(MobileMenuContext);
   const { openPopup, toggleCalendly } = useContext(CalendlyContext);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null);
+
+  const handleToggleSubMenu = (index) => {
+    setOpenSubMenuIndex(openSubMenuIndex === index ? null : index);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,10 +37,6 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prev) => !prev);
-  };
 
   const menus = [
     {
@@ -166,12 +168,12 @@ export default function Navbar() {
                 ))}
               </ul>
             </div>
-            <div className="group flex flex-row justify-end w-full">
+            <div className="flex flex-row justify-end w-full">
               <Primarygreenbuton
                 text={"Foglalj időpontot"}
                 onclick={toggleCalendly}
                 linkclassname={""}
-                buttonclassname={"md:block hidden"}
+                classname={"md:block hidden"}
               />
               {/*Mobile Menu*/}
 
@@ -185,19 +187,25 @@ export default function Navbar() {
                     initial={{ right: "-100%", top: '0' }}
                     animate={{ right: "0", top: '0' }}
                     exit={{ right: "-100%", top: '0' }}
-                    className="absolute flex flex-col w-[80%] h-[100vh] bg-white"
+                    className="absolute flex flex-col gap-8 w-[80%] h-[100vh] bg-white pt-16 px-8 shadow-2xl overflow-y-scroll"
                   >
                     <ul className="gap-2 md:gap-8 text-lg">
                       {menus.map((menu, index) => (
-                        <NavButton key={index} {...menu} scrolled={isScrolled} />
+                        <NavButton 
+                        key={index} 
+                        {...menu} 
+                        scrolled={isScrolled}
+                        isOpen={openSubMenuIndex === index}
+                        toggleSubMenu={() => handleToggleSubMenu(index)} />
                       ))}
                     </ul>
                     <button
-                      className="absolute top-4 left-4 text-black"
+                      className="absolute top-7 right-4 text-black"
                       onClick={toggleMobileMenu}
                     >
                       <IoClose className="min-w-8 min-h-8"/>
                     </button>
+                    <Primarygreenbuton text={'Foglalj időpontot'} link={'/idopontfoglalas'}/>
                   </motion.div>
                 )}
               </div>

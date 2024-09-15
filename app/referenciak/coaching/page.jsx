@@ -5,6 +5,7 @@ import Regularcontainer from "@/components/ui/regularcontainer"
 import Coachingreferencetile from "@/components/ui/coachingReferenceTile";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import H2 from "@/components/ui/typo/H2";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,11 +15,11 @@ import "swiper/css/scrollbar";
 export default function Coaching() {
   return (
     <>
-    <Mainheader title={'Coaching referenciák'} image={'/eva/coaching.webp'}/>
+    <Mainheader title={'Referenciák'} subtitle={'Coaching referenciák'} image={'/eva/coaching.webp'}/>
     <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={'bg-[--white]'}>
     <div className="flex flex-col gap-16">
         <div>
-          <h2 className="text-center">Ügyfeleim mondták rólam</h2>
+          <H2 classname="lg:text-center lg:self-center">Ügyfeleim mondták rólam</H2>
         </div>
         <div className="w-full">
           <Swiper

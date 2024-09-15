@@ -6,6 +6,8 @@ import Primarybluebutton from "./ui/primaryBlueButton";
 import { motion } from "framer-motion";
 import { CalendlyContext } from "@/app/CalendlyContext";
 import { useContext } from "react";
+import H2 from "./ui/typo/H2";
+import Paragraph from "./ui/typo/Paragraph";
 
 export default function Ctaone() {
 
@@ -13,20 +15,17 @@ export default function Ctaone() {
 
   return (
     <Regularcontainer bgcolor={"bg-white"} padding={"pb-20 pt-16"}>
-      <motion.div
+      <div
         className="flex flex-row justify-between bg-[--aquamarine] w-full min-h-[40vh] gap-4"
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
       >
         <div className="relative flex flex-col gap-4 justify-between lg:w-2/3 lg:p-8 p-4">
           <div className="flex flex-col gap-4 z-10">
-            <h2>Foglalj ingyenes, 30 perces konzultációt!</h2>
-            <p className="lg:text-xl">
+            <H2>Foglalj ingyenes, 30 perces konzultációt!</H2>
+            <Paragraph className="lg:text-xl">
               Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a
               témádról, a coaching részleteiről, illetve bármilyen felmerülő
               kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!
-            </p>
+            </Paragraph>
           </div>
           <Primarybluebutton
             text={"Ingyenes konzultáció igénylés"}
@@ -46,7 +45,7 @@ export default function Ctaone() {
             <div className="absolute -bottom-1/2 left-2/3 -translate-x-1/2 bg-[--black] blur-3xl w-1/2 h-full z-10 opacity-30"></div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </Regularcontainer>
   );
 }

@@ -1,73 +1,93 @@
+import Ctaone from "@/components/Ctaone";
 import Horizontalcontainer from "@/components/ui/horizontalContainer";
 import MainCta from "@/components/ui/mainCta";
 import Mainheader from "@/components/ui/mainHeader";
+import H2 from "@/components/ui/typo/H2";
+import Paragraph from "@/components/ui/typo/Paragraph";
 import Image from "next/image";
-import { MdOutlineHorizontalRule } from "react-icons/md"
+import { MdOutlineHorizontalRule } from "react-icons/md";
 
 export default function Miertvalassz() {
   return (
     <>
       <Mainheader
-        title={"Miért lehetek számodra hiteles partner?"}
+        title={"Rólam"}
+        subtitle={"Miért lehetek számodra hiteles partner?"}
         image={"/eva/miert-valassz.webp"}
       />
       <Horizontalcontainer
         bgcolor={"bg-[--white]"}
-        padding={"lg:py-20 py-8"}
+        padding={"lg:py-32 py-16"}
         align={"lg:flex-row"}
       >
         <div className="flex flex-col gap-8 lg:w-1/2">
           <div className="flex flex-col gap-4">
-            <h2 className="">
+            <H2 className="">
               Mert széleskörű szakmai tapasztalattal rendelkezem:
-            </h2>
+            </H2>
           </div>
-          
+
           <ul className="grid flex-col gap-2 list-disc marker:text-[--aquamarine] ml-4">
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              15+ év nagyvállalati, multinacionális háttér
+              <Paragraph>
+                15+ év nagyvállalati, multinacionális háttér
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              különböző marketing és kereskedelmi funkciókban szerzett üzleti
-              szemlélet
+              <Paragraph>
+                különböző marketing és kereskedelmi funkciókban szerzett üzleti
+                szemlélet
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              FMCG márkamenedzsment tapasztalat
+              <Paragraph>FMCG márkamenedzsment tapasztalat</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              üzleti kommunikáció magyar, angol és német nyelven
+              <Paragraph>
+                üzleti kommunikáció magyar, angol és német nyelven
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              10+ év vezetői tapasztalat
+              <Paragraph>10+ év vezetői tapasztalat</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              külföldi (osztrák) munkavégzés
+              <Paragraph>külföldi (osztrák) munkavégzés</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              együttműködés sokféle személyiségtípussal és nemzetiséggel
+              <Paragraph>
+                együttműködés sokféle személyiségtípussal és nemzetiséggel
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              erős projektmenedzsment képességek
+              <Paragraph>erős projektmenedzsment képességek</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              civil szférában szerzett tapasztalat
+              <Paragraph>civil szférában szerzett tapasztalat</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              nők és munkahelyi kisebbségek támogatása
+              <Paragraph>nők és munkahelyi kisebbségek támogatása</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              elköteleződés a sokszínűség, a munkahelyi egyenlőség és a befogadó
-              vezetés iránt
+              <Paragraph>
+                elköteleződés a sokszínűség, a munkahelyi egyenlőség és a
+                befogadó vezetés iránt
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              rejtett előítéletek tudatosításának oktatása,
+              <Paragraph>
+                rejtett előítéletek tudatosításának oktatása
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              összetartó és igényes szakmai közösségek, network építése
+              <Paragraph>
+                összetartó és igényes szakmai közösségek, network építése
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              horizontális kapcsolatok és partneri viszony létrehozása a
-              munkában és magánéletben egyaránt.
+              <Paragraph>
+                horizontális kapcsolatok és partneri viszony létrehozása a
+                munkában és magánéletben egyaránt.
+              </Paragraph>
             </li>
           </ul>
         </div>
@@ -86,44 +106,58 @@ export default function Miertvalassz() {
       >
         <div className="flex flex-col gap-8 lg:w-1/2">
           <div className="flex flex-col gap-4">
-            <h2 className="">
-            Mert ezeket saját magam is átéltem:
-            </h2>
+            <H2 className="">Mert ezeket saját magam is átéltem:</H2>
           </div>
           <ul className="flex flex-auto flex-wrap gap-2 list-disc marker:text-[--aquamarine] ml-4 w-full">
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              felelős szerepek betöltése egészen fiatal kortól
+              <Paragraph>
+                felelős szerepek betöltése egészen fiatal kortól
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              mentális betegséggel küzdő családtag támogatása
+              <Paragraph>
+                mentális betegséggel küzdő családtag támogatása
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              megküzdés méltatlan és/vagy diszkriminatív munkahelyi
+              <Paragraph>
+                megküzdés méltatlan és/vagy diszkriminatív munkahelyi
+              </Paragraph>
               helyzetekkel
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              beilleszkedés más kultúrába
+              <Paragraph>beilleszkedés más kultúrába</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              elhúzódó munkahelyi stressz és kiégés kezelése
+              <Paragraph>
+                elhúzódó munkahelyi stressz és kiégés kezelése
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              szakmai útkeresés, pályaváltás
+              <Paragraph>szakmai útkeresés, pályaváltás</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              visszatérés a munkaerőpiacra kisgyermekes szülőként
+              <Paragraph>
+                visszatérés a munkaerőpiacra kisgyermekes szülőként
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              munka- és magánélet összeegyeztetése, határtartás
+              <Paragraph>
+                munka- és magánélet összeegyeztetése, határtartás
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              önazonos szakmai célok megfogalmazása és megvalósítása
+              <Paragraph>
+                önazonos szakmai célok megfogalmazása és megvalósítása
+              </Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              önismeret fejlesztése és traumafeldolgozás
+              <Paragraph>önismeret fejlesztése és traumafeldolgozás</Paragraph>
             </li>
             <li className="p-2 bg-white max-w-[-150px] shadow-sm">
-              bátorság megtalálása a vállalkozóvá váláshoz.
+              <Paragraph>
+                bátorság megtalálása a vállalkozóvá váláshoz.
+              </Paragraph>
             </li>
           </ul>
         </div>
@@ -131,7 +165,7 @@ export default function Miertvalassz() {
           <Image
             src={"/eva/ateltem3.webp"}
             fill
-            style={{ objectFit: "cover", objectPosition: '0% 0%'}}
+            style={{ objectFit: "cover", objectPosition: "0% 0%" }}
           />
         </div>
       </Horizontalcontainer>
@@ -142,20 +176,22 @@ export default function Miertvalassz() {
       >
         <div className="flex flex-col justify-center gap-8 lg:w-1/2">
           <div className="flex flex-col gap-4">
-              <h2 className="">
-                Mert kiváló emberektől tanulhattam:
-              </h2>
+            <H2 className="">Mert kiváló emberektől tanulhattam:</H2>
           </div>
-          <p className="text-xl">
+          <Paragraph className="text-xl">
             Egyetemi oklevelemet az ország egyik legkiválóbb és legtöbb
             gyakorlatot alkalmazó coaching képzési helyén, a{" "}
             <b>Budapesti Metropolitan Egyetemen szereztem</b>, ahol tapasztalt
             és ismert gyakorló coachoktól, pszichológusoktól és trénerektől
             tanulhattam egyéni és team coachingot.
-          </p>
+          </Paragraph>
         </div>
         <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
-          <Image src={"/eva/egyenlito.webp"} fill style={{ objectFit: "cover" }} />
+          <Image
+            src={"/eva/egyenlito.webp"}
+            fill
+            style={{ objectFit: "cover" }}
+          />
         </div>
       </Horizontalcontainer>
       <Horizontalcontainer
@@ -165,29 +201,26 @@ export default function Miertvalassz() {
       >
         <div className="flex flex-col justify-center gap-8 lg:w-1/2">
           <div className="flex flex-col gap-4">
-            <h2 className="">
-              Mert folyamatosan feljesztem magam:
-            </h2>
+            <H2 className="">Mert folyamatosan feljesztem magam:</H2>
           </div>
-          <p className="text-xl">
+          <Paragraph className="text-xl">
             Tudásomat, önismeretemet és nyitottságomat{" "}
             <b>
               folyamatosan fejlesztem és pozitívan állok az enyémtől eltérő
               látásmódhoz
             </b>
             , hogy a coaching maximálisan az ügyfélről, ne pedig rólam szóljon.
-          </p>
+          </Paragraph>
         </div>
         <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
-          <Image src={"/eva/fejlodes.webp"} fill style={{ objectFit: "cover" }} />
+          <Image
+            src={"/eva/fejlodes.webp"}
+            fill
+            style={{ objectFit: "cover" }}
+          />
         </div>
       </Horizontalcontainer>
-      <MainCta
-        title={""}
-        subtitle={
-          "Ha szívesen megismerkednél velem, foglalj egy ingyenes, 30 perces konzultációt!"
-        }
-      />
+      <Ctaone />
     </>
   );
 }

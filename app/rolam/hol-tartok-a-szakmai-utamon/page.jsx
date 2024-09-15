@@ -7,7 +7,8 @@ export default function Holtartok() {
   return (
     <>
       <Mainheader
-        title={"Hol tartok a szakmai utamon?"}
+        title={"Rólam"}
+        subtitle={'Hol tartok a szakmai utamon?'}
         image={"/eva/miert-valassz2.webp"}
       />
       <Regularcontainer padding={"lg:py-32 py-16"}>
@@ -34,7 +35,7 @@ export default function Holtartok() {
               2022-től vállalok egyéni coaching ügyfeleket. Olvass bele az
               ügyfeleimtől kapott visszajelzésekbe a{" "}
               <Secondarybluebutton
-                text={"coaching referenciák"}
+                text={"Coaching referenciák"}
                 link={"/rolam/coaching-referenciak"}
               />{" "}
               menüpont alatt!

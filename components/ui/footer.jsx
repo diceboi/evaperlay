@@ -7,7 +7,7 @@ import { TbMail, TbBrandLinkedin,TbPhone } from "react-icons/tb";
 export default function Footer() {
   return (
     <Regularcontainer bgcolor={"bg-[--aquamarine]"} padding={'py-16'}>
-      <div className="flex flex-col gap-8 w-full">
+      <div className="flex flex-col gap-16 w-full">
         <div className="flex lg:flex-row flex-col gap-16 w-full justify-center items-start">
           <div className="flex flex-col gap-8 justify-center ">
             <Image
@@ -51,9 +51,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center gap-4  opacity-25">
-            <p className="text-center">Evaperlay.com 2024 @ Minden jog fenntartva</p>
-            <Link href={'/adatkezelesi-tajekoztato'} className="hover:underline">Adatkezelési tájékoztató</Link>
+        <div className="flex lg:flex-row flex-col items-center justify-center gap-4 opacity-30">
+            <p className="text-center">evaperlay.com 2024 @ Minden jog fenntartva</p>
+            <Link href={'/adatkezelesi-tajekoztato'} className="underline">Adatkezelési tájékoztató</Link>
         </div>
       </div>
     </Regularcontainer>

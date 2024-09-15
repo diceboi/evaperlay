@@ -3,13 +3,14 @@ import Mainheader from "@/components/ui/mainHeader";
 import Regularcontainer from "@/components/ui/regularcontainer";
 import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
 import TimelineBlock from "@/components/ui/timelineBlock";
+import H2 from "@/components/ui/typo/H2";
 
 export default function Tanulmanyaim() {
   return (
     <>
-      <Mainheader title={"Tanulmányaim"} image={"/eva/tanulmanyaim2.webp"} />
-      <Regularcontainer padding={"lg:py-16 py-8"}>
-        <h2 className="lg:mb-20 mb-8">Egyetemi tanulmányaim</h2>
+      <Mainheader title={"Rólam"} subtitle={'Tanulmányaim'} image={"/eva/tanulmanyaim2.webp"} />
+      <Regularcontainer padding={"lg:pt-32 pt-16 lg:pb-16 pb-8"}>
+        <H2 classname="pb-8">Egyetemi tanulmányaim</H2>
         <TimelineBlock
           title={"2003 - 2007"}
           type={"start"}
@@ -50,8 +51,8 @@ export default function Tanulmanyaim() {
           }
         />
       </Regularcontainer>
-      <Regularcontainer padding={"lg:py-16 py-8"}>
-        <h2 className="lg:mb-20 mb-8">Egyéb képzések és tanulmányok</h2>
+      <Regularcontainer padding={"pt-16 lg:pb-32 pb-16"}>
+        <H2 classname="pb-8">Egyéb képzések és tanulmányok</H2>
 
         <TimelineBlock
           title={"2023 - 2024"}

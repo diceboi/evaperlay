@@ -106,7 +106,9 @@ export default async function BlogArchive() {
     <Mainheader title={'Blog'} image={'/eva/hol-tartok.webp'}/>
     <Suspense>
     <BlogFilter categories={categories}/>
-    <BlogList posts={posts}/>
+    <div className="container">
+    <BlogList posts={posts} gridclassname={'lg:grid-cols-3 grid-cols-1 py-16 w-full'} tilebg={'bg-white'}/>
+    </div>
     </Suspense>
     </>
   )

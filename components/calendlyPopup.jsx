@@ -13,15 +13,26 @@ const CalendlyPopup = () => {
   });
 
   return (
-    <div className="App">
+    <>
+    <div className="App lg:block hidden">
       <InlineWidget 
-      url="https://calendly.com/szasz-szabolcs1995/30min" 
+      url="https://calendly.com/szasz-szabolcs1995" 
       styles={{
-        height: '600px',
-        width: '300px',
+        height: '700px',
+        width: '1024px',
       }}
       />
     </div>
+    <div className="App lg:hidden block">
+    <InlineWidget 
+    url="https://calendly.com/szasz-szabolcs1995" 
+    styles={{
+      height: '700px',
+      width: '300px',
+    }}
+    />
+  </div>
+  </>
   );
 };
 

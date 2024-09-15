@@ -9,14 +9,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import H2 from "./ui/typo/H2";
+import SubTitle from "./ui/typo/SubTitle";
 
 export default function Coachingreferences() {
   return (
     <Regularcontainer bgcolor={"bg-[--white]"} padding={'py-16 lg:py-32'}>
       <div className="flex flex-col gap-16">
-        <div>
-          <h2 className="text-center">Coaching referenciák</h2>
-        </div>
+        <div className="flex flex-col lg:items-center gap-4">
+            <SubTitle>
+            Coaching referenciák
+            </SubTitle>
+            <H2>Ügyfeleim mondták rólam</H2>
+          </div>
         <div className="w-full">
           <Swiper
             className=""
@@ -45,6 +50,9 @@ export default function Coachingreferences() {
             </SwiperSlide>
             <SwiperSlide>
               <Coachingreferencetile image={'/referenciak/kiss-imre.webp'} name={'Kiss Imre'} from={'Consumer Insights Manager, Kia Europe (Frankfurt, Németország)'} comment={'<p>Szakmai kihívásokkal kerestem meg Évát, és ő beleegyezett, hogy együtt dolgozzon velem ezeken. Hozzáállását az én igényeimre szabta, és úgy hámozta le a problémáim különböző rétegeit, mint a hagymát. Amit először a fő problémáimnak tartottam, azokról jól irányzott kérdései által kiderült, hogy egy mélyebb dolog tünetei csupán.</p><p>Összességében csak ajánlani tudom az Évával való együttműködést. Empatikus, profi, intelligens és nagyon leegyszerűsítve remek beszélgetőpartner.</p>'}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Coachingreferencetile image={'/referenciak/sas-dora.webp'} name={'Sas Dóra'} from={'Global VP of Business Development, Teads (Zürich, Svájc)'} comment={'<p>Éva kiváló szakember, aki támogató és inspiráló módon segített céljaim elérésében. Professzionális hozzáállása és empátiája révén gyorsan kialakítottuk a bizalmi kapcsolatot, és könnyedén megtaláltuk a közös hangot. Jól irányzott kérdéseivel segített mélyebb problémákat feltárni, önmagamat jobban megismerni és iránymutatásával teljesen új nézőpontokat megismerni. Biztos vagyok benne, hogy a coaching során megszerzett tudást és eszköztárat hosszú távon is tudom majd kamatoztatni.</p>'}/>
             </SwiperSlide>
             <SwiperSlide>
               <Coachingreferencetile image={'/referenciak/pecsi-anita.webp'} name={'Pécsi Anita'} from={'Digitális Termékmenedzser, Paramount Group'} comment={'<p>A coaching folyamat kezdetekor elakadva éreztem magam a karrieremben, alacsony volt a szakmai önbizalmam, nem tudtam, merre és hogyan haladjak tovább. </p><p>Ehhez képest a közös munkánk végére, Éva sok gondolatébresztő kérdésének és az alkalmak közötti “házi feladatoknak” köszönhetően rengeteg új ötletem született. </p><p>Visszanyertem a szakmai magabiztosságom, melynek segítségével képes vagyok tovább alakítani a karrieremet, és ezért végtelenül hálás vagyok.</p>'}/>

@@ -9,7 +9,7 @@ import Link from "next/link";
     return(
         <>
             <Link href={href} className={classname}>
-                <div style={{backgroundImage:`url("${featuredimage}")`}} className="w-full min-h-[150px] bg-cover bg-center bg-no-repeat">
+                <div style={{backgroundImage:`url("${featuredimage}")`}} className="w-full h-full bg-cover bg-center bg-no-repeat min-h-[150px]">
                 </div>
                 <div className="flex flex-col justify-between gap-4 w-full h-full p-4">
                     <div className="flex flex-col gap-4">

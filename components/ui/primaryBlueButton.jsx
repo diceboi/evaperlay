@@ -2,35 +2,44 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Context, useContext } from "react"
-import { CalendlyContext } from "@/app/CalendlyContext";
+import BtnText from "./typo/BtnText";
 
-export default function Primarybluebutton({ link, text, linkclassname, buttonclassname, onclick }) {
-
-  const {toggleCalendly, openPopup} = useContext(CalendlyContext)
-
+export default function Primarygreenbuton({
+  link,
+  text,
+  classname,
+  onclick,
+}) {
   return (
-    
-      <motion.button
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
-        className={`w-fit ${buttonclassname}`}
-        onClick={onclick}
-      >
-        {link && (
-          <Link href={link} className={`group px-5 py-3 bg-[--dukeblue] hover:bg-white font-medium transition-all duration-200 ${linkclassname}`}>
-          <span className="group-hover:text-white lg:text-md text-sm transition-all">{text}</span>
-          </Link>
-        )}
-        {!link && (
-          <div className={`group px-5 py-3 bg-[--dukeblue] hover:bg-white font-medium transition-all duration-200 ${linkclassname}`}>
-          <span className="text-white group-hover:text-black transition-all">{text}</span>
-          </div>
-        )}
-        
-      </motion.button>
-    
+    <motion.button
+      initial={{
+        opacity: 0,
+        backgroundColor: "var(--dukeblue)",
+        borderRadius: "3px",
+        boxShadow: "rgba(0, 0, 0, 0.3) 0px 1px 5px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, var(--dukeblueborder) 0px -3px 0px inset",
+      }}
+      whileInView={{ opacity: 1 }}
+      whileHover={{
+        backgroundColor: "var(--white)",
+        boxShadow: "rgba(0, 0, 0, 0.3) 0px 2px 20px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset",
+        borderRadius: "5px",
+      }}
+      transition={{ duration: 0.2, type: "ease-out"}}
+      className={`group w-fit font-medium ${classname}`}
+      onClick={onclick}
+    >
+      {link && (
+        <Link href={link}>
+          <BtnText classname="px-5 py-3 text-white group-hover:text-black w-full h-full transition-all duration-200">
+            {text}
+          </BtnText>
+        </Link>
+      )}
+      {!link && (
+        <BtnText classname="px-5 py-3 text-white lg:group-hover:text-black w-full h-full transition-all duration-200">
+          {text}
+        </BtnText>
+      )}
+    </motion.button>
   );
 }
-

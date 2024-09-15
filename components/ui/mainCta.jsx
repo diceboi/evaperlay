@@ -6,6 +6,8 @@ import Primarybluebutton from "./primaryBlueButton";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { CalendlyContext } from "@/app/CalendlyContext";
+import H2 from "./typo/H2";
+import Paragraph from "./typo/Paragraph";
 
 export default function MainCta() {
 
@@ -21,10 +23,10 @@ export default function MainCta() {
         >
           <div className="flex flex-col gap-4 justify-between w-2/3  p-8">
             <div className="flex flex-col gap-4">
-                <h2>Foglalj ingyenes 30 perces konzultációt!</h2>
-                <p className="text-xl">Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a témádról, a coaching részleteiről, illetve bármilyen felmerülő kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!</p>
+                <H2>Foglalj ingyenes 30 perces konzultációt!</H2>
+                <Paragraph className="text-xl">Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a témádról, a coaching részleteiről, illetve bármilyen felmerülő kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!</Paragraph>
             </div>
-            <Primarybluebutton text={'Ingyenes konzultáció igénylés'} onclick={toggleCalendly}/>
+            <Primarybluebutton text={'Ingyenes konzultáció igénylés'} link={'/idopontfoglalo'}/>
           </div>
           <div className="relative w-1/3">
           <Image

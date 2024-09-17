@@ -204,7 +204,7 @@ export default function Gyik() {
 
   return (
     <>
-      <Mainheader title={'GYIK'} subtitle={'Gyakran ismételt kérdések'} image={'/eva/tanulmanyaim.webp'} />
+      <Mainheader title={'GYIK'} subtitle={'Gyakran ismételt kérdések'} image={'/gyik.webp'} bgposition={'lg:bg-[left_0rem_top_-15rem] bg-[left_-10rem_top_-10rem] lg:bg-[length:100%] bg-[length:250%]'}/>
       <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={'bg-[--white]'}>
         <div className='flex flex-col gap-8 overflow-hidden'>
           {faqs.map((faq, index) => (

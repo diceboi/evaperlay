@@ -18,7 +18,7 @@ export default function Mireszamithatsz() {
 
   return (
     <>
-      <Mainheader title={'Hogy dolgozom?'} subtitle={'Egyéni coaching'} image={'/eva/beszelgeto2.webp'} />
+      <Mainheader title={'Hogy dolgozom?'} subtitle={'Egyéni coaching'} image={'/eva/beszelgeto2.webp'} bgposition={'lg:bg-[center_-5rem] bg-[center]'} />
       <Regularcontainer padding={'lg:py-32 py-16'}>
         <div className="flex flex-col gap-16">
 

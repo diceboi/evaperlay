@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
+import H3 from "./ui/typo/H3";
 
 export default function BlogFilter({ categories }) {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function BlogFilter({ categories }) {
 
   return (
     <div className="flex lg:flex-row flex-col justify-center py-4 items-center gap-4 w-full pt-16">
-      <h3 className="font-bold mr-4">Kategóriák:</h3>
+      <H3 className="font-bold mr-4">Kategóriák:</H3>
       <div className="flex flex-wrap gap-2">
         <button
           className={`font-bold w-auto p-2 px-3 hover:bg-[--aquamarine] focus:bg-[--aquamarine] active:bg-[--aquamarine] ${

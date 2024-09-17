@@ -9,7 +9,7 @@ import React from 'react'
 export default function Egyenlitoalapitvany() {
   return (
     <>
-    <Mainheader title={'Rólam'} subtitle={'Az Egyenlítő Alapítványnál végzett munkám'} image={'/eva/egyenlito1.webp'}/>
+    <Mainheader title={'Rólam'} subtitle={'Az Egyenlítő Alapítványnál végzett munkám'} image={'/eva/egyenlito1.webp'} bgposition={'lg:bg-[center_-15rem] bg-[left_-8rem_bottom_-5rem] lg:bg-[length:100%] bg-[length:200%]'}/>
     <Horizontalcontainer bgcolor={"bg-white"} padding={"lg:pt-32 pt-16 pb-16"} align={'lg:flex-row'}>
           <div className="flex flex-col justify-center gap-8 lg:w-1/2">
             <div className="flex flex-col gap-4">

@@ -16,6 +16,7 @@ import H2 from "./ui/typo/H2";
 import H3 from "./ui/typo/H3"
 import Paragraph from "./ui/typo/Paragraph";
 import GreenBorderTile from "./ui/GreenBorderTile";
+import Label from "./ui/typo/Label";
 
 export default function Whattoexpect() {
 
@@ -76,12 +77,13 @@ export default function Whattoexpect() {
               <div className="flex flex-col items-center gap-4 w-10/12 mx-auto z-10 py-8">
                 <Quote
                   text={
-                    "A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is. (ICF)"
+                    "A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is."
                   }
                   textcolor={"text-white"}
                   width={"w-full"}
                   textalign={"text-center"}
                 />
+                <Label classname={'italic text-white'}>International Coaching Federation (ICF) definíció</Label>
               </div>
             </motion.div>
             <div className="flex flex-col justify-center gap-16 lg:w-1/3 w-full">

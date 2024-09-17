@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{x: 100, opacity: 0}}
             whileinview={{x: 0, opacity: 1}}
           >
-            Az igényeidre szabva
+            az igényeidre szabva
           </H1>
         </div>
 

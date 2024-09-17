@@ -17,7 +17,7 @@ import Link from "next/link";
                             <Image src={authorimage} height={30} width={30} alt='author' className='rounded-full'/>
                             <p className="text-sm ">{authorname}</p>
                             <p className="text-sm ">{postdate}</p>
-                            <p className="text-sm border border-neutral-300 rounded-full px-2">{category}</p>
+                            {/*<p className="text-sm border border-neutral-300 rounded-full px-2">{category}</p>*/}
                         </div>                    
                         <h3 className="text-xl font-bold">{title}</h3>
                         <div className="text-sm" dangerouslySetInnerHTML={{ __html: content }}></div>

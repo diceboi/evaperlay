@@ -171,8 +171,7 @@ export default function Navbar() {
             <div className="flex flex-row justify-end w-full">
               <Primarygreenbuton
                 text={"Foglalj időpontot"}
-                onclick={toggleCalendly}
-                linkclassname={""}
+                link={"/idopontfoglalas"}
                 classname={"md:block hidden"}
               />
               {/*Mobile Menu*/}

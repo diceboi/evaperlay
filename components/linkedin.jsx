@@ -85,7 +85,7 @@ export default async function Linkedin() {
         >
           <div className="relative flex flex-col items-center justify-end gap-4 lg:w-1/3 w-full p-8 rounded-xl h-auto min-h-[50vh]">
             <Image
-              src="/eva/linkedin.webp"
+              src="/eva/linkedin3.webp"
               fill
               style={{ objectFit: "cover", objectPosition: "top" }}
               alt="Éva ül"
@@ -98,7 +98,7 @@ export default async function Linkedin() {
             <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent to-[--black] rounded-xl opacity-50"></div>
           </div>
           <Suspense>
-            <BlogList posts={posts} gridclassname={'lg:grid-cols-2 grid-cols-1 py-0 w-full'} tilebg={'bg-[--white]'}/>
+            <BlogList posts={posts} gridclassname={'lg:grid-cols-2 grid-cols-1 py-0 w-2/3'} tilebg={'bg-[--white]'}/>
           </Suspense>
         </div>
         <Primarygreenbuton

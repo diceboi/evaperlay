@@ -13,7 +13,7 @@ export default function Kapcsolat() {
 
   return (
     <>
-    <Mainheader title={'Kapcsolat'} subtitle={'Vegyük fel a kapcsolatot!'} image={'/eva/kapcsolat2.webp'} />
+    <Mainheader title={'Kapcsolat'} subtitle={'Vegyük fel a kapcsolatot!'} image={'/eva/tanulmanyaim.webp'} bgposition={'lg:bg-[left_0rem_top_0rem] bg-[left_-18rem_top_0rem] lg:bg-[length:100%] bg-[length:250%]'} />
     <Regularcontainer bgcolor={"bg-white"} padding={'lg:py-32 py-16'}>
       <div className="flex flex-col gap-16">
         <div className="flex lg:flex-row flex-col lg:gap-20 gap-8 w-full">

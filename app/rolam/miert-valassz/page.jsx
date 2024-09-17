@@ -14,6 +14,7 @@ export default function Miertvalassz() {
         title={"Rólam"}
         subtitle={"Miért lehetek számodra hiteles partner?"}
         image={"/eva/miert-valassz.webp"}
+        bgposition={'lg:bg-[center_-2rem] bg-[center_-3rem] lg:bg-[length:100%] bg-[length:250%] '}
       />
       <Horizontalcontainer
         bgcolor={"bg-[--white]"}
@@ -186,11 +187,11 @@ export default function Miertvalassz() {
             tanulhattam egyéni és team coachingot.
           </Paragraph>
         </div>
-        <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
+        <div className="relative lg:w-1/2 min-h-[50vh] overflow-hidden rounded-xl">
           <Image
             src={"/eva/egyenlito.webp"}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", objectPosition: "0%, 20%" }}
           />
         </div>
       </Horizontalcontainer>
@@ -201,7 +202,7 @@ export default function Miertvalassz() {
       >
         <div className="flex flex-col justify-center gap-8 lg:w-1/2">
           <div className="flex flex-col gap-4">
-            <H2 className="">Mert folyamatosan feljesztem magam:</H2>
+            <H2 className="">Mert folyamatosan fejlesztem magam:</H2>
           </div>
           <Paragraph className="text-xl">
             Tudásomat, önismeretemet és nyitottságomat{" "}
@@ -212,7 +213,7 @@ export default function Miertvalassz() {
             , hogy a coaching maximálisan az ügyfélről, ne pedig rólam szóljon.
           </Paragraph>
         </div>
-        <div className="relative lg:w-1/2 min-h-[60vh] overflow-hidden rounded-xl">
+        <div className="relative lg:w-1/2 min-h-[50vh] overflow-hidden rounded-xl">
           <Image
             src={"/eva/fejlodes.webp"}
             fill

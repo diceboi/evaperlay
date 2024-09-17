@@ -1,12 +1,13 @@
 "use client";
 
 import Blogtile from "./ui/blogTile";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 
 export default function BlogList({ posts, gridclassname, tilebg }) {
   const searchParams = useSearchParams();
+  const pathname = usePathname(); // Get the current pathname
 
-  const categoryFromQuery = searchParams.get("category"); // Retrieve the category from the query parameter
+  const categoryFromQuery = searchParams.get("category");
 
   const filteredPosts = categoryFromQuery
     ? posts.filter(
@@ -27,7 +28,7 @@ export default function BlogList({ posts, gridclassname, tilebg }) {
 
   return (
     <div className={`grid ${gridclassname} gap-8`}>
-      {filteredPosts &&
+      {pathname === "/blog" &&
         filteredPosts.map((post, index) => (
           <Blogtile
             key={index}
@@ -39,32 +40,35 @@ export default function BlogList({ posts, gridclassname, tilebg }) {
             category={post.node.categories.nodes[0].name}
             classname={`group relative flex flex-col w-full ${tilebg} gap-4 shadow-sm hover:shadow-xl hover:border-transparent transition-all ${
               index === 0
-                ? "lg:col-span-2 lg:flex-row after:content-['Legfrissebb'] after:p-2 after:w-auto after:h-auto after:bg-[--aquamarine] after:absolute after:top-4 after:left-4 after:text-sm after:uppercase after:tracking-widest after:font-bold"
+                ? "lg:col-span-3 min-h-96 lg:flex-row after:content-['Legfrissebb'] after:p-2 after:w-auto after:h-auto after:bg-[--aquamarine] after:absolute after:top-4 after:left-4 after:text-sm after:uppercase after:tracking-widest after:font-bold"
                 : "flex-col"
             }`}
             content={post.node.excerpt}
             href={`/blog/${post.node.slug}`}
           />
         ))}
-  {!filteredPosts &&
-      posts.map((post, index) => (
-        <Blogtile
-          key={index}
-          featuredimage={post.node.featuredImage.node.sourceUrl}
-          postdate={formatDate(post.node.date)}
-          title={post.node.title}
-          authorimage={post.node.author.node.avatar.url}
-          authorname={post.node.author.node.name}
-          category={post.node.categories.nodes[0].name}
-          classname={`group relative flex flex-col w-full ${tilebg} gap-4 shadow-sm hover:shadow-xl hover:border-transparent transition-all ${
-            index === 0
-              ? "after:content-['Legfrissebb'] after:p-2 after:w-auto after:h-auto after:bg-[--aquamarine] after:absolute after:top-4 after:left-4 after:text-sm after:uppercase after:tracking-widest after:font-bold"
-              : "flex-col"
-          }`}
-          content={post.node.excerpt}
-          href={`/blog/${post.node.slug}`}
-        />
-      ))}
+
+      {pathname !== "/blog" &&
+        posts
+          .slice(0, 3)
+          .map((post, index) => (
+            <Blogtile
+              key={index}
+              featuredimage={post.node.featuredImage.node.sourceUrl}
+              postdate={formatDate(post.node.date)}
+              title={post.node.title}
+              authorimage={post.node.author.node.avatar.url}
+              authorname={post.node.author.node.name}
+              category={post.node.categories.nodes[0].name}
+              classname={`group relative flex flex-col w-full ${tilebg}  shadow-sm hover:shadow-xl hover:border-transparent transition-all ${
+                index === 0
+                  ? "lg:col-span-2 min-h-96 lg:flex-row after:content-['Legfrissebb'] after:p-2 after:w-auto after:h-auto after:bg-[--aquamarine] after:absolute after:top-4 after:left-4 after:text-sm after:uppercase after:tracking-widest after:font-bold"
+                  : "flex-col"
+              }`}
+              content={post.node.excerpt}
+              href={`/blog/${post.node.slug}`}
+            />
+          ))}
     </div>
   );
 }

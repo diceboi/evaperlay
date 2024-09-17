@@ -8,7 +8,7 @@ import H2 from "@/components/ui/typo/H2";
 export default function Tanulmanyaim() {
   return (
     <>
-      <Mainheader title={"Rólam"} subtitle={'Tanulmányaim'} image={"/eva/tanulmanyaim2.webp"} />
+      <Mainheader title={"Rólam"} subtitle={'Tanulmányaim'} image={"/eva/tanulmanyaim2.webp"} bgposition={'lg:bg-[center_-3rem] bg-[left_-5rem_top_0rem] lg:bg-[length:100%] bg-[length:200%] '} />
       <Regularcontainer padding={"lg:pt-32 pt-16 lg:pb-16 pb-8"}>
         <H2 classname="pb-8">Egyetemi tanulmányaim</H2>
         <TimelineBlock

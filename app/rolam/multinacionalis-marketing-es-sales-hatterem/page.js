@@ -79,8 +79,8 @@ export default function Multinacionalis() {
           <div className="flex flex-col justify-center gap-8 lg:w-1/2">
            <H2>Marketing és sales tapasztalat</H2>
             <Paragraph className="">Széleskörű márkaépítési, kategória- és ügyfélmenedzsment tapasztalatra tettem szert, határokon átívelve vezettem csapatokat és komplex projekteket, illetve értem el kiemelkedő üzleti eredményeket budapesti, bécsi és közép-európai régiós pozíciókban.</Paragraph>
-            <Paragraph className="">Ha <b>versenyszférában dolgozol</b> garantáltan egy nyelvet fogunk beszélni, hiszem jól ismerem ezt a működést.</Paragraph>
-            <Paragraph className="">Ha <b>más területen működsz</b> az üzleti hátterem a stratégiai és strukturált gondolkodás, illetve a hatékony kommunikáció és csapatmunka miatt is hasznos lehet számodra.</Paragraph>
+            <Paragraph className="">Ha <b>versenyszférában dolgozol,</b> garantáltan egy nyelvet fogunk beszélni, hiszem jól ismerem ezt a működést.</Paragraph>
+            <Paragraph className="">Ha <b>más területen működsz,</b> az üzleti hátterem a stratégiai és strukturált gondolkodás, illetve a hatékony kommunikáció és csapatmunka miatt is hasznos lehet számodra.</Paragraph>
           </div>
           <div className="relative lg:w-1/2 lg:min-h-max min-h-[50vh] overflow-hidden rounded-xl">
             <Image 

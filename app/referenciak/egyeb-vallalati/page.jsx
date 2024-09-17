@@ -15,7 +15,7 @@ import H2 from "@/components/ui/typo/H2";
 export default function Vallalati() {
   return (
     <>
-    <Mainheader title={'Referenciák'} subtitle={'Egyéb vállalati referenciák'} image={'/eva/beszelgeto2.webp'}/>
+    <Mainheader title={'Referenciák'} subtitle={'Egyéb vállalati referenciák'} image={'/eva/beszelgeto2.webp'} bgposition={'lg:bg-[center_-0rem] bg-[left_-8rem_top_0rem] lg:bg-[length:100%] bg-[length:200%]'}/>
     <Regularcontainer bgcolor={"bg-[--white]"} padding={'lg:py-32 py-16'}>
       <div className="flex flex-col gap-16">
         <div>

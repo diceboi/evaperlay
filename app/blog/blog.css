@@ -1,0 +1,235 @@
+:root {
+    --black: #191919;
+    --white:#f5f5f7;
+    --mint: #beeedb;
+    --mintbg: #eaf7f1;
+    --aquamarine: #58e7b9;
+    --aquamarineborder: #3ab38c;
+    --vistablue: #96a9d9;
+    --vistabluebg: #edf0fa;
+    --dukeblue: #2b089d;
+    --dukeblueborder: #3f14cc;
+    --dukebluegardiant: linear-gradient(180deg, rgba(43,8,157,0) 0%, rgba(43,8,157,1) 20%, rgba(43,8,157,1) 80%, rgba(43,8,157,1) 100%);
+    --dukeblue-dark: #1f066f;
+    
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+  }
+
+/*---------H1----------*/
+
+h1 {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+}
+
+
+/*---------H2----------*/
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+
+/*---------H3----------*/
+
+h3 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+}
+
+@media (min-width: 640px) {
+    h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+
+/*---------Paragraph----------*/
+
+article p {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+@media (min-width: 640px) {
+    article p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    article p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+/*text-[15px] leading-[23px] sm:text-[16px] sm:leading-[24px] md:text-[18px] md:leading-[26px]*/
+
+
+/*---------Lists----------*/
+
+article ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+article li::marker {
+    color: var(--aquamarine);
+}
+
+
+/*---------Links----------*/
+
+article a {
+    text-decoration: none;
+    position: relative;
+    display: inline; /* Use inline to prevent block behavior */
+    color: black;
+    padding: 0 1px;
+    transition: color ease 0.3s;
+    font-weight: 500;
+    background-image: linear-gradient(90deg, var(--mint), var(--vistablue));
+    background-size: 100% 5px; /* Set the height of the underline */
+    background-repeat: no-repeat;
+    background-position: 0 100%; /* Position it at the bottom */
+}
+
+article a:hover {
+    background-size: 100% 100%;
+}
+
+
+/*---------Blockquote----------*/
+
+
+article blockquote {
+    position: relative;
+    display: block!important;
+    margin-block-start: 0em!important;
+    margin-block-end: 0em!important;
+    margin-inline-start: 0px!important;
+    margin-inline-end: 0px!important;
+    background-color: white!important;
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+}
+
+article blockquote::after {
+    position: absolute;
+    content: "”";
+    bottom: -36px;
+    left: -12px;
+    font-size: 96px;
+    font-weight: 500;
+    color: var(--aquamarine);
+    opacity: 0.5;
+}
+
+article blockquote::before {
+    position: absolute;
+    content: "”";
+    top: 10px;
+    right: -12px;
+    font-size: 96px;
+    font-weight: 500;
+    color: var(--aquamarine);
+    opacity: 0.5;
+}
+
+
+/*---------Gallery----------*/
+
+
+.wp-block-gallery {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr; /* 1 column by default (before 1024px) */
+}
+
+.wp-block-gallery figure {
+    column-span: 1; /* Ensures figures are in their own column */
+}
+
+@media (min-width: 1024px) {
+    .wp-block-gallery {
+        grid-template-columns: 1fr 1fr; /* 2 columns after 1024px */
+    }
+
+    .wp-block-gallery figure {
+        column-span: auto; /* Not necessary, but ensures proper layout */
+    }
+}

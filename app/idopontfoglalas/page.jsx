@@ -1,17 +1,22 @@
 import CalendlyPopup from '@/components/calendlyPopup'
-import Horizontalcontainer from '@/components/ui/horizontalContainer'
-import Mainheader from '@/components/ui/mainHeader'
-import React from 'react'
+import H1 from '@/components/ui/typo/H1'
+import SubTitle from '@/components/ui/typo/SubTitle'
 
 export default function Idopontfoglalas() {
   return (
     <>
-    <Mainheader title={'Kapcsolat'} subtitle={'Foglalj időpontot'} image={'/eva/vallalati-kepzesek.webp'}/>
-    <Horizontalcontainer bgcolor={'bg-[--white]'} padding={'lg:py-32 py-16'} align={'flex-col'}>
-        <div className='m-auto'>
+    <section style={{backgroundImage:`url("/hatter/hatter2.png")`}} className={`relative flex flex-col items-center justify-end text-white w-full min-h-[100vh] overflow-hidden px-2 py-32 lg:bg-[center_0rem] bg-[left_-5rem_top_0rem] lg:bg-[length:100%] bg-[length:150%] bg-no-repeat`}>
+        <div className={`absolute w-full h-full top-0 left-0 bg-gradient-to-b lg:from-[#2b089de3] from-[#2b089dc9] to-[#1e066f92] z-10 `}></div>
+        <div className="flex flex-col items-center gap-4 py-8 z-10">
+            <SubTitle>
+            Foglalj időpontot
+            </SubTitle>
+            <H1 classname={'text-center'}>Csatlakozz elégedett ügyfeleim táborába</H1>
+        </div>
+        <div className='m-auto z-10'>
             <CalendlyPopup />
         </div>
-    </Horizontalcontainer>
+      </section>
     </>
   )
 }

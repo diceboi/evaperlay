@@ -50,7 +50,7 @@ export default function Ctatwo() {
           <Primarybluebutton
             text={"Ingyenes konzultáció igénylés"}
             classname={'z-10'}
-            onclick={toggleCalendly}
+            link={'/idopontfoglalas'}
           />
         </div>
       </motion.div>

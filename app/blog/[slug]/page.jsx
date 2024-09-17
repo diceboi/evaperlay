@@ -88,7 +88,7 @@ export default async function Blog() {
         <BlogPostHero featuredimage={currentpost.node.featuredImage.node.sourceUrl} title={currentpost.node.title} authorimage={currentpost.node.author.node.avatar.url} authorname={currentpost.node.author.node.name} postdate={formatDate(currentpost.node.date)} category={currentpost.node.categories.nodes[0].name} slug={""}/>
         <div className='flex lg:flex-row flex-col lg:gap-20 w-full lg:w-8/12 m-auto'>
           <article className='flex text-lg flex-col gap-8 w-full lg:w-2/3 px-4 lg:px-0 py-8 lg:py-20'>
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-tighter z-10">{currentpost.node.title}</h1>
+          <h1>{currentpost.node.title}</h1>
           {currentpost.node.blocks.map((block, index) => (
             <div
               key={index}

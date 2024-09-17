@@ -30,7 +30,7 @@ export default function Ctaone() {
           <Primarybluebutton
             text={"Ingyenes konzultáció igénylés"}
             classname={'z-10'}
-            onclick={toggleCalendly}
+            link={'/idopontfoglalas'}
           />
         </div>
         <div className="lg:block hidden relative w-[30%]">

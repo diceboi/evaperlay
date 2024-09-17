@@ -16,7 +16,7 @@ const CalendlyPopup = () => {
     <>
     <div className="App lg:block hidden">
       <InlineWidget 
-      url="https://calendly.com/szasz-szabolcs1995" 
+      url="https://calendly.com/evaperlay/30min" 
       styles={{
         height: '700px',
         width: '1024px',
@@ -25,7 +25,7 @@ const CalendlyPopup = () => {
     </div>
     <div className="App lg:hidden block">
     <InlineWidget 
-    url="https://calendly.com/szasz-szabolcs1995" 
+    url="https://calendly.com/evaperlay/30min" 
     styles={{
       height: '700px',
       width: '300px',

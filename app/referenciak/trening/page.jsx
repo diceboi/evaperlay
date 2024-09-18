@@ -15,7 +15,7 @@ import "swiper/css/scrollbar";
 export default function Trening() {
   return (
     <>
-    <Mainheader title={'Referenciák'} subtitle={'Tréning referenciák'} image={'/eva/egyenlito3.webp'} bgposition={'lg:bg-[center_-5rem] bg-[center]'}/>
+    <Mainheader title={'Referenciák'} subtitle={'Tréning referenciák'} image={'/eva/egyenlito3.webp'} bgposition={'lg:bg-[center_-12rem] bg-[center]'}/>
     <Regularcontainer padding={"lg:py-32 py-16"} bgcolor={'bg-[--white]'}>
     <div className="flex flex-col gap-16">
         <div>

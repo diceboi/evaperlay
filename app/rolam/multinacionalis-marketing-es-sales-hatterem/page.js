@@ -12,6 +12,7 @@ export default function Multinacionalis() {
         title={"Rólam"}
         subtitle={'Multinacinális marketing és sales hátterem'}
         image={"/eva/multinacionalis.webp"}
+        bgposition={'lg:bg-[center_-15rem] bg-[center]'}
       />
       <Horizontalcontainer
         bgcolor={"bg-[-white]"}

@@ -9,7 +9,7 @@ import Paragraph from '@/components/ui/typo/Paragraph'
 export default function Vallalatikepzesek() {
   return (
     <>
-    <Mainheader title={'Vállalati képzések'} subtitle={'Válogass!'} image={'/eva/egyenlito3.webp'} bgposition={'lg:bg-[center_-5rem] bg-[center]'}/>
+    <Mainheader title={'Vállalati képzések'} subtitle={'Válogass!'} image={'/eva/egyenlito3.webp'} bgposition={'lg:bg-[center_-12rem] bg-[center]'}/>
     <Regularcontainer padding={'lg:py-32 py-16'} bgcolor={'bg-[--white]'}>
         
         <div className='flex flex-col gap-32'>

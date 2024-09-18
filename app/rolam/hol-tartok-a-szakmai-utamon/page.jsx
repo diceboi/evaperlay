@@ -10,7 +10,7 @@ export default function Holtartok() {
         title={"Rólam"}
         subtitle={'Hol tartok a szakmai utamon?'}
         image={"/eva/miert-valassz2.webp"}
-        bgposition={'lg:bg-[center_-4rem] bg-[center_-0rem] lg:bg-[length:100%] bg-[length:200%]'}
+        bgposition={'lg:bg-[center_-8rem] bg-[center_-0rem] lg:bg-[length:100%] bg-[length:200%]'}
       />
       <Regularcontainer padding={"lg:py-32 py-16"}>
         <TimelineBlock

@@ -17,7 +17,7 @@ export async function POST(request) {
 
     const adminEmail = await resend.emails.send({
       from: 'Kapcsolat űrlap <hello@evaperlay.com>',
-      to: 'szasz.szabolcs1995@gmail.com',
+      to: 'hello@evaperlay.com',
       subject: `Új kapcsolatfelvétel: ${subject}`,
       text: `Név: ${name}\nE-mail: ${email}\nÜzenet: ${message}`,
     });

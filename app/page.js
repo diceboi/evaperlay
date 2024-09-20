@@ -18,8 +18,8 @@ export default function Home() {
     <Whyus />
     <Ctatwo />
     <Whattoexpect />
-    <Linkedin />
     <Coachingreferences />
+    <Linkedin />
     <Contactus />
     </>
   );

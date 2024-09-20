@@ -14,7 +14,7 @@ export default function Miertvalassz() {
         title={"Rólam"}
         subtitle={"Miért lehetek számodra hiteles partner?"}
         image={"/eva/miert-valassz.webp"}
-        bgposition={'lg:bg-[center_-2rem] bg-[center_-3rem] lg:bg-[length:100%] bg-[length:250%] '}
+        bgposition={'lg:bg-[center_-2rem] bg-[center_-0rem_top_0rem] lg:bg-[length:100%] bg-[length:250%] '}
       />
       <Horizontalcontainer
         bgcolor={"bg-[--white]"}

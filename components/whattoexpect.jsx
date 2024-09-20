@@ -82,6 +82,7 @@ export default function Whattoexpect() {
                   textcolor={"text-white"}
                   width={"w-full"}
                   textalign={"text-center"}
+                  bgcolor={'bg-neutral-900'}
                 />
                 <Label classname={'italic text-white'}>International Coaching Federation (ICF) definíció</Label>
               </div>

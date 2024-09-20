@@ -4,6 +4,8 @@ import Coachingreferencetile from "./ui/coachingReferenceTile";
 import Regularcontainer from "./ui/regularcontainer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import Logocarousel from "./logocarousel";
+import H3 from "./ui/typo/H3";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -76,6 +78,12 @@ export default function Coachingreferences() {
               <Coachingreferencetile image={'/referenciak/blankprofile.webp'} name={'Dobos Kata'} from={'szakfordító és tolmács'} comment={'<p>Évával öröm volt együttműködni. Minden alkalomra felkészülten érkezett, együtt mértük fel és határoztuk meg a fejlesztendő területeimet, melyeket segített fókuszba helyezni és konkretizálni. </p><p>Végig jó szakemberként funkcionált, semleges tudott maradni és kívülről szemlélni a dolgokat, sosem "okoskodott bele" semmibe, nem próbálta megmondani a "tutit", hanem mellettem állva, velem együtt haladva segített eljutni a cél felé. </p><p>Jó kérdéseket tett fel, melyek sokszor elgondolkodtattak, további elmélkedésre ösztönöztek, nekem is kellett dolgoznom magamon. Számomra mindig nagyon megnyugtató volt vele beszélgetni, megnyílhattam neki. Higgadt, empatikus személyisége és jó meglátásai miatt abszolút jó coach-nak tartom.</p>'}/>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className="flex flex-col w-full">
+          <H3 classname={"self-center text-center"}>
+            Partnereim, akik már bizalmat szavaztak nekem:
+          </H3>
+          <Logocarousel />
         </div>
       </div>
     </Regularcontainer>

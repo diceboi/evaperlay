@@ -109,10 +109,6 @@ export default function Navbar() {
       link: "/gyik",
     },
     {
-      title: "Blog",
-      link: "/blog",
-    },
-    {
       title: "Kapcsolat",
       link: "/kapcsolat",
     },

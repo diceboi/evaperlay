@@ -37,7 +37,7 @@ export default function Holtartok() {
               ügyfeleimtől kapott visszajelzésekbe a{" "}
               <Secondarybluebutton
                 text={"Coaching referenciák"}
-                link={"/rolam/coaching-referenciak"}
+                link={"/referenciak/coaching"}
               />{" "}
               menüpont alatt!
             </>

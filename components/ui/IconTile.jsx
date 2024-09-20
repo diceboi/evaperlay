@@ -8,7 +8,7 @@ export default function IconTile({icon, title, text}) {
       initial={{ scale: 0.9, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.4, type: "ease-out", delay: 0.2 }}
-      className="flex flex-col justify-center items-center gap-4 p-8 bg-white w-full min-h-72 hover:shadow-xl "
+      className="flex flex-col justify-center items-center gap-4 p-8 bg-white w-full min-h-72 shadow-sm"
     >
       <div className="flex flex-col justify-center items-center h-1/3 w-full">
         {icon}

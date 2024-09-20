@@ -30,7 +30,7 @@ export default function Whyus() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 grid-rows-2 gap-8">
-          <IconTile icon={<GrLineChart className="min-w-10 min-h-10 text-[--dukeblue]" />} title={'Fejlődésre vágsz'} text={'Többet szeretnél kihozni magadból, új célokat megvalósítani.'}/>
+          <IconTile icon={<GrLineChart className="min-w-10 min-h-10 text-[--dukeblue]" />} title={'Fejlődésre vágysz'} text={'Többet szeretnél kihozni magadból, új célokat megvalósítani.'}/>
           <IconTile icon={<RiGlassesLine className="min-w-10 min-h-10 text-[--dukeblue]" />} title={'Új perspektíva kell'} text={'Hasznos kérdésekre, eszköztárra vagy más nézőpontra lenne szükséged.'}/>
           <IconTile icon={<TbStairsUp className="min-w-10 min-h-10 text-[--dukeblue]" />} title={'Szintet lépnél'} text={'Jobb vezetővé, munkatárssá, vállalkozóvá akarsz válni vagy felgyorsítanád a fejlődésedet egy új helyzetben.'}/>
           <IconTile icon={<FaPersonRays className="min-w-10 min-h-10 text-[--dukeblue]" />} title={'Magadat képviselnéd'} text={'Fontossá váltak a saját értékeid és igényeid, de még nem tudod, hogyan demonstráld őket.'}/>

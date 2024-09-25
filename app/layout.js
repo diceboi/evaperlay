@@ -5,7 +5,7 @@ import Footer from "@/components/ui/footer";
 import CalendlyContextProvider from "./CalendlyContext";
 import CalendlyModal from "@/components/calendlyModal";
 import MobileMenuContextProvider from "./MobileMenuContext";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <GoogleTagManager gtmId="GTM-M8R4S2LK" />
+        <GoogleAnalytics gaId="G-PWVPSEM48X" />
         <CalendlyContextProvider>
           <MobileMenuContextProvider>
           <body className={`${poppins.variable} text-poppins bg-[--white]`}>

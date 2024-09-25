@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.8.12",
+    "@next/third-parties": "^14.2.13",
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@react-email/components": "^0.0.25",
     "class-variance-authority": "^0.7.0",
@@ -17,7 +18,7 @@
     "framer-motion": "^11.3.19",
     "he": "^1.2.0",
     "lucide-react": "^0.417.0",
-    "next": "14.2.5",
+    "next": "^14.2.13",
     "react": "^18",
     "react-calendly": "^4.3.1",
     "react-dom": "^18",

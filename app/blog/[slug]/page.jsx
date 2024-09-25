@@ -36,6 +36,10 @@ export async function getPosts() {
               order
             }
             excerpt
+            seo {
+              metaDesc
+              title
+            }
           }
         }
       }
@@ -59,6 +63,28 @@ export async function getPosts() {
   
   return data.posts.edges
     
+}
+
+export async function generateMetadata() {
+
+  const posts = await getPosts()
+
+  const headersList = headers();
+  const pathname = headersList.get('x-pathname');
+
+  const slug = pathname.split('/').filter(Boolean).pop();
+
+  // Find the post with the matching slug
+  const currentpost = posts?.find(post => post.node.slug === slug);
+
+  return {
+    title: `${currentpost.node.seo.title} - Blog - Perlay Éva`,
+    description: `${currentpost.node.seo.metaDesc}`,
+    alternates: {
+      canonical: `https://www.evaperlay.com/blog/${currentpost.node.slug}`
+    }
+  }
+  
 }
 
 export default async function Blog() {

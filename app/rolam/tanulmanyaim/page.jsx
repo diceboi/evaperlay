@@ -5,6 +5,18 @@ import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
 import TimelineBlock from "@/components/ui/timelineBlock";
 import H2 from "@/components/ui/typo/H2";
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Tanulmányaim - Perlay Éva',
+    description: 'Fontosnak tartom az oktatást ezért én is folyamatosan képzem magam, hiszen úgy tartja a mondás: "a jó pap is holtig tanul."',
+    alternates: {
+      canonical: `https://www.evaperlay.com/rolam/tanulmanyaim`
+    }
+  }
+  
+}
+
 export default function Tanulmanyaim() {
   return (
     <>

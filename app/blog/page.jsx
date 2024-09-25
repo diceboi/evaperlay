@@ -95,6 +95,18 @@ return data.posts.edges
   
 }
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Blog, Szakmai Tartalmak - Perlay Éva',
+    description: 'Olvass bele szakmai tartalmaimba, ha úgy érzed elakadtál céljaid megvalósításában, vagy fejlődésre vágysz szakmai területen, vagy a magánéletben.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/blog`
+    }
+  }
+  
+}
+
 
 export default async function BlogArchive() {
 

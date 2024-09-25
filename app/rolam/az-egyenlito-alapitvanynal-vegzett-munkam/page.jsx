@@ -6,6 +6,18 @@ import Paragraph from '@/components/ui/typo/Paragraph'
 import Image from 'next/image'
 import React from 'react'
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Az Egyenlítő Alapítványnál végzett munkám - Perlay Éva',
+    description: 'Már több mint 10 éve a szakmában vagyok, és ennek egy jelentős részét az Egyenlítő Alapítványnál töltöttem.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/rolam/az-egyenlito-alapitvanynal-vegzett-munkam`
+    }
+  }
+  
+}
+
 export default function Egyenlitoalapitvany() {
   return (
     <>

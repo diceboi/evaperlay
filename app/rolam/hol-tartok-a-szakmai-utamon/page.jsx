@@ -3,6 +3,18 @@ import Regularcontainer from "@/components/ui/regularcontainer";
 import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
 import TimelineBlock from "@/components/ui/timelineBlock";
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Hol tartok szakmai utamon - Perlay Éva',
+    description: 'Nézd meg jelenleg hol tartok szakmai utamon, és milyen kihívások várnak még a jövőben.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/rolam/hol-tartok-a-szakmai-utamon`
+    }
+  }
+  
+}
+
 export default function Holtartok() {
   return (
     <>

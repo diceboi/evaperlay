@@ -7,6 +7,18 @@ import Paragraph from "@/components/ui/typo/Paragraph";
 import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Miért válassz? - Perlay Éva',
+    description: 'A sok közül miért pont engem válassz? Olvass bele munkamódszerembe, céljaimba, és döntsd el hogy szeretnél-e velem dolgozni.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/rolam/miert-valassz`
+    }
+  }
+  
+}
+
 export default function Miertvalassz() {
   return (
     <>

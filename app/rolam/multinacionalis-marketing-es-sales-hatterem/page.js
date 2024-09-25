@@ -3,7 +3,18 @@ import Horizontalcontainer from "@/components/ui/horizontalContainer";
 import Image from "next/image";
 import H2 from "@/components/ui/typo/H2";
 import Paragraph from "@/components/ui/typo/Paragraph";
-import Label from "@/components/ui/typo/Label";
+
+export async function generateMetadata() {
+
+  return {
+    title: 'Multinacionális Marketing és Sales hátterem - Perlay Éva',
+    description: 'Pályafutásom első, jelentős szakaszát nagyvállalati, multinacionális közegben töltöttem. 15+ év elsősorban FMCG marketing és sales, valamint 10+ év vezetői tapasztalattal rendelkezem.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/rolam/multinacionalis-marketing-es-sales-hatterem`
+    }
+  }
+  
+}
 
 export default function Multinacionalis() {
   return (

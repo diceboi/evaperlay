@@ -1,10 +1,21 @@
 import Mainheader from '@/components/ui/mainHeader'
 import Primarygreenbuton from '@/components/ui/primaryGreenButon'
 import Regularcontainer from '@/components/ui/regularcontainer'
-import Secondarybluebutton from '@/components/ui/SecondaryBlueButton'
 import H2 from '@/components/ui/typo/H2'
 import H3 from '@/components/ui/typo/H3'
 import Paragraph from '@/components/ui/typo/Paragraph'
+
+export function generateMetadata() {
+
+  return {
+    title: 'Vállalati képzések - Perlay Éva',
+    description: 'Az Egyenlítő alaítvány számos képzéséből válogathatsz legyél akár felsővezető, akár HR-es, megtaláljuk a számodra megfelelő képzést.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/szolgaltatasok/vallalati-kepzesek`
+    }
+  }
+  
+}
 
 export default function Vallalatikepzesek() {
   return (

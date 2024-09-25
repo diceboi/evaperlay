@@ -2,6 +2,18 @@ import CalendlyPopup from '@/components/calendlyPopup'
 import H1 from '@/components/ui/typo/H1'
 import SubTitle from '@/components/ui/typo/SubTitle'
 
+export async function generateMetadata() {
+
+  return {
+    title: 'Időpontfoglalás - Ingyenes 30 perces konzultáció - Perlay Éva',
+    description: 'Ne bízd a véletlenre, foglalj egy 30 perces ingyenes konzultációt velem, és derítsük ki együtt, hogyan tudunk közösen dolgozni.',
+    alternates: {
+      canonical: `https://www.evaperlay.com/idopontfoglalas`
+    }
+  }
+  
+}
+
 export default function Idopontfoglalas() {
   return (
     <>

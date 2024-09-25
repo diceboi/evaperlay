@@ -110,11 +110,11 @@ export default async function Linkedin() {
             <Paragraph classname={'text-white z-20'}>A következőkben szeretnék betekintést adni szakdolgozati témámba, amely azzal foglalkozik, hogy a felsővezetői egyéni coaching hogyan tudja támogatni a szervezetek sokszínűséggel...</Paragraph>
           </div>
         </div>
-        <Primarygreenbuton
+        {/*<Primarygreenbuton
           text={"További olvasmányok"}
           link={"/blog"}
           classname={"self-center my-8"}
-        />
+        />*/}
       </div>
     </Regularcontainer>
   );

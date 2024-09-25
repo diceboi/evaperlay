@@ -26,14 +26,11 @@ export default function Aboutme() {
                 <Image src='/eva/rolam5.webp' fill style={{objectFit: 'cover', objectPosition: '25% 20%',}} alt="Rólam" className="relative" />
                 <div className="flex flex-col items-center gap-4 w-10/12 mx-auto z-10 py-8">
                 <Quote
-                  text={
-                    'Hogy helyedre kerülj a munkádban, a munka pedig az életedben.'
-                  }
                   textcolor={"text-white"}
                   width={"w-full"}
                   textalign={"text-center bg-grey"}
                   bgcolor={'bg-neutral-900'}
-                />
+                >Hogy helyedre kerülj a munkádban,<br></br> a munka pedig az életedben.</Quote>
               </div>
             </motion.div>
             <div className="flex flex-col gap-12 justify-center lg:w-1/2">

@@ -21,7 +21,7 @@ export default function Ctaone() {
           <div className="flex flex-col gap-4 z-10">
             <H2>Foglalj ingyenes, 30 perces konzultációt!</H2>
             <Paragraph className="lg:text-xl">
-              Ha felkeltettem az érdeklődésedet és szívesen egyeztetnél a
+              Ha felkeltettem az érdeklődésedet, és szívesen egyeztetnél a
               témádról, a coaching részleteiről, illetve bármilyen felmerülő
               kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!
             </Paragraph>

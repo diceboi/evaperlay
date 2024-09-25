@@ -44,7 +44,7 @@ export default function Mireszamithatsz() {
             text={
               <>
                 A coaching munka egy ingyenes, 30 perces online konzultációval, az ún. 0. beszélgetéssel indul.&nbsp;
-                <Secondarybluebutton text={"Foglald le itt!"} onclick={toggleCalendly} />
+                <Secondarybluebutton text={"Foglald le itt!"} link={'/idopontfoglalas'} />
                 <br />
                 <br />
                 Ebben a fázisban mindketten fel tudjuk mérni, hogy céljaid megvalósításában én tudlak-e a legjobban támogatni, szeretnénk-e elkezdeni és mikortól a közös munkát. Itt egyeztethetünk a coaching folyamat részleteiről, az árakról és bármilyen egyéb kérdéseddel kapcsolatban is.

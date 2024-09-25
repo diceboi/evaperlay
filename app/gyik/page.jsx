@@ -62,7 +62,7 @@ export default function Gyik() {
       question: 'Hogy én jó coach vagyok-e?',
       answer: (
         <>
-          <Paragraph>Igyekszem azzá válni. Ha itt valami nagyképű és egyértelmű IGEN-t olvasnátok, akkor mindenképpen érdemes lenne gyanakodnotok. Két dolgot tudok ehhez hozzátenni: Egyrészt nézzetek körül a Referenciák menüpont alatt, különös tekintettel a coaching referenciákra, hadd beszéljenek helyettem az ügyfeleim arról, mennyire voltak megelégedve a közös munkával.</Paragraph>
+          <Paragraph>Igyekszem azzá válni. Ha itt valami nagyképű és egyértelmű IGEN-t olvasnál, akkor mindenképpen érdemes lenne gyanakodnod. Két dolgot tudok ehhez hozzátenni: Egyrészt nézz körül a Referenciák menüpont alatt, különös tekintettel a coaching referenciákra, hadd beszéljenek helyettem az ügyfeleim arról, mennyire voltak megelégedve a közös munkával.</Paragraph>
           <Paragraph>Másrészt hadd mondjam el, hogy fantasztikus élmény nekem a coaching, őszinte örömömet lelem a közös munkában, az ügyfeleimmel való beszélgetésekben, a kapcsolódásunkban és fejlődésük nyomon követésében. Ebből az örömből bőven tudok töltekezni és energiát fordítani arra, hogy folyamatosan fejlesszem magam, akár magánemberként (önismeret), akár szakemberként (képzések, módszertanok, szakmai gyakorlat). Elkötelezett vagyok, hogy megtegyek minden tőlem telhetőt annak érdekében, hogy hatékony segítség legyek.</Paragraph>
         </>
       ),

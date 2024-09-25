@@ -76,14 +76,11 @@ export default function Whattoexpect() {
               />
               <div className="flex flex-col items-center gap-4 w-10/12 mx-auto z-10 py-8">
                 <Quote
-                  text={
-                    "A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is."
-                  }
                   textcolor={"text-white"}
                   width={"w-full"}
                   textalign={"text-center"}
                   bgcolor={'bg-neutral-900'}
-                />
+                >A coaching az ügyféllel való partneri együttműködés, olyan gondolatébresztő és kreatív folyamat, amely arra inspirálja az ügyfelet, hogy a legtöbbet hozza ki önmagából személyes és szakmai szempontból is.</Quote>
                 <Label classname={'italic text-white'}>International Coaching Federation (ICF) definíció</Label>
               </div>
             </motion.div>
@@ -112,7 +109,7 @@ export default function Whattoexpect() {
             text={
               <>
                 A coaching munka egy ingyenes, 30 perces online konzultációval, az ún. 0. beszélgetéssel indul.&nbsp;
-                <Secondarybluebutton text={"Foglald le itt!"} onclick={toggleCalendly} />
+                <Secondarybluebutton text={"Foglald le itt!"} link={'/idopontfoglalas'} />
                 <br />
                 <br />
                 Ebben a fázisban mindketten fel tudjuk mérni, hogy céljaid megvalósításában én tudlak-e a legjobban támogatni, szeretnénk-e elkezdeni és mikortól a közös munkát. Itt egyeztethetünk a coaching folyamat részleteiről, az árakról és bármilyen egyéb kérdéseddel kapcsolatban is.

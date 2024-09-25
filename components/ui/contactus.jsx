@@ -15,7 +15,7 @@ export default function Contactus() {
       <div className="flex flex-col gap-16">
         <H2 classname="text-center">Vegyük fel a kapcsolatot!</H2>
         <div className="flex lg:flex-row flex-col flex-fol lg:gap-20 gap-8 w-full">
-          <div className="relative flex flex-col items-center justify-center lg:w-1/2">
+          <div className="relative flex flex-col items-center justify-center lg:w-1/2 min-h-[50vh]">
             <Image
               src={"/eva/kapcsolat.webp"}
               fill

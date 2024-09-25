@@ -11,7 +11,7 @@ export default function Idopontfoglalas() {
             <SubTitle>
             Foglalj időpontot
             </SubTitle>
-            <H1 classname={'text-center'}>Csatlakozz elégedett ügyfeleim táborába</H1>
+            <H1 classname={'text-center'}>Ingyenes, 30 perces konzultációra</H1>
         </div>
         <div className='m-auto z-10'>
             <CalendlyPopup />

@@ -145,8 +145,24 @@ article ul {
     margin-left: 20px;
 }
 
+article li {
+    font-size: 15px;
+}
+
 article li::marker {
     color: var(--aquamarine);
+}
+
+@media (min-width: 640px) {
+    article li {
+        font-size: 165px;
+    }
+}
+
+@media (min-width: 768px) {
+    article li {
+        font-size: 18px;
+    }
 }
 
 
@@ -173,6 +189,14 @@ article a:hover {
 
 /*---------Blockquote----------*/
 
+
+article blockquote {
+    font-style: italic;
+}
+
+article blockquote p:last-child {
+    text-align: right;
+}
 
 article blockquote {
     position: relative;
@@ -232,4 +256,10 @@ article blockquote::before {
     .wp-block-gallery figure {
         column-span: auto; /* Not necessary, but ensures proper layout */
     }
+}
+
+/*---------Backgrounded Paragraph----------*/
+
+.has-background {
+    padding: 1rem!important;
 }

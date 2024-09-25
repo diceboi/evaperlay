@@ -105,6 +105,10 @@ export default function Navbar() {
       ],
     },
     {
+      title: "Blog",
+      link: "/blog",
+    },
+    {
       title: "GYIK",
       link: "/gyik",
     },

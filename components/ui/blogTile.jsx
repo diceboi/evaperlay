@@ -22,7 +22,7 @@ import Paragraph from "./typo/Paragraph";
                             {/*<p className="text-sm border border-neutral-300 rounded-full px-2">{category}</p>*/}
                         </div>                    
                         <H3 className="text-xl font-bold">{title}</H3>
-                        <div className="text-sm w-[80%]" dangerouslySetInnerHTML={{ __html: content }}></div>
+                        <div className="text-sm w-[80%] font-normal" dangerouslySetInnerHTML={{ __html: content }}></div>
                     </div>
                     <div className="relative h-8">
                         <FiArrowRight className='absolute text-[--aquamarine] right-4 bottom-0 recruitment-icon w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:right-0 ease-out duration-200'/>

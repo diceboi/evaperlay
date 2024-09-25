@@ -99,22 +99,22 @@ export default async function Linkedin() {
             <LinkedInButton />
             <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent to-[--black] rounded-xl opacity-50"></div>
           </div>
-          {/*<Suspense>
-            <BlogList posts={posts} gridclassname={'lg:grid-cols-2 grid-cols-1 py-0 w-2/3'} tilebg={'bg-[--white]'}/>
-          </Suspense>*/}
-          <div className="relative flex flex-col gap-8 p-8 lg:w-2/3 min-h-[50vh] rounded-xl overflow-hidden">
+          <Suspense>
+            <BlogList posts={posts} gridclassname={'lg:grid-cols-1 grid-cols-1 py-0 w-full lg:w-2/3'} tilebg={'bg-[--white]'}/>
+          </Suspense>
+          <Link href={'https://coachszemle.hu/2023/05/31/perlay-eva-felsovezetoi-coaching-a-dei-szolgalataban/'} target={'__blank'} className="relative flex flex-col gap-8 p-8 lg:w-2/3 min-h-[50vh] rounded-xl overflow-hidden">
             <div className="absolute w-full h-full top-0 left-0 bg-black opacity-50 z-10"></div>
             <Image src={'/coach-palyazat-szemle-borito-1500x500-1.jpg'} fill style={{ objectFit: 'cover', objectPosition: 'left' }} />
             <Label classname={'z-20 border border-white px-4 py-2 rounded-full w-fit text-white'}>coachszemle.hu</Label>
-            <Link href={'https://coachszemle.hu/2023/05/31/perlay-eva-felsovezetoi-coaching-a-dei-szolgalataban/'} target={'__blank'} className="z-20"><H2 classname={'text-white hover:underline'}>Perlay Éva: Felsővezetői coaching a DEI szolgálatában</H2></Link>
+            <H2 classname={'text-white hover:underline z-20'}>Perlay Éva: Felsővezetői coaching a DEI szolgálatában</H2>
             <Paragraph classname={'text-white z-20'}>A következőkben szeretnék betekintést adni szakdolgozati témámba, amely azzal foglalkozik, hogy a felsővezetői egyéni coaching hogyan tudja támogatni a szervezetek sokszínűséggel...</Paragraph>
-          </div>
+          </Link>
         </div>
-        {/*<Primarygreenbuton
+        <Primarygreenbuton
           text={"További olvasmányok"}
           link={"/blog"}
           classname={"self-center my-8"}
-        />*/}
+        />
       </div>
     </Regularcontainer>
   );

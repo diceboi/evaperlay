@@ -11,10 +11,10 @@ export default function MobileSubmenu({ items }) {
 
   return (
     <ul
-      className={`flex flex-col py-4 gap-4 backdrop-blur-lg w-max text-sm max-w-[300px] overflow-hidden`}
+      className={`flex flex-col py-4 gap-4 backdrop-blur-lg w-max text-sm max-w-[200px] overflow-hidden`}
     >
       {items.map((item, index) => (
-        <Link href={item.link} onClick={toggleMobileMenu} key={index} className="h-6 hover:border-b hover:border-white text-[--black] hover:text-black w-fit underline">
+        <Link href={item.link} onClick={toggleMobileMenu} key={index} className="hover:border-b hover:border-white text-[--black] hover:text-black w-fit underline">
         <li>
         <span>{item.title}</span>
         </li>

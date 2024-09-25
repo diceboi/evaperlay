@@ -31,8 +31,6 @@ export default function BlogList({ posts, gridclassname, tilebg }) {
     }${day}.`;
   };
 
-  console.log(posts[0].node.blocks)
-
   return (
     <div className={`grid ${gridclassname} gap-8`}>
       {pathname === "/blog" &&

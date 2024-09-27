@@ -84,7 +84,7 @@ export async function generateMetadata() {
       canonical: `https://www.evaperlay.com/blog/${currentpost.node.slug}`
     },
     openGraph: {
-      images: [{ url: currentpost.node.featuredImage.sourceUrl }]
+      images: [{ url: currentpost.node.featuredImage.node.sourceUrl }]
     }
   }
   

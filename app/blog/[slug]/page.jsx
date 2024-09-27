@@ -82,6 +82,9 @@ export async function generateMetadata() {
     description: `${currentpost.node.seo.metaDesc}`,
     alternates: {
       canonical: `https://www.evaperlay.com/blog/${currentpost.node.slug}`
+    },
+    openGraph: {
+      images: [{ url: currentpost.node.featuredImage.sourceUrl }]
     }
   }
   

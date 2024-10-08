@@ -16,7 +16,7 @@ export function generateMetadata() {
 export default function Trening() {
   return (
     <>
-    <Mainheader title={'Referenciák'} subtitle={'Tréning referenciák'} image={'/eva/egyenlito3.webp'} bgposition={'lg:bg-[center_-12rem] bg-[center]'}/>
+    <Mainheader title={'Referenciák'} subtitle={'Tréning referenciák'} bgposition={'lg:bg-[center_-12rem] bg-[center]'}/>
     <TreningReferences />
     </>
   )

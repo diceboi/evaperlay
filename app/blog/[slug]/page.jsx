@@ -112,6 +112,13 @@ export default async function Blog() {
     return `${year}.${month < 10 ? "0" : ""}${month}.${day < 10 ? "0" : ""}${day}.`;
   };
 
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    }
+    return text;
+  };
+
     return(
         <>
         <BlogPostHero featuredimage={currentpost.node.featuredImage.node.sourceUrl} title={currentpost.node.title} authorimage={currentpost.node.author.node.avatar.url} authorname={currentpost.node.author.node.name} postdate={formatDate(currentpost.node.date)} category={currentpost.node.categories.nodes[0].name} slug={""}/>
@@ -134,14 +141,14 @@ export default async function Blog() {
             <Blogtile
               classname={"group relative flex flex-col w-full bg-white gap-4 h-[430px] shadow-sm hover:shadow-2xl transition-all"}
               href={`/blog/${posts.node.slug}`}
-              key={posts.node.slug}
+              key={posts.node.slug} 
               featuredimage={posts.node.featuredImage?.node.sourceUrl} 
               title={posts.node.title}
               authorimage={posts.node.author.node.avatar.url}
               authorname={posts.node.author.node.name}
               postdate={formatDate(posts.node.date)}
               category={posts.node.categories.nodes[0].name}
-              content={posts.node.excerpt}
+              content={truncateText(posts.node.excerpt, 120)}
             />
             ))}
           </div>

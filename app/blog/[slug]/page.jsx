@@ -78,8 +78,8 @@ export async function generateMetadata() {
   const currentpost = posts?.find(post => post.node.slug === slug);
 
   return {
-    title: `${currentpost.node.seo.title}`,
-    description: `${currentpost.node.seo.metaDesc}`,
+    title: `${currentpost.node?.seo?.title}`,
+    description: `${currentpost.node?.seo?.metaDesc}`,
     alternates: {
       canonical: `https://www.evaperlay.com/blog/${currentpost.node.slug}`
     },

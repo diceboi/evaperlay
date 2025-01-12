@@ -11,6 +11,7 @@ import BlogList from "./blogList";
 import { Suspense } from "react";
 import Label from "./ui/typo/Label";
 import Link from "next/link";
+import EmailSub from "./ui/EmailSub";
 
 export async function getPosts() {
 
@@ -110,6 +111,7 @@ export default async function Linkedin() {
             <Paragraph classname={'text-white z-20'}>A következőkben szeretnék betekintést adni szakdolgozati témámba, amely azzal foglalkozik, hogy a felsővezetői egyéni coaching hogyan tudja támogatni a szervezetek sokszínűséggel...</Paragraph>
           </Link>
         </div>
+        <EmailSub type={"blue"} baselayout={"row"}/>
         <Primarygreenbuton
           text={"További olvasmányok"}
           link={"/blog"}

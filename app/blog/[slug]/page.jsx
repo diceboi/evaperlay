@@ -1,6 +1,7 @@
 import BlogPostHero from "@/components/ui/blogPostHero";
 import Blogtile from "@/components/ui/blogTile";
 import { headers } from "next/headers";
+import EmailSub from "@/components/ui/EmailSub";
 
 export async function getPosts() {
 
@@ -133,7 +134,7 @@ export default async function Blog() {
             />
           ))}
           </article>
-          <div className='flex flex-col justify-start mx-auto lg:w-1/3 w-11/12 gap-8 pt-20'>
+          <div className='flex flex-col justify-start mx-auto lg:w-1/3 w-11/12 gap-8 py-20 min-h-full'>
             <h3 className='text-sm lg:text-lg border-b border-black w-fit'>
               Ezeket olvastad már?
             </h3>
@@ -151,6 +152,10 @@ export default async function Blog() {
               content={truncateText(posts.node.excerpt, 120)}
             />
             ))}
+            <div className="w-full lg:min-h-[300px] lg:sticky top-24">
+              <EmailSub type={"blue"} baselayout={'col'}/>
+            </div>
+            
           </div>
       </div>
       </>

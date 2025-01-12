@@ -1,6 +1,7 @@
 import Regularcontainer from "./regularcontainer";
 import Image from "next/image";
 import Link from "next/link";
+import EmailSub from "./EmailSub";
 
 import { TbMail, TbBrandLinkedin,TbPhone } from "react-icons/tb";
 
@@ -17,7 +18,7 @@ export default function Footer() {
               alt={"footer logo"}
             />
           </div>
-          <div className="flex flex-col gap-8 justify-center items-center">
+          <div className="flex flex-col gap-8 justify-center items-start lg:w-1/2">
             <div className="flex flex-col gap-2">
               <h3>Perlay Éva</h3>
               <p>Diplomás üzleti coach</p>
@@ -50,6 +51,10 @@ export default function Footer() {
 
             </div>
           </div>
+          <div className="lg:w-1/2">
+            <EmailSub type={"green"} baselayout={"row"}/>
+          </div>
+          
         </div>
         <div className="flex lg:flex-row flex-col items-center justify-center gap-4 opacity-30">
             <p className="text-center">evaperlay.com 2024 @ Minden jog fenntartva</p>

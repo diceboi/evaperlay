@@ -1,3 +1,5 @@
+"use client"
+
 import { useForm } from "react-hook-form";
 import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
 import { useState } from "react";

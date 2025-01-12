@@ -11,7 +11,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "admin.evaperlay.com",
+        hostname: "cms.evaperlay.com",
         port: "",
         pathname: "/wp-content/**",
       },

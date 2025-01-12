@@ -6,7 +6,10 @@ const SHEET_ID = "1JC0J7w6U42HtGG63vb0DHxnvaz9v_MaAHi0RCuXY3bI"; // Cseréld a s
 
 async function appendToSheet(data) {
   const auth = new google.auth.GoogleAuth({
-    keyFile: path.join(process.cwd(), "google-credentials.json"), // Győződj meg róla, hogy itt van a fájl!
+    credentials: {
+      private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      client_email: process.env.GOOGLE_CLIENT_EMAIL,
+    },
     scopes: SCOPES,
   });
 

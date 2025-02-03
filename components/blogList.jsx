@@ -37,7 +37,7 @@ export default function BlogList({ posts, gridclassname, tilebg }) {
         filteredPosts.map((post, index) => (
           <Blogtile
             key={index}
-            featuredimage={post.node.featuredImage.node.sourceUrl}
+            featuredimage={post?.node?.featuredImage?.node?.sourceUrl}
             postdate={formatDate(post.node.date)}
             title={post.node.title}
             authorimage={post.node.author.node.avatar.url}
@@ -66,7 +66,7 @@ export default function BlogList({ posts, gridclassname, tilebg }) {
           .map((post, index) => (
             <Blogtile
               key={index}
-              featuredimage={post.node.featuredImage.node.sourceUrl}
+              featuredimage={post?.node?.featuredImage?.node?.sourceUrl}
               postdate={formatDate(post.node.date)}
               title={post.node.title}
               authorimage={post.node.author.node.avatar.url}

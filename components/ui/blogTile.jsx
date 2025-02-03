@@ -20,10 +20,12 @@ const Blogtile = ({
   return (
     <>
       <Link href={href} className={classname}>
+      {featuredimage && (
         <div
           style={{ backgroundImage: `url("${featuredimage}")` }}
           className="w-full h-full bg-cover bg-center bg-no-repeat min-h-[150px]"
         ></div>
+      )}
         <div className="flex flex-col justify-between gap-4 w-full h-full p-4">
             <div className="flex flex-col gap-4">
                 <div className="flex flex-wrap items-center gap-2">
@@ -41,10 +43,10 @@ const Blogtile = ({
                 <H3 className="text-xl font-bold">{title}</H3>
             </div>
             <div className="relative flex flex-nowrap items-end w-full self-end">
-              <div
-                className="text-sm w-[80%] font-normal"
-                dangerouslySetInnerHTML={{ __html: content }}
-              ></div>
+            <div
+              className="text-sm w-[80%] font-normal"
+              dangerouslySetInnerHTML={{ __html: content.length > 100 ? content.slice(0, 100) + "..." : content }}
+            ></div>
               <div className="h-8">
                 <FiArrowRight className="absolute text-[--aquamarine] right-4 bottom-0 recruitment-icon w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:right-0 ease-out duration-200" />
               </div>

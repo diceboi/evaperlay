@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="flex flex-col gap-8 justify-center items-start lg:w-1/2">
             <div className="flex flex-col gap-2">
               <h3>Perlay Éva</h3>
-              <p>Diplomás üzleti coach</p>
+              <p>Okleveles üzleti coach</p>
             </div>
             <div className="flex flex-col items-start gap-2">
               <a

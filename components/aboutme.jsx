@@ -30,7 +30,7 @@ export default function Aboutme() {
                   width={"w-full"}
                   textalign={"text-center bg-grey"}
                   bgcolor={'bg-neutral-900'}
-                >Hogy helyedre kerülj a munkádban,<br></br> a munka pedig az életedben.</Quote>
+                >Hiszem, hogy mindenkinek jár egy szerethető munka és egy teljes élet.</Quote>
               </div>
             </motion.div>
             <div className="flex flex-col gap-12 justify-center lg:w-1/2">
@@ -50,11 +50,11 @@ export default function Aboutme() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
                 >
-                    <Paragraph>Üzleti coachként abban tudlak támogatni, hogy rátalálj azokra a szakmai utakra, ahol elégedett, hiteles és kiegyensúlyozott lehetsz. Hiszem, hogy mindenkinek jár egy szerethető munkahely és egy teljes élet.</Paragraph>
+                    <Paragraph>Üzleti coachként abban tudlak támogatni, hogy rátalálj azokra a szakmai utakra, ahol elégedett, hiteles és kiegyensúlyozott lehetsz. Hiszem, hogy mindenkinek jár egy szerethető munka és egy teljes élet.</Paragraph>
                     <Paragraph>Az Egyenlítő Alapítvány partnerkapcsolati vezetőjeként és trénereként sokszínű és befogadó csapatok kialakításában segítem a hozzám forduló cégeket.
                     </Paragraph>
                     <Paragraph>
-                    Fókuszterületeim az önazonos munkavégzés és kommunikáció, a mentális egészségmegőrzés, a munkahelyi egyenlőség, a befogadó vezetés és az élhető szervezeti kultúra kialakítása.
+                    Fókuszterületeim az önazonos munka megtalálása, a mentális egészségmegőrzés, valamint a sokszínű és befogadó szervezeti kultúra kialakítása.
                     </Paragraph>
                     <Paragraph>
                     Ha kíváncsi vagy, miért lehetek számodra hiteles partner, <Secondarybluebutton text={'kattints ide!'} link={'/rolam/miert-valassz'} />
@@ -63,21 +63,17 @@ export default function Aboutme() {
             </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 justify-evenly pt-16 lg:pt-32 lg:gap-8 gap-2">
-            <Link href={'/rolam/multinacionalis-marketing-es-sales-hatterem'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
-                <Paragraph classname={'font-bold'}>15+ év</Paragraph>
-                <Paragraph className="text-sm">nagyvállalati háttér</Paragraph>
-            </Link>
-            <Link href={'/rolam/az-egyenlito-alapitvanynal-vegzett-munkam'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
-                <Paragraph classname={'font-bold'}>Egyenlítő Alapítvány</Paragraph>
-                <Paragraph className="text-sm">partnerkapcsolati vezető és tréner</Paragraph>
-            </Link>
             <Link href={'/rolam/hol-tartok-a-szakmai-utamon'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
-                <Paragraph classname={'font-bold'}>Diplomás</Paragraph>
-                <Paragraph className="text-sm">üzleti coach</Paragraph>
+                <Paragraph className="text-sm">Okleveles üzleti coach</Paragraph>
             </Link>
             <Link href={'/rolam/tanulmanyaim'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
-                <Paragraph classname={'font-bold'}>Képzésben lévő </Paragraph>
-                <Paragraph>mentálhigiénés szakember</Paragraph>
+                <Paragraph>Képzésben lévő mentálhigiénés szakember</Paragraph>
+            </Link>
+            <Link href={'/rolam/multinacionalis-marketing-es-sales-hatterem'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
+                <Paragraph className="text-sm">15+ év nagyvállalati háttér</Paragraph>
+            </Link>
+            <Link href={'/rolam/aktiv-dei-tapasztalatom'} className="flex flex-col justify-evenly w-full lg:px-8 px-2 text-center gap-2 py-4 shadow-sm bg-white hover:shadow-xl transition-all">
+                <Paragraph className="text-sm">Aktív DEI tapasztalat</Paragraph>
             </Link>
         </div>
     </Regularcontainer>

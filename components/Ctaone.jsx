@@ -19,15 +19,13 @@ export default function Ctaone() {
       >
         <div className="relative flex flex-col gap-4 justify-between lg:w-2/3 lg:p-8 p-4">
           <div className="flex flex-col gap-4 z-10">
-            <H2>Foglalj ingyenes, 30 perces konzultációt!</H2>
+            <H2>Foglalj konzultációt!</H2>
             <Paragraph className="lg:text-xl">
-              Ha felkeltettem az érdeklődésedet, és szívesen egyeztetnél a
-              témádról, a coaching részleteiről, illetve bármilyen felmerülő
-              kérdésedről, foglalj egy ingyenes, 30 perces konzultációt velem!
+              Ha felkeltettem az érdeklődésedet, és szeretnéd biztosítani a helyed, foglalj egy 60 perces konzultációt velem!
             </Paragraph>
           </div>
           <Primarybluebutton
-            text={"Ingyenes konzultáció igénylés"}
+            text={"Konzultáció igénylés"}
             classname={'z-10'}
             link={'/idopontfoglalas'}
           />

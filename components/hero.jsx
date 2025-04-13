@@ -43,15 +43,15 @@ export default function Hero() {
           classname="text-white lg:w-1/2 text-center lg:block hidden"
         >
           Ha új célokat tűznél ki és ehhez egy bizalmon alapuló szakmai
-          partnert keresel, foglalj velem egy ingyenes, 30 perces konzultációt!
+          partnert keresel, foglalj velem egy konzultációs időpontot!
         </Paragraph>
         <Paragraph
           classname="text-white lg:w-1/2 text-center lg:hidden block"
         >
           Ha új célokat tűznél ki és ehhez egy bizalmon alapuló szakmai
-          partnert keresel, foglalj velem egy ingyenes,<br></br>30 perces konzultációt!
+          partnert keresel, foglalj velem egy <br></br>konzultációt!
         </Paragraph>
-        <Primarygreenbuton text={"Ingyenes konzultáció igénylés"} link={"/idopontfoglalas"} />
+        <Primarygreenbuton text={"Konzultáció igénylés"} link={"/idopontfoglalas"} />
       </div>
     </Bgcontainer>
   );

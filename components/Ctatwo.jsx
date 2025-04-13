@@ -41,11 +41,11 @@ export default function Ctatwo() {
             </ul>
             <Paragraph className="lg:text-xl">
               akkor mindenképp foglalj velem egy{" "}
-              <strong>ingyenes, 30 perces konzultációt!</strong>
+              <strong>első, 60 perces konzultációt!</strong>
             </Paragraph>
           </div>
           <Primarybluebutton
-            text={"Ingyenes konzultáció igénylés"}
+            text={"Konzultáció igénylés"}
             classname={'z-10'}
             link={'/idopontfoglalas'}
           />

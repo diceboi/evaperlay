@@ -5,8 +5,8 @@ import SubTitle from '@/components/ui/typo/SubTitle'
 export async function generateMetadata() {
 
   return {
-    title: 'Időpontfoglalás - Ingyenes 30 perces konzultáció - Perlay Éva',
-    description: 'Ne bízd a véletlenre, foglalj egy 30 perces ingyenes konzultációt velem, és derítsük ki együtt, hogyan tudunk közösen dolgozni.',
+    title: 'Időpontfoglalás - Perlay Éva',
+    description: 'Ne bízd a véletlenre, foglalj egy konzultációt velem, és derítsük ki együtt, hogyan tudunk közösen dolgozni.',
     alternates: {
       canonical: `https://www.evaperlay.com/idopontfoglalas`
     }
@@ -23,7 +23,7 @@ export default function Idopontfoglalas() {
             <SubTitle>
             Foglalj időpontot
             </SubTitle>
-            <H1 classname={'text-center'}>Ingyenes, 30 perces konzultációra</H1>
+            <H1 classname={'text-center'}>Az első, 60 perces konzultációnkra!</H1>
         </div>
         <div className='m-auto z-10'>
             <CalendlyPopup />

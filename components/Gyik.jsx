@@ -4,6 +4,7 @@ import Regularcontainer from '@/components/ui/regularcontainer'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Primarygreenbuton from '@/components/ui/primaryGreenButon'
+import Secondarybluebutton from './ui/SecondaryBlueButton'
 import { TbPlus } from "react-icons/tb";
 import { TbMinus } from "react-icons/tb";
 import H3 from '@/components/ui/typo/H3'
@@ -67,7 +68,7 @@ export default function Gyik() {
       ),
     },
     {
-      question: 'Mit jelent az, hogy diplomás coach?',
+      question: 'Mit jelent az, hogy okleveles coach?',
       answer: (
         <>
           <Paragraph>Business és team coach oklevelemet a Budapesti Metropolitan Egyetem által szervezett, 3 féléves szakirányú továbbképzés elvégzésével szereztem, amely közgazdász alapdiplomámmal együtt egyetemi végzettségnek felel meg. Az államilag elismert coach képzések között a Metropolitan (METU) híres arról, hogy rendkívül gyakorlatorientált, oktatói pedig a coach szakma legjobbjai közül kerülnek ki, akik maguk is gyakorló szakemberek.</Paragraph>
@@ -193,9 +194,8 @@ export default function Gyik() {
       answer: (
         <>
           <Paragraph>Egyéni coaching esetén jellemzően eltér a személyes és az online alkalmak díjszabása. Vállalati megkeresés esetén minden esetben egyedi ajánlatot küldök, miután tisztáztuk a célokat és az igényeket.</Paragraph>
-          <Paragraph>Az ún. 0. beszélgetés során, amely nálam minden esetben egy ingyenes, 30 perces online konzultáció, az árazással kapcsolatban is tudunk egyeztetni.</Paragraph>
-          <Paragraph>Ha rátérnél a coaching témád egyeztetésére vagy további kérdéseid vannak, foglalj egy ingyenes, 30 perces konzultációt velem!</Paragraph>
-          <Primarygreenbuton classname={''} text={'Foglalás'} link={'/idopontfoglalas'}/>
+          <Paragraph>Az ún. 0. beszélgetés során, amely nálam egy kb. 15-20 perces telefonbeszélgetés, az árazással kapcsolatban is tudunk egyeztetni.</Paragraph>
+          <Paragraph>Ha rátérnél a coaching témád egyeztetésére vagy további kérdéseid vannak <Secondarybluebutton text={"Hagyd meg az elérhetőségeidet itt!"} link={'/kapcsolat'} /></Paragraph>
         </>
       ),
     },

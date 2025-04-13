@@ -47,11 +47,7 @@ export default function Navbar() {
           icon: "/icons/coaching-icon.svg",
           link: "/szolgaltatasok/egyeni-coaching",
         },
-        {
-          title: "Vállalati képzések",
-          icon: "/icons/coaching-icon.svg",
-          link: "/szolgaltatasok/vallalati-kepzesek",
-        },
+
       ],
     },
     {
@@ -67,17 +63,17 @@ export default function Navbar() {
           icon: "",
           link: "/rolam/hol-tartok-a-szakmai-utamon",
         },
-        {
-          title: "Az Egyenlítő Alapítványnál végzett munkám",
-          icon: "",
-          link: "/rolam/az-egyenlito-alapitvanynal-vegzett-munkam",
-        },
+        { title: "Tanulmányaim", icon: "", link: "/rolam/tanulmanyaim" },
         {
           title: "Multinacionális marketing és sales hátterem",
           icon: "",
           link: "/rolam/multinacionalis-marketing-es-sales-hatterem",
         },
-        { title: "Tanulmányaim", icon: "", link: "/rolam/tanulmanyaim" },
+        {
+          title: "Aktív DEI tapasztalatom",
+          icon: "",
+          link: "/rolam/aktiv-dei-tapasztalatom",
+        }, 
       ],
     },
     {

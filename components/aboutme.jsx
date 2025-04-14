@@ -30,7 +30,7 @@ export default function Aboutme() {
                   width={"w-full"}
                   textalign={"text-center bg-grey"}
                   bgcolor={'bg-neutral-900'}
-                >Hiszem, hogy mindenkinek jár egy szerethető munka és egy teljes élet.</Quote>
+                >Hiszem, hogy mindenkinek jár egy<br></br>szerethető munka és egy teljes élet.</Quote>
               </div>
             </motion.div>
             <div className="flex flex-col gap-12 justify-center lg:w-1/2">
@@ -50,9 +50,8 @@ export default function Aboutme() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, type: "spring", bounce: 0.4}}
                 >
-                    <Paragraph>Üzleti coachként abban tudlak támogatni, hogy rátalálj azokra a szakmai utakra, ahol elégedett, hiteles és kiegyensúlyozott lehetsz. Hiszem, hogy mindenkinek jár egy szerethető munka és egy teljes élet.</Paragraph>
-                    <Paragraph>Az Egyenlítő Alapítvány partnerkapcsolati vezetőjeként és trénereként sokszínű és befogadó csapatok kialakításában segítem a hozzám forduló cégeket.
-                    </Paragraph>
+                    <Paragraph>Üzleti coachként abban tudlak támogatni, hogy rátalálj azokra a szakmai utakra, ahol elégedett, hiteles és kiegyensúlyozott lehetsz.</Paragraph>
+                    <Paragraph><b>Hiszem, hogy mindenkinek jár egy szerethető munka és egy teljes élet.</b></Paragraph>
                     <Paragraph>
                     Fókuszterületeim az önazonos munka megtalálása, a mentális egészségmegőrzés, valamint a sokszínű és befogadó szervezeti kultúra kialakítása.
                     </Paragraph>

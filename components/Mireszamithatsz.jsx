@@ -35,7 +35,7 @@ export default function Mireszamithatsz() {
             type={'start'}
             text={
               <>
-                A coaching munka, az ún. 0. beszélgetéssel indul, amely nálam egy kb. 15-20 perc hosszúságú telefonbeszélgetés.
+                A coaching munka az ún. 0. beszélgetéssel indul, amely nálam egy kb. 15-20 perc hosszúságú telefonbeszélgetés.{" "}<br></br>
                 <Secondarybluebutton text={"Hagyd meg az elérhetőségeidet itt!"} link={'/kapcsolat'} />
                 <br />
                 <br />

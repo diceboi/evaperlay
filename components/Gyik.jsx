@@ -195,7 +195,7 @@ export default function Gyik() {
         <>
           <Paragraph>Egyéni coaching esetén jellemzően eltér a személyes és az online alkalmak díjszabása. Vállalati megkeresés esetén minden esetben egyedi ajánlatot küldök, miután tisztáztuk a célokat és az igényeket.</Paragraph>
           <Paragraph>Az ún. 0. beszélgetés során, amely nálam egy kb. 15-20 perces telefonbeszélgetés, az árazással kapcsolatban is tudunk egyeztetni.</Paragraph>
-          <Paragraph>Ha rátérnél a coaching témád egyeztetésére vagy további kérdéseid vannak <Secondarybluebutton text={"Hagyd meg az elérhetőségeidet itt!"} link={'/kapcsolat'} /></Paragraph>
+          <Paragraph>Ha rátérnél a coaching témád egyeztetésére vagy további kérdéseid vannak, <Secondarybluebutton text={"hagyd meg az elérhetőségeidet itt!"} link={'/kapcsolat'} /></Paragraph>
         </>
       ),
     },

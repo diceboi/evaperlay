@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Eva Perlay coaching, training",
-  description: "Szakmai partnert keresel új célok eléréséhez? Vezetői és HR tréningek, most konzultációval a sikeres indulásért.",
+  description: "Szakmai partnert keresel új munkahelyi célok eléréséhez? Az egyéni coaching segít, hogy elégedett, hiteles és kiegyensúlyozott legyél. Kezdjünk el beszélgetni!",
 };
 
 export default function RootLayout({ children }) {

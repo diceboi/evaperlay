@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useForm } from "react-hook-form";
 import Secondarybluebutton from "@/components/ui/SecondaryBlueButton";
@@ -7,6 +7,7 @@ import { useState } from "react";
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionResult, setSubmissionResult] = useState(null);
+  const [formLoadTime] = useState(() => Date.now()); // időbélyeg az űrlap betöltésekor
 
   const {
     register,
@@ -19,19 +20,22 @@ export default function ContactForm() {
     setSubmissionResult(null);
 
     try {
-      const response = await fetch('/api/email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+      const response = await fetch("/api/email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...data,
+          formLoadTime,
+        }),
       });
 
       if (response.ok) {
-        setSubmissionResult('Sikeres üzenetküldés!');
+        setSubmissionResult("Sikeres üzenetküldés!");
       } else {
-        setSubmissionResult('Hiba történt az üzenet küldése közben.');
+        setSubmissionResult("Hiba történt az üzenet küldése közben.");
       }
     } catch (error) {
-      setSubmissionResult('Hálózati hiba történt.');
+      setSubmissionResult("Hálózati hiba történt.");
     }
 
     setIsSubmitting(false);
@@ -42,9 +46,19 @@ export default function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-4 w-full"
     >
+      {/* 🔒 Honeypot mező – a felhasználó nem látja */}
+      <div className="hidden" aria-hidden="true">
+        <label htmlFor="company">Ne töltsd ki ezt a mezőt</label>
+        <input
+          id="company"
+          type="text"
+          autoComplete="off"
+          {...register("company")}
+        />
+      </div>
+
       <input
         placeholder="Név*"
-        name="name"
         {...register("name", { required: true })}
         className="p-4 text-lg bg-[--white]"
       />
@@ -54,10 +68,9 @@ export default function ContactForm() {
 
       <input
         placeholder="E-mail*"
-        name="email"
         {...register("email", {
           required: true,
-          pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+          pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/,
         })}
         className="p-4 text-lg bg-[--white]"
       />
@@ -69,7 +82,6 @@ export default function ContactForm() {
 
       <input
         placeholder="Tárgy*"
-        name="subject"
         {...register("subject", { required: true })}
         className="p-4 text-lg bg-[--white]"
       />
@@ -79,7 +91,6 @@ export default function ContactForm() {
 
       <textarea
         placeholder="Üzenet*"
-        name="message"
         rows={8}
         {...register("message", { required: true })}
         className="p-4 text-lg bg-[--white]"
@@ -93,7 +104,6 @@ export default function ContactForm() {
       <div className="flex flex-nowrap items-start gap-2">
         <input
           type="checkbox"
-          name="acceptance"
           id="acceptance"
           {...register("acceptance", { required: true })}
           className="p-4 text-lg bg-[--white] mt-1"
@@ -117,7 +127,7 @@ export default function ContactForm() {
         type="submit"
         className="w-fit px-5 py-3 bg-[--aquamarine] hover:bg-[--dukeblue] transition-all text-black hover:text-white cursor-pointer self-center"
         disabled={isSubmitting}
-        value={isSubmitting ? 'Küldés...' : 'Küldés'}
+        value={isSubmitting ? "Küldés..." : "Küldés"}
       />
 
       {submissionResult && (

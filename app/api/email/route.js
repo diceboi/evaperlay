@@ -30,6 +30,7 @@ export async function POST(request) {
     );
 
     const turnstileData = await turnstileRes.json();
+    console.log("Turnstile verify result:", turnstileData);
 
     if (!turnstileData.success) {
       console.log("Turnstile verification failed:", turnstileData);

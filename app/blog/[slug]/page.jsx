@@ -1,6 +1,6 @@
 import BlogPostHero from "@/components/ui/blogPostHero";
 import Blogtile from "@/components/ui/blogTile";
-import { headers } from "next/headers";
+// import { headers } from "next/headers";
 import EmailSub from "@/components/ui/EmailSub";
 
 export async function getPosts() {
@@ -46,34 +46,77 @@ export async function getPosts() {
       }
     }
   `;
-  
+
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
       query
     )}`,
-    { next: { revalidate: 10 } },
+    /*
+      { next: { revalidate: 10 } },
+      {
+        method: "GET",
+        headers: {
+          "Content-type" : "application/json",
+        }
+      }
+    */
     {
       method: "GET",
       headers: {
-        "Content-type" : "application/json",
-      }
+        "Content-type": "application/json",
+      },
+      next: { revalidate: 10 }
     }
   )
-  
+
   const { data } = await res.json()
-  
+
   return data.posts.edges
-    
+
 }
 
-export async function generateMetadata() {
+
+export async function getPostSlugs() {
+  const query = `
+  {
+      posts(first: 100) {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `;
+
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(
+      query
+    )}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+      },
+      next: { revalidate: 10 }
+    }
+  )
+
+  const { data } = await res.json()
+  return data.posts.edges
+}
+
+export async function generateStaticParams() {
+  const posts = await getPostSlugs()
+  return posts.map((post) => ({
+    slug: post.node.slug,
+  }))
+}
+
+export async function generateMetadata({ params }) {
 
   const posts = await getPosts()
-
-  const headersList = headers();
-  const pathname = headersList.get('x-pathname');
-
-  const slug = pathname.split('/').filter(Boolean).pop();
+  const { slug } = params;
 
   // Find the post with the matching slug
   const currentpost = posts?.find(post => post.node.slug === slug);
@@ -88,17 +131,13 @@ export async function generateMetadata() {
       images: [{ url: currentpost.node.featuredImage.node.sourceUrl }]
     }
   }
-  
+
 }
 
-export default async function Blog() {
+export default async function Blog({ params }) {
 
   const posts = await getPosts()
-
-  const headersList = headers();
-  const pathname = headersList.get('x-pathname');
-
-  const slug = pathname.split('/').filter(Boolean).pop();
+  const { slug } = params;
 
   // Find the post with the matching slug
   const currentpost = posts?.find(post => post.node.slug === slug);
@@ -120,11 +159,11 @@ export default async function Blog() {
     return text;
   };
 
-    return(
-        <>
-        <BlogPostHero featuredimage={currentpost.node.featuredImage.node.sourceUrl} title={currentpost.node.title} authorimage={currentpost.node.author.node.avatar.url} authorname={currentpost.node.author.node.name} postdate={formatDate(currentpost.node.date)} category={currentpost.node.categories.nodes[0].name} slug={""}/>
-        <div className='flex lg:flex-row flex-col lg:gap-20 w-full lg:w-8/12 m-auto'>
-          <article className='flex text-lg flex-col gap-8 w-full lg:w-2/3 px-4 lg:px-0 py-8 lg:py-20'>
+  return (
+    <>
+      <BlogPostHero featuredimage={currentpost.node.featuredImage.node.sourceUrl} title={currentpost.node.title} authorimage={currentpost.node.author.node.avatar.url} authorname={currentpost.node.author.node.name} postdate={formatDate(currentpost.node.date)} category={currentpost.node.categories.nodes[0].name} slug={""} />
+      <div className='flex lg:flex-row flex-col lg:gap-20 w-full lg:w-8/12 m-auto'>
+        <article className='flex text-lg flex-col gap-8 w-full lg:w-2/3 px-4 lg:px-0 py-8 lg:py-20'>
           <h1>{currentpost.node.title}</h1>
           {currentpost.node.blocks.map((block, index) => (
             <div
@@ -133,17 +172,17 @@ export default async function Blog() {
               dangerouslySetInnerHTML={{ __html: block.saveContent }}
             />
           ))}
-          </article>
-          <div className='flex flex-col justify-start mx-auto lg:w-1/3 w-11/12 gap-8 py-20 min-h-full'>
-            <h3 className='text-sm lg:text-lg border-b border-black w-fit'>
-              Ezeket olvastad már?
-            </h3>
-            {recentposts?.slice(0, 4).map((posts) => (
+        </article>
+        <div className='flex flex-col justify-start mx-auto lg:w-1/3 w-11/12 gap-8 py-20 min-h-full'>
+          <h3 className='text-sm lg:text-lg border-b border-black w-fit'>
+            Ezeket olvastad már?
+          </h3>
+          {recentposts?.slice(0, 4).map((posts) => (
             <Blogtile
               classname={"group relative flex flex-col w-full bg-white gap-4 h-[430px] shadow-sm hover:shadow-2xl transition-all"}
               href={`/blog/${posts.node.slug}`}
-              key={posts.node.slug} 
-              featuredimage={posts.node.featuredImage?.node.sourceUrl} 
+              key={posts.node.slug}
+              featuredimage={posts.node.featuredImage?.node.sourceUrl}
               title={posts.node.title}
               authorimage={posts.node.author.node.avatar.url}
               authorname={posts.node.author.node.name}
@@ -151,13 +190,13 @@ export default async function Blog() {
               category={posts.node.categories.nodes[0].name}
               content={truncateText(posts.node.excerpt, 120)}
             />
-            ))}
-            <div className="w-full lg:min-h-[300px] lg:sticky top-24">
-              <EmailSub type={"blue"} baselayout={'col'}/>
-            </div>
-            
+          ))}
+          <div className="w-full lg:min-h-[300px] lg:sticky top-24">
+            <EmailSub type={"blue"} baselayout={'col'} />
           </div>
+
+        </div>
       </div>
-      </>
-    )
+    </>
+  )
 }
